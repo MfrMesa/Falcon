@@ -1,0 +1,11 @@
+.contenedorMarketShareTarjetaWeather{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.contenedorMarketShare{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+    justify-content: space-between;
+}
