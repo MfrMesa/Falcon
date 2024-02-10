@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style/seccion2.css">
 </head>
 <body>
@@ -16,18 +15,24 @@
                 </h2>
                 <div class="tablaMarketShare">
                     <div class="contenedorMarketShare SamsungMarketShare">
-                        <div class="azulOscuroMarketShare"></div>
-                        <p class="SamsungTituloMarketShare">Samsung</p>
+                        <div class="contenedorCirculoTituloMarketShare">
+                            <div class="azulOscuroMarketShare"></div>
+                            <p class="SamsungTituloMarketShare">Samsung</p>
+                        </div>
                         <p class="SamsungPorcentajeMarketShare">58%</p>
                     </div>
                     <div class="contenedorMarketShare HuaweiMarketShare">
-                        <div class="azulClaroMarketShare"></div>
-                        <p class="HuaweiTituloMarketShare">Huawei</p>
+                        <div class="contenedorCirculoTituloMarketShare">
+                            <div class="azulClaroMarketShare"></div>
+                            <p class="HuaweiTituloMarketShare">Huawei</p>
+                        </div>
                         <p class="SamsungPorcentajeMarketShare">21%</p>
                     </div>
-                    <div class=" contenedorMarketShare AppleMarketShare">
-                        <div class="grisMarketShare"></div>
-                        <p class="AppleTituloMarketShare">Apple</p>
+                    <div class="contenedorMarketShare AppleMarketShare">
+                        <div class="contenedorCirculoTituloMarketShare">
+                            <div class="grisMarketShare"></div>
+                            <p class="AppleTituloMarketShare">Apple</p>
+                        </div>
                         <p class="ApplePorcentajeMarketShare">22%</p>
                     </div>
                 </div>
@@ -41,15 +46,22 @@
             <h2 class="tituloWeather">
                 Weather
             </h2>
-            <div class="imagenWeather">
+            <div class="contenedorImagenWeatherCiudadNombreContenedorWeather">
+                <div class="imagenWeather" id="imagenWeather">
+                
+                </div>
 
-            </div>
-            <div class="ciudadNombreContenedorWeather" id="ciudadNombreContenedorWeather">
+                <div class="contenedorTemperaturaCiudadNombreWeather">
+                    <div class="ciudadNombreContenedorWeather" id="ciudadNombreContenedorWeather">
+                    
+                    </div>
+                    <div class="tempertaturaContenedorWeather" id="tempertaturaContenedorWeather">
+
+                    </div>
+                </div>
                 
             </div>
-            <div class="tempertaturaContenedorWeather">
-
-            </div>
+            
         </section>
 
     </article>    

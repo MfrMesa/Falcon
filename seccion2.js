@@ -14,7 +14,10 @@ function guardarCoordenadas(men){
 function apiCall(lat, lon){
     let url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=700ced70a8c9741db00d107274333a57";
     fetch(url)
-    .then((res)=>res.json())
+    .then((res)=>{
+        console.log(res);
+        return res.json();
+    })
     .then(res =>{
         introducirEnHtml(res)
     })
@@ -24,17 +27,39 @@ function apiCall(lat, lon){
 function introducirEnHtml(data){
     console.log(data);
     let contenedor = document.getElementById("ciudadNombreContenedorWeather");
+    let imagencontenedor =document.getElementById("imagenWeather");
+    //Nombre Localizacion
     let elemento= document.createElement("h3");
     elemento.innerText=data.name;
     contenedor.appendChild(elemento);
+    //Estado de la localizacion
     elemento = document.createElement("p");
     elemento.innerText=data.weather[0].main;
+    elemento.style="color:#f5803e;";
+    //Imagen de sol o nubes
+    let img = document.createElement("img");
+    img.className = "imagenWeather";
+    if(data.weather[0].main=="Clear"){
+        img.src="img/descarga.png";
+
+    }else{
+        img.src="img/weather.6da58429.jpg";
+    }
+    imagencontenedor.appendChild(img);
     contenedor.appendChild(elemento);
+    //Precipitaciones
     elemento = document.createElement("p");
     elemento.innerText="Precipitation: "+data.main.humidity+"%";
     contenedor.appendChild(elemento);
-    
-
+    //temperaturaNormal
+    contenedor= document.getElementById("tempertaturaContenedorWeather");
+    elemento = document.createElement("p");
+    elemento.innerText=Math.round(data.main.temp-273,15)+"º";
+    elemento.className="tempWeather";
+    contenedor.appendChild(elemento);
+    elemento= document.createElement("p");
+    elemento.innerText=Math.round(data.main.temp_max-273,15)+"º/"+Math.round(data.main.temp_min-273,15)+"º";
+    contenedor.appendChild(elemento);
 }
 
 

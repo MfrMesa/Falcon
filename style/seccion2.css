@@ -2,10 +2,50 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    background-color: lightgrey;
+    gap: 20px;
 }
 .contenedorMarketShare{
     display: flex;
     flex-wrap: nowrap;
     width: 50%;
+    justify-content: space-between;
+}
+.azulOscuroMarketShare,.azulClaroMarketShare, .grisMarketShare{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    align-self: center;
+}
+.contenedorCirculoTituloMarketShare{
+    display: flex;
+    flex-wrap: nowrap;
+    gap:10px;
+}
+.azulOscuroMarketShare{
+    background-color: blue;
+}
+.azulClaroMarketShare{
+    background-color: lightskyblue;
+}
+.grisMarketShare{
+    background-color: lightgray;
+}
+.TarjetaMarketShare, .TarjetaWeather{
+    background-color: white;
+    padding: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+}
+.imagenWeather{
+    margin-left: 1rem;
+    height: 60px;
+    align-self: center;
+}
+.contenedorImagenWeatherCiudadNombreContenedorWeather{
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
