@@ -1,9 +1,17 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../Poppins/Poppins-Regular.ttf);
+}
+
+
+
 .contenedorMarketShareTarjetaWeather{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     background-color: lightgrey;
     gap: 20px;
+    font-family: "Poppins-Regular";
 }
 .contenedorMarketShare{
     display: flex;
@@ -42,10 +50,41 @@
 .imagenWeather{
     margin-left: 1rem;
     height: 60px;
+    margin-right:1rem ;
     align-self: center;
+}
+.tituloNombreCiudad{
+    margin: 0;
+    margin-bottom: 0.5rem;
 }
 .contenedorImagenWeatherCiudadNombreContenedorWeather{
     display: flex;
     flex-wrap: nowrap;
+    padding-top: 0.5rem;
+}
+.contenedorTemperaturaCiudadNombreWeather{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
     justify-content: space-between;
+}
+.tempertaturaContenedorWeather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tempWeather{
+    line-height: 1;
+    font-size: 2.0736rem;
+    color: #2c7be5;
+}
+.botonTemperaturaWeather{
+    cursor: pointer;
+    
+}
+.svgbuttonWeather{
+    width: 1em;
+    height: 1em;
+    font-size:0.69444rem; 
+
 }

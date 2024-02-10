@@ -30,6 +30,7 @@ function introducirEnHtml(data){
     let imagencontenedor =document.getElementById("imagenWeather");
     //Nombre Localizacion
     let elemento= document.createElement("h3");
+    elemento.className="tituloNombreCiudad";
     elemento.innerText=data.name;
     contenedor.appendChild(elemento);
     //Estado de la localizacion
