@@ -1,7 +1,4 @@
-@font-face {
-    font-family: "Poppins-Regular";
-    src: url(../Poppins/Poppins-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 
 
@@ -11,7 +8,7 @@
     width: 100%;
     background-color: lightgrey;
     gap: 20px;
-    font-family: "Poppins-Regular";
+    font-family: 'Poppins', sans-serif;
 }
 .contenedorMarketShare{
     display: flex;
@@ -29,6 +26,12 @@
     display: flex;
     flex-wrap: nowrap;
     gap:10px;
+}
+.tituloMarketShare{
+    margin: 0;
+}
+.tituloWeather{
+    margin:0;
 }
 .azulOscuroMarketShare{
     background-color: blue;
@@ -77,6 +80,7 @@
     line-height: 1;
     font-size: 2.0736rem;
     color: #2c7be5;
+    margin: 0;
 }
 .botonTemperaturaWeather{
     cursor: pointer;
