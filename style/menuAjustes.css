@@ -1,0 +1,12 @@
+.contenedorMenuAjustesDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.parteOscuraMenuAjustes{
+    width: calc(100vw - 350px);
+}
+.ContenedorSettingsMenuAjustes{
+    display: flex;
+    flex-direction: column;
+}
