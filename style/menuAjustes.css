@@ -1,12 +1,39 @@
+@import url("fonts.css");
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .contenedorMenuAjustesDiv{
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+    font-family: var(--font-Poppins);
 }
-.parteOscuraMenuAjustes{
+.parteOscuraMenuAjustesDiv{
     width: calc(100vw - 350px);
+    height: 100%;
+    background-color: gray;
 }
 .ContenedorSettingsMenuAjustes{
     display: flex;
     flex-direction: column;
+    width: 350px;
 }
+.svgTituloMenuAjuste{
+    width: 1em;
+}
+.settingsTituloMenuAjustes{
+    margin-bottom: 0.25rem;
+    padding-top: 0.5rem;
+}
+.settingsMenuAjustes{
+    color: white;
+    background-image: linear-gradient(-45deg,#4695ff,#1970e2);
+    min-height: 69px;
+}
+.contenedorSuperiorSettingsMenuAjustes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
