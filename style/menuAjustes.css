@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    font-family: var(--font-Poppins);
+    font-family: var(--Poppins-Regular);
 }
 .parteOscuraMenuAjustesDiv{
     width: calc(100vw - 350px);
@@ -22,18 +22,77 @@
 }
 .svgTituloMenuAjuste{
     width: 1em;
+    font-size: 1rem;
+    margin-right: 0.5rem;
 }
 .settingsTituloMenuAjustes{
     margin-bottom: 0.25rem;
     padding-top: 0.5rem;
+    margin-left: 1.25rem;
+}
+
+.spanButtonMenuAjustes{
+    font-weight: 300;
+    margin-right: 0.25rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 1.5rem;
+    opacity: .80;
+    text-shadow: 0 1px 0 #fff;
+}
+.spanButtonMenuAjustes:hover{
+    opacity: 1;
 }
 .settingsMenuAjustes{
     color: white;
     background-image: linear-gradient(-45deg,#4695ff,#1970e2);
     min-height: 69px;
 }
+.settingsSubtituloMenuajustes{
+    font-size: 0.83333rem;
+    font-weight: 400;
+    opacity: 0.75;
+    margin-left: 1.25rem;
+    font-family: var(--Poppins-Regular);
+}
 .contenedorSuperiorSettingsMenuAjustes{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    }
+}
+.colorSchemeMenuAjustes{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.subtituloColorSchemeMenuAjustes{
+    margin-bottom: 1rem;
+    font-size: 0.83333rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5e6e82;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contenedorOpcionesColorSchemeMenuAjustes{
+    display: inline-flex;
+    vertical-align: middle;
+    width: 100%;
+}
+.imgPrimeraOpcionColorSchemeMenuAjustes{
+    width: 138.500px;
+}
+.imgSegundaOpcionColorSchemeMenuAjustes{
+    width: 138.500px;
+}
+.primeraOpcionColorSchemeMenuAjustes{
+    display: flex;
+    flex-direction: column;
+}
+
+.ContenedorSettingsMenuAjustes section{
+    border-bottom: 1px lightgrey solid;
+}
