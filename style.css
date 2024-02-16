@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.NavigationBarContainer {
+    width: 100%;
+    display: flex;
+}
+
+.NavBarUtilities {
+    width: fit-content;
+    display: flex;
+}
+
+.NavBarUtilities img {
+    width: 24px;
+    height: 24px;
+}
+
+.SideBarFalconLogos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#SideBarFalconLogoIcon {
+    width: 40px;
+    height: 40px;
+}
+
+#SideBarFalconLogoName {
+    font-size: 24px;
+    color: #2c7be5;
+}
