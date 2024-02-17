@@ -10,15 +10,27 @@
     width: 100%;
     font-family: var(--Poppins-Regular);
 }
+.contenedorCheckboxOpcionesColorSchemeMenuAjustes{
+    display: flex;
+    justify-content: center;
+}
+.imgPrimeraOpcionColorSchemeMenuAjustes, 
+.imgSegundaOpcionColorSchemeMenuAjustes{
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    border: 3px solid #00d27a;
+    border-radius: 0.375rem;
+}
 .parteOscuraMenuAjustesDiv{
     width: calc(100vw - 350px);
     height: 100%;
-    background-color: gray;
+    background-color: #5e6e82;
 }
 .ContenedorSettingsMenuAjustes{
     display: flex;
     flex-direction: column;
     width: 350px;
+    overflow: hidden;
 }
 .svgTituloMenuAjuste{
     width: 1em;
@@ -95,4 +107,94 @@
 
 .ContenedorSettingsMenuAjustes section{
     border-bottom: 1px lightgrey solid;
+}
+.RTLModeMenuAjustes,.fluidLayoutMenuAjustes,
+.navigationPositionMenuAjustes,.VerticalNavbarStyleMenuAjustes
+{
+    width: 100%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+.contenedorSuperiorRTLModeAjustes,
+.contenedorSuperiorFluidLayoutModeAjustes,
+.contenedorSuperiorNavigationPositionAjustes{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.navigationPositionMenuAjustes{
+    margin-top: 1rem;
+}
+.contenedorInferiorNavigationPosititonMenuAjustes{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+.svgRTLModeAjustes,.svgFluidLayoutMenuAjustes,
+.svgNavigationPositionMenuAjustes
+{
+    margin-right: 0.5rem;
+    width: 20px;
+}
+.subtituloRTLModeAjustes, .subtituloFluidLayoutMenuAjustes,
+.subtituloNavigationPositionMenuAjustes,.subtituloCompraMenuAjustes
+{
+    margin-left: 25px;
+    font-size:0.83333rem ;
+    font-family: 'Poppins Thin';
+}
+.tituloFluidLayoutMenuAjustes,
+.tituloRTLModeAjustes,
+.tituloColorSchemeMenuAjustes,
+.titulonavigationPositionMenuAjustes,
+.tituloVerticalNavbarStyleMenuAjustes,
+.tituloCompraMenuAjustes
+{
+    font-size: 1rem;
+}
+.subtituloVerticalNavbarStyleMenuAjustes{
+    font-size:0.83333rem ;
+    font-family: 'Poppins Thin';
+    margin-bottom: 1rem;
+}
+.labelVerticalNavigationPositionMenuAjustes,
+.labelTopNavigationPositionMenuAjustes,
+.labelComboNavigationPositionMenuAjustes{
+    font-size: .83333rem;
+}
+.lineaUnoOpcionesVerticalNavbarStyleMenuAjustes,
+.lineaDosOpcionesVerticalNavbarStyleMenuAjustes{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 1rem;
+}
+.TransparentOpcionVerticalNavbarStyleMenuAjustes,
+.imgInvertedOptionVerticalNavbarmenuAjustes,
+.imgCardOptionVerticalNavbarMenuAjustes,
+.imgVibrantVerticalNavbarMenuAjustes{
+    border-radius: 0.375rem;
+    border: 3px solid #d8e2ef;
+    width: 134px;
+}
+.compraMenuAjustes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imgCompraMenuAjustes{
+    margin-bottom:1.8rem ;
+    width: 120px;
+}
+.estadoDelnavigatoPositionMenuAjustes{
+    margin-left: 0.5rem;
+    color:#00864e;
+    background-color: #ccf6e4;
+    padding-right: 0.71111em;
+    padding-left: 0.71111em;
+    border-radius: 10rem;
+    font-size: 0.69444rem;
+    vertical-align: baseline;
+    padding: 0.35556em 0.71111em;
 }
