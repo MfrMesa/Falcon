@@ -35,6 +35,7 @@ function introducirEnHtml(data){
     contenedor.appendChild(elemento);
     //Estado de la localizacion
     elemento = document.createElement("p");
+    elemento.className="estadoWeather";
     elemento.innerText=data.weather[0].main;
     elemento.style="color:#f5803e;";
     //Imagen de sol o nubes
@@ -50,6 +51,7 @@ function introducirEnHtml(data){
     contenedor.appendChild(elemento);
     //Precipitaciones
     elemento = document.createElement("p");
+    elemento.className="precipitacionWeather";
     elemento.innerText="Precipitation: "+data.main.humidity+"%";
     contenedor.appendChild(elemento);
     //temperaturaNormal

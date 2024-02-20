@@ -10,6 +10,7 @@
     gap: 20px;
     font-family: 'Poppins', sans-serif;
 }
+
 .contenedorMarketShare{
     display: flex;
     flex-wrap: nowrap;
@@ -29,9 +30,11 @@
 }
 .tituloMarketShare{
     margin: 0;
+    font-size: 0.83333rem;
 }
 .tituloWeather{
     margin:0;
+    font-size: 0.83333rem;
 }
 .azulOscuroMarketShare{
     background-color: blue;
@@ -44,6 +47,7 @@
 }
 .TarjetaMarketShare, .TarjetaWeather{
     background-color: white;
+    color:#344050 ;
     padding: 1.25rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -58,7 +62,16 @@
 }
 .tituloNombreCiudad{
     margin: 0;
+    font-family: "Poppins Bold";
+    font-weight: 1000;
+    font-size: 0.83333rem;
     margin-bottom: 0.5rem;
+}
+.estadoWeather{
+    font-size: .69444rem;
+}
+.precipitacionWeather{
+    font-size: .69444rem;
 }
 .contenedorImagenWeatherCiudadNombreContenedorWeather{
     display: flex;
