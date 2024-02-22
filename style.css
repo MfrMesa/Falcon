@@ -4,36 +4,71 @@
 
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+}
+
+.NavigationBarSection {
+    width: 862px;
 }
 
 .NavigationBarContainer {
     width: 100%;
+    padding: 8px 16px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavBarSearchBar {
+    position: relative;
+}
+
+#NavBarSearchInput {
+    padding: 5px 16px;
+    padding-left: 25px;
+    border: 1px solid #B6C1D2;
+    border-radius: 15px;
+}
+
+input[type="search"] {
+    color: solid #B6C1D2;
+}
+
+#NavBarSearchIcon {
+    margin-left: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 20px;
 }
 
 .NavBarUtilities {
-    width: fit-content;
-    display: flex;
-}
-
-.NavBarUtilities img {
-    width: 24px;
-    height: 24px;
-}
-
-.SideBarFalconLogos {
+    height: auto;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 3px;
 }
 
-#SideBarFalconLogoIcon {
-    width: 40px;
-    height: 40px;
+#NavBarSettingsIcon {
+    margin-right: 8px;
 }
 
-#SideBarFalconLogoName {
-    font-size: 24px;
-    color: #2c7be5;
+#NavBarShoppingCartIcon,
+#NotificationBellAllSeen,
+#NotificationBellUnseen,
+#NavBarProfileIcon {
+    width: 30px;
+}
+
+.NavBarUtilities div {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#NotificationBellAllSeen {
+    display: none;
+}
+
+.NavBarUtilitiesNotificationsDropdown {
+    display: none;
 }
