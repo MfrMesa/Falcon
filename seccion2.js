@@ -10,6 +10,16 @@ function guardarCoordenadas(men){
     let lon = men.coords.longitude;
     apiCall(lat, lon);
 }
+function desplegarContenedorWeather(){
+    let $desplegable = document.getElementById("desplegableWeather");
+   
+    if($desplegable.style.display=="none"){
+        $desplegable.style.display="block";
+    }else{
+        $desplegable.style.display="none";
+    }
+}
+
 
 function apiCall(lat, lon){
     let url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=700ced70a8c9741db00d107274333a57";
@@ -37,7 +47,6 @@ function introducirEnHtml(data){
     elemento = document.createElement("p");
     elemento.className="estadoWeather";
     elemento.innerText=data.weather[0].main;
-    elemento.style="color:#f5803e;";
     //Imagen de sol o nubes
     let img = document.createElement("img");
     img.className = "imagenWeather";
@@ -61,7 +70,8 @@ function introducirEnHtml(data){
     elemento.className="tempWeather";
     contenedor.appendChild(elemento);
     elemento= document.createElement("p");
-    elemento.innerText=Math.round(data.main.temp_max-273,15)+"º/"+Math.round(data.main.temp_min-273,15)+"º";
+    elemento.className="temperaturaMinMax";
+    elemento.innerText=Math.round(data.main.temp_max-273,15)+"º / "+Math.round(data.main.temp_min-273,15)+"º";
     contenedor.appendChild(elemento);
 }
 

@@ -10,6 +10,7 @@
 
         <section class="TarjetaMarketShare">
             <div class="porcentajesMarketShare">
+               <div class="contenedorTitulosMarketShare">
                 <h2 class="tituloMarketShare">
                     Market Share
                 </h2>
@@ -36,7 +37,19 @@
                         <p class="ApplePorcentajeMarketShare">22%</p>
                     </div>
                 </div>
+               </div>
                 <div class="GraficaMarketShare">
+                    <svg class="appleSVGMarketShare">
+                        <circle r="53px" cx="50%" cy="50%" pathlength="100"/>
+                    </svg>
+                    <svg class="huaweiSVGMarketShare">
+                        <circle r="53px" cx="50%" cy="50%" pathlength="100"/>
+                    </svg>
+                    <svg class="samsungSVGMarketShare">
+                        <circle r="53px" cx="50%" cy="50%" pathlength="100"/>
+                    </svg>
+                    <h3 class="cantidadTituloMarketShare">92M</h3>
+                    
                     
                 </div>
             </div>
@@ -56,8 +69,24 @@
                     
                     </div>
                     <div class="tempertaturaContenedorWeather" id="tempertaturaContenedorWeather">
-                        <div class="botonTemperaturaWeather">
+                        <div onclick="desplegarContenedorWeather()" class="botonTemperaturaWeather">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="svgbuttonWeather" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <div id="desplegableWeather" style="display: none;" class="contenedorDesplegableWeather">
+                            <div class="contenedorViewExportRemoveWeather">
+                                <button class="botonDesplegableWeather botonViewWeather">
+                                    View
+                                </button>
+                                <button class="botonDesplegableWeather botonExportWeather">
+                                    Export
+                                </button>
+                                <div class="botonDesplegableWeather separadorDesplegableweather">
+
+                                </div>
+                                <button class="botonDesplegableWeather botonRemoveWeather">
+                                    Remove
+                                </button>
+                            </div>
                         </div>
 
                     </div>
