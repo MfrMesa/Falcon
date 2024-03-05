@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(fonts.css);
+
 * {
     box-sizing: border-box;
 }
@@ -8,6 +11,32 @@ body {
 
 .NavigationBarSection {
     width: 862px;
+    padding-left: 216px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.TopLogosContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#TopLogosFalconIcon {
+    width: 40px;
+    height: 40px;
+}
+
+#TopLogosFalconText {
+    font-size: 1.728rem;
+    font-weight: 800;
+    color: #2C7BE5;
+    margin: 0;
 }
 
 .NavigationBarContainer {
@@ -23,12 +52,19 @@ body {
 }
 
 #NavBarSearchInput {
+    min-width: 286px;
     padding: 5px 16px;
     padding-left: 25px;
     border: none;
     outline: 1px solid #B6C1D2;
-    border-radius: 15px;
-    
+    border-radius: 18px;
+    line-height: 1.7;
+    transition: all 0.3s ease;
+}
+
+input[type="search"] {
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 #NavBarSearchInput::placeholder {
@@ -39,7 +75,6 @@ body {
     outline:solid 1px #669fea;
 }
 
-
 #NavBarSearchIcon {
     margin-left: 5px;
     position: absolute;
@@ -47,6 +82,16 @@ body {
     transform: translateY(-50%);
     left: 0;
     width: 20px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+    display: block;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button,
+.container:hover input[type="search"]::-webkit-search-cancel-button {
+    display: block !important;
 }
 
 .NavBarUtilities {
