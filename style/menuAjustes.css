@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .circuloSuperiorDerecho{
     position: relative;
@@ -14,6 +15,100 @@
     bottom: 35px;
     background-image: linear-gradient(45deg,#318aff,#247cef);
 }
+.checkboxLight {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkboxLight input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .checkboxLight .checkmark {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .checkboxLight input[type="checkbox"]:checked + .checkmark {
+    background-color: #0078d4;
+    border-color: #0078d4;
+  }
+
+  
+  .checkboxLight input[type="checkbox"]:checked + .checkmark:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.2s ease;
+    transform: scale(1);
+  }
+  
+  .checkboxLight .checkmark:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+  }
+  
+.switch {
+    display: inline-block;
+}
+.switch input {
+    display: none;
+}
+.switch label {
+    display: block;
+    width: 28px;
+    height: 16px;
+    padding: 3px;
+    border-radius: 15px;
+    border: 1px solid var(--gray);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .switch label::after {
+    content: "";
+    display: inherit;
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+    width: 13px;
+    height: 13px;
+    border-radius: 12px;
+    background: var(--gray);
+    transition: 0.3s;
+  }
+  
+  .switch input:checked ~ label {
+    border-color: var(--gray) ;
+    background: var(--blue);
+  }
+  
+  .switch input:checked ~ label::after {
+    translate: 12px;
+    background: white;
+  }
+  
+  .switch input:disabled ~ label {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
 .circuloSuperiorIzquierdo{
     position: relative;
     z-index: 1;
@@ -32,17 +127,29 @@
     width: 100%;
     font-family: var(--Poppins-Regular);
 }
-.contenedorCheckboxOpcionesColorSchemeMenuAjustes{
+#contenedorDarkCheckBoxOpcionesColorSchemeMenuAjustes{
     display: flex;
+    position: relative;
+    bottom: 6px;
     justify-content: center;
+}
+.contenedorCheckboxOpcionesColorSchemeMenuAjustes{
+    justify-content: center;
+    display: flex;
 }
 .darkLabel{
     position: relative;
-    bottom: 6px;
+    line-height: 1.45rem;
+    font-size: .83333rem;
+    margin-left: 6px;
 }
 .lightLabel{
-    position: relative;
-    bottom: 65px;
+    line-height: 1.45rem;
+    font-size: .83333rem;
+    margin-left: 6px;
+}
+.inicioRTLModeMenuajustes{
+    display: flex;
 }
 .imgPrimeraOpcionColorSchemeMenuAjustes, 
 .imgSegundaOpcionColorSchemeMenuAjustes{
@@ -56,46 +163,7 @@
     height: 100%;
     background-color: #5e6e82;
 }
-.ControlRTLMode{
-    position: relative;
-    display: inline-block;
-    width: 28px;
-    height: 16px;
-}
-.slider{
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-    border-radius: 34px;
-}
-.switch input{
-    display: none;
-}
-.ControlRTLMode:checked +.slider{
-    background-color: var(--success);
-}
-.slider::before{
-    position: absolute;
-    content:"" ;
-    height: 14px;
-    width: 14px;
-    left: 1px;
-    top: 1px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50px;
-}
-.contenedorSlider{
-    position: absolute;
-    text-align: center;
-    right: 20px;
-    height: 16px;
-}
+
 .ContenedorSettingsMenuAjustes{
     display: flex;
     flex-direction: column;
@@ -135,6 +203,10 @@
     overflow: hidden;
     background-image: linear-gradient(-45deg,#4695ff,#1970e2);
     min-height: 69px;
+}
+.contenedorSlider{
+    position: absolute;
+    right: 20px;
 }
 .settingsSubtituloMenuajustes{
     position: relative;
@@ -243,9 +315,7 @@
     margin-top: 1rem;
     margin-left: 25px;
 }
-.labelNavigationPositionMenuAjustes{
-    font-family: 'Poppins Thin';
-}
+
 .svgRTLModeAjustes,.svgFluidLayoutMenuAjustes,
 .svgNavigationPositionMenuAjustes
 {
@@ -267,17 +337,30 @@
 .tituloVerticalNavbarStyleMenuAjustes,
 .tituloCompraMenuAjustes
 {
+    
     font-size: 1rem;
+}
+.labelNavigationPositionMenuAjustes{
+    font-size: .83333rem;
+    font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 1.45rem;
+    letter-spacing: .02rem;
+    color: #5e6e82;
 }
 .subtituloVerticalNavbarStyleMenuAjustes{
     font-size:0.83333rem ;
     font-family: 'Poppins Thin';
     margin-bottom: 1rem;
+    
 }
 .labelVerticalNavigationPositionMenuAjustes,
 .labelTopNavigationPositionMenuAjustes,
 .labelComboNavigationPositionMenuAjustes{
     font-size: .83333rem;
+    font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    color: #5e6e82;
 }
 .lineaUnoOpcionesVerticalNavbarStyleMenuAjustes,
 .lineaDosOpcionesVerticalNavbarStyleMenuAjustes{
@@ -323,9 +406,7 @@
     height: 24px;
     margin-bottom: 1rem;
 }
-input{
-    accent-color: var(--green);
-}
+
 .estadoDelnavigatoPositionMenuAjustes{
     margin-left: 0.5rem;
     color:#00864e;

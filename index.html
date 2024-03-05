@@ -46,15 +46,19 @@
                     <div class="primeraOpcionColorSchemeMenuAjustes">
                         <img src="https://falconreactbs4.prium.me/static/media/falcon-mode-default.66875604.jpg" class="imgPrimeraOpcionColorSchemeMenuAjustes" alt="Light">
                         <div class="contenedorCheckboxOpcionesColorSchemeMenuAjustes">
-                            <div  class="radioButtonLightColorSchemeMenuAjustessuccess" style="display: none;" name="LightColorScheme"></div>
-                            <div  class="radioButtonLightColorSchemeMenuAjustesfail" name="LightColorScheme"></div>
+                            <label class="checkboxLight">
+                                <input type="checkbox" id="checkboxLightColorScheme">
+                                <span class="checkmark"></span>
+                            </label>
                         <label for="LightColorScheme" class="lightLabel"> Light</label>
                     </div></div>
                     <div class="segundaOpcionColorSchemeMenuAjustes">
                         <img src="https://falconreactbs4.prium.me/static/media/falcon-mode-dark.651bc4bd.jpg" class="imgSegundaOpcionColorSchemeMenuAjustes" alt="Dark">
-                        <div class="contenedorCheckboxOpcionesColorSchemeMenuAjustes">
-                            <div  class="radioButtonDarkColorSchemeMenuAjustessuccess" style="display: none;" name="DarkColorScheme"></div>
-                                <div  class="radioButtonDarkColorSchemeMenuAjustesfail" name="DarkColorScheme"></div>
+                        <div class="contenedorCheckboxOpcionesColorSchemeMenuAjustes" id="contenedorDarkCheckBoxOpcionesColorSchemeMenuAjustes">
+                            <label class="checkboxLight">
+                                <input type="checkbox" id="checkboxDarkColorScheme">
+                                <span class="checkmark"></span>
+                            </label>
                                 <label for="DarkColorScheme" class="darkLabel">Dark</label>
                         
                         </div>
@@ -64,14 +68,18 @@
             </section>
             <section class="RTLModeMenuAjustes">
                 <div class="contenedorSuperiorRTLModeAjustes">
-                    <img src="https://falconreactbs4.prium.me/static/media/left-arrow-from-left.764b929a.svg" alt="" class="svgRTLModeAjustes">
+                    <div class="inicioRTLModeMenuajustes">
+                        <img src="https://falconreactbs4.prium.me/static/media/left-arrow-from-left.764b929a.svg" alt="" class="svgRTLModeAjustes">
                     <h1 class="tituloRTLModeAjustes">
                         RTL Mode
                     </h1>
+                    </div>
                     <div class="contenedorSlider">
-                        <label class="switch"></label>
-                        <input type="checkbox"  class="ControlRTLMode" id="RTLodeAjustesSwitch">
-                        <span class="slider"></span>
+                     
+                        <span class="switch">
+                            <input type="checkbox" id="inputRTLModeMenu" />
+                            <label for="inputRTLModeMenu"></label>
+                          </span>
 
                     </div>
                     
@@ -84,7 +92,14 @@
                 <div class="contenedorSuperiorFluidLayoutModeAjustes">
                     <img src="https://falconreactbs4.prium.me/static/media/arrows-h.31beeeb2.svg" alt="" class="svgFluidLayoutMenuAjustes">
                     <h1 class="tituloFluidLayoutMenuAjustes">Fluid Layout</h1>
-                    <input type="checkbox" class="controFluidLayoutMenuAjustes">
+                    <div class="contenedorSlider">
+                     
+                        <span class="switch">
+                            <input type="checkbox" id="inputFluidLayout" />
+                            <label for="inputFluidLayout"></label>
+                          </span>
+
+                    </div>
                 </div>
                 <h2 class="subtituloFluidLayoutMenuAjustes">
                     Toggle container layout system
@@ -105,15 +120,24 @@
                 </h2>
                 <div class="contenedorInferiorNavigationPosititonMenuAjustes">
                     <div class="contenedorInputLabelNavigationPosition">
-                        <input type="radio" name="checkboxVerticalNavigationPositionMenuAjustes" class="checkboxVerticalNavigationPositionMenuAjustes">
+                        <label class="checkboxLight">
+                            <input type="checkbox" id="checkboxDarkColorScheme">
+                            <span class="checkmark"></span>
+                        </label>
                     <label for="checkboxVerticalNavigationPositionMenuAjustes" class="labelNavigationPositionMenuAjustes">Vertical</label>
                     </div>
                     <div class="contenedorInputLabelNavigationPosition">
-                        <input type="radio" name="checkboxTopNavigationPositionMenuAjustes" class="checkboxTopNavigationPositionMenuAjustes">
+                        <label class="checkboxLight">
+                            <input type="checkbox" id="checkboxDarkColorScheme">
+                            <span class="checkmark"></span>
+                        </label>
                     <label for="checkboxTopNavigationPositionMenuAjustes" class="labelNavigationPositionMenuAjustes">Top</label>
                     </div>
                     <div class="contenedorInputLabelNavigationPosition">
-                        <input type="radio" name="checkboxComboNavigationPositionMenuAjustes" class="checkboxComboNavigationPositionMenuAjustes">
+                        <label class="checkboxLight">
+                            <input type="checkbox" id="checkboxDarkColorScheme">
+                            <span class="checkmark"></span>
+                        </label>
                     <label for="checkboxComboNavigationPositionMenuAjustes" class="labelNavigationPositionMenuAjustes">Combo</label>
                     </div>
                     
