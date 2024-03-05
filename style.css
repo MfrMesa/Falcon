@@ -25,13 +25,20 @@ body {
 #NavBarSearchInput {
     padding: 5px 16px;
     padding-left: 25px;
-    border: 1px solid #B6C1D2;
+    border: none;
+    outline: 1px solid #B6C1D2;
     border-radius: 15px;
+    
 }
 
-input[type="search"] {
-    color: solid #B6C1D2;
+#NavBarSearchInput::placeholder {
+    color: #B6C1D2;
 }
+
+#NavBarSearchInput:focus {
+    outline:solid 1px #669fea;
+}
+
 
 #NavBarSearchIcon {
     margin-left: 5px;
