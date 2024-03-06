@@ -3,6 +3,7 @@
 @import url(style/style.css);
 
 * {
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -11,3 +12,106 @@ body {
     background-color: #EDF2F9;
 }
 
+.ChartsDashboard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ChartWeeklySales */
+
+.ChartWeeklySales {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    border-radius: .375rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ChartHeader {
+    width: 100%;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ChartHeaderTitle, h6 {
+    max-height: 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #344050;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.ChartData {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ChartDataSideInfo {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ChartMainInfo {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #5E6E82;
+}
+
+.ChartSecondaryInfo {
+    padding: 4px 8px;
+    background-color: #CCF6E4;
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #00864E;
+}
+
+.ChartDataGraph {
+    width: 136px;
+}
+
+#ChartWeeklySalesGraph {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ChartWeeklySales End */
+
+/* ChartTotalOrder */
+
+.ChartTotalOrder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    border-radius: .375rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#ChartTotalOrderInfo .ChartDataSideInfo .ChartSecondaryInfo {
+    background-color: #D4F2FF;
+    color: #1978A2;
+}
+
+
+
+/* ChartTotalOrder End */
