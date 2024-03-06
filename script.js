@@ -24,9 +24,9 @@ function almacenamientoDatosMenuAjustes(){
 }
 
 function NavigationPositionLocalStorage(valor) {
-    if(valor=="Top"){
+    if(valor=="checkboxTopNavigationPositionMenuAjustes"){
         document.getElementById("checkboxTopNavigationPositionMenuAjustes").checked=true;
-    }else if(valor =="Combo"){
+    }else if(valor =="checkboxComboNavigationPositionMenuAjustes"){
         document.getElementById("checkboxComboNavigationPositionMenuAjustes").checked=true;
     }else{
         document.getElementById("checkboxVerticalNavigationPositionMenuAjustes").checked=true;
@@ -34,7 +34,7 @@ function NavigationPositionLocalStorage(valor) {
 }
 
 function VerticalNavbarStyleLocalStorage(valor){
-    console.log(valor);
+    
     if(valor=="radioInvertedVertical"){
         let $radioboton = document.getElementById("radioInvertedVertical");
         $radioboton.checked = true;
@@ -98,7 +98,7 @@ function cambioColorRadioColorScheme() {
         localStorage.removeItem("dark");
     }
 }
-// onclick="cambioColorRadioVerticalNavbarStyle()"
+
 function cambioColorRadioVerticalNavbarStyle(){
     let botones = [document.getElementById("radioTransparentVertical")
     , document.getElementById("radioInvertedVertical")
@@ -122,6 +122,20 @@ function cambioColorRadioVerticalNavbarStyle(){
         }
     }
     
+}
+//onclick="RadioNavigationPosition()"
+function RadioNavigationPosition(){
+    let radios = [
+        document.getElementById("checkboxVerticalNavigationPositionMenuAjustes"),
+        document.getElementById("checkboxTopNavigationPositionMenuAjustes"),
+        document.getElementById("checkboxComboNavigationPositionMenuAjustes")
+    ]
+
+    for(let i=0; i<radios.length;i++){
+        if(radios[i].checked==true){
+            localStorage.setItem("NavigationPosition", radios[i].id);
+        }
+    }
 }
 
 function cambiarColorBorder (obj, color){
