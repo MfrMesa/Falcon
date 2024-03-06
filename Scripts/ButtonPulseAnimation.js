@@ -10,15 +10,15 @@ function startAnimation(element, animationName) {
 pulse1.addEventListener('animationend', function() {
   setTimeout(function() {
     startAnimation(pulse2, 'pulse2');
-  }, 0); // Delay starting pulse2 to ensure it starts after pulse1 finishes
+  }, 0);
 });
 
 pulse2.addEventListener('animationend', function() {
   setTimeout(function() {
     startAnimation(pulse1, 'pulse1');
-  }, 0); // Delay starting pulse1 to ensure it starts after pulse2 finishes
+  }, 0);
 });
 
-startAnimation(pulse1, 'pulse1'); // Start the first animation initially
+startAnimation(pulse1, 'pulse1');
 
 /* End of NavBar Button Animation */
