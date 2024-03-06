@@ -7,6 +7,7 @@
 
 body {
     margin: 0;
+    background-color: #EDF2F9;
 }
 
 .NavigationBarSection {
@@ -17,6 +18,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
+
+/* Top Logos */
 
 .TopLogosContainer {
     display: flex;
@@ -38,6 +41,8 @@ body {
     color: #2C7BE5;
     margin: 0;
 }
+
+/* Top Logos End */
 
 .NavigationBarContainer {
     width: 100%;
@@ -94,33 +99,281 @@ input[type="search"]:focus::-webkit-search-cancel-button,
     display: block !important;
 }
 
+
+
+/* NAVBAR UTILITIES */
+
 .NavBarUtilities {
-    height: auto;
+    height: 20px;
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 10px;
+}
+
+.NavBarUtilities a {
+    text-decoration: none;
+}
+
+/* NavBar Settings */
+
+.NavBarUtilitiesSettings {
+    display: flex;
+    height: 20px;	
+    cursor: pointer;
 }
 
 #NavBarSettingsIcon {
-    margin-right: 8px;
+    animation: rotate 2s infinite linear;
 }
 
-#NavBarShoppingCartIcon,
-#NotificationBellAllSeen,
-#NotificationBellUnseen,
-#NavBarProfileIcon {
-    width: 30px;
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.NavBarUtilities div {
-    padding-top: 8px;
-    padding-bottom: 8px;
+.NavBarUtilitiesSettingsPulse {
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    width: 20px;
+    z-index: -1;
+    border-radius: 70px;
 }
 
-#NotificationBellAllSeen {
+#SettingsPulse1 {
+    border: 3px solid #ef5350;
+    animation: pulse1 3s infinite;
+}
+
+#SettingsPulse2 {
+    border: 2px solid #50dcef;
+    animation: pulse2 3s infinite;
+}
+
+@keyframes pulse1 {
+    0% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.0;
+    }
+
+    15% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: scale(2.8);
+        opacity: 0.0;
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.0;
+    }
+
+    15% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: scale(2.8);
+        opacity: 0.0;
+    }
+}
+
+/* NavBar Settings End */
+
+/* NavBar Shopping Cart */
+
+.NavBarUtilitiesShoppingCart {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.NavBarUtilitiesShoppingCartLink {
+    position: absolute;
+    display: inline-block;
+}
+.ShoppingCartNotificationNumber {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    right: -10px;
+    border-radius: 50%;
+    background-color: #F5803E;
+    color: white;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1;
+}
+
+.NavBarUtilitiesShoppingCart:hover svg path {
+    fill: #242a31;
+    transition: all 0.2s ease-in-out;
+}
+
+/* NavBar Shopping Cart End */
+
+/* NavBar Notifications Bell */
+
+.NavBarUtilitiesNotifications,  .NavBarUtilitiesNotifications a {
+    width: 25px;
+    height: 25px;
+}
+
+.NavBarUtilitiesNotifications:hover svg path {
+    fill: #2C7BE5;
+    transition: all 0.2s ease-in-out;
+}
+
+.NavBarUtilitiesNotifications svg {
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.NavBarUtilitiesNotificationsCircle {
+    width: 12px;
+    height: 12px;
+    background-color: #2C7BE5;
+    outline: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: -32px;
+    left: 8px;
+    z-index: 1;
+    display: block;
+}
+
+/* NavBar Notifications Bell End */
+
+/* NavBar Notifications Dropdown */
+
+.NavBarUtilitiesNotificationsDropdownMenu {
     display: none;
+    position: relative;
+    left: -120px;
+    z-index: 1;
+    background-color: #f5f7fa;
+    min-width: 50rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: .83333rem;
 }
 
-.NavBarUtilitiesNotificationsDropdown {
-    display: none;
+.NavBarUtilitiesNotifications:hover .NavBarUtilitiesNotificationsDropdownMenu {
+    display: flex;
 }
+
+.NavBarUtilitiesNotificationsDropdownMenu a {
+    text-decoration: none;
+}
+
+.NotificationsDropdownPanelHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* NavBar Notifications Dropdown End */
+
+/* NavBar Utilities Profile */
+
+.NavBarUtilitiesProfile {
+    margin-left: -7px;
+}
+
+.NavBarUtilitiesProfileIcon {
+    display: flex;
+    align-items: center;
+}
+
+.NavBarUtilitiesProfileIcon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.NavBarUtilitiesProfileIcon:hover svg path {
+    fill: #242a31;
+    transition: all 0.2s ease-in-out;
+}
+
+.NavBarUtilitiesProfile:hover .NavBarUtilitiesProfileDropdownMenu {
+    display: block;
+}
+
+.NavBarUtilitiesProfileDropdownMenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f5f7fa;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    font-size: .83333rem;
+}
+
+.NavBarUtilitiesProfileDropdownMenu a {
+    text-decoration: none;
+}
+
+.ProfileDropdownCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.ProfileDropdownCardGoPro {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 4px 16px;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    font-weight: 600;
+}
+
+.ProfileDropdownCardUserOptions,
+.ProfileDropdownCardAdmin {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.ProfileDropdownCardDivider {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.ProfileDropdownCardItem {
+    padding: 4px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #5e6e82;
+}
+
+.ProfileDropdownCardGoPro:hover, .ProfileDropdownCardItem:hover {
+    background-color: #EDF2F9;
+    color: #232E3C;
+    transition: all .2s ease-in-out;
+}
+
+/* NavBar Utilities Profile End */
+
+/* NAVBAR UTILITIES END */
