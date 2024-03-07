@@ -1,0 +1,69 @@
+
+/*Contenedor Center*/
+
+.containerCenter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 2350px;
+    width: 1200px;
+    padding-inline: 15px;
+    right: 1rem;
+    margin-left: 16rem;
+}
+
+.firstandSecondRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 878px;
+    height: 350px;
+    margin-bottom: 1rem;
+}
+
+.weeklySales{
+    display: inline-flex;
+    position: relative;
+    max-width: 431px;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.totalOrder{
+    display: inline-flex;
+    position: relative;
+    max-width: 431px;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.marketShare{
+    display: inline-flex;
+    position: relative;
+    max-width: 431px;
+    width: 50%;
+    height: 43%;
+    border: 1px solid black;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.weather{
+    display: inline-flex;
+    position: relative;
+    max-width: 431px;
+    width: 50%;
+    height: 43%;
+    border: 1px solid black;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}

@@ -1,6 +1,7 @@
 :root{  
+    --backgroungtag:  #d5e5fa;
     --background: #edf2f9;
-    --sidebartext: #5E6e82;
+    --sidebartext: #5e6e82;
     --blue: #2c7be5;
     --indigo: #727cf5;
     --purple: #6b5eae;
@@ -30,7 +31,7 @@
     --breakpoint-xxl: 1540px;
     --font-family-sans-serif: "Poppins";
 }
-
+#d5e5fa 
 * {
     box-sizing: border-box;
 }

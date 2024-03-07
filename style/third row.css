@@ -1,0 +1,27 @@
+.thirdRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    height: 388.6px;
+    width: 878px;
+    margin-bottom: 1rem;
+}
+
+.runningProyects{
+    display: inline-flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    margin-right: 0.5rem;
+}
+
+.totalSales{
+    display: inline-flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    margin-left: 0.5rem;
+}

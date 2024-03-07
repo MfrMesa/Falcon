@@ -1,0 +1,20 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    width: 878px;
+    height: 74px;
+    border: 1px solid black;
+    justify-self: left;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        left: 13rem;
+        width: 730px;
+    }
+}
