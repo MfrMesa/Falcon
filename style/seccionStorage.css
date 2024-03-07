@@ -1,0 +1,85 @@
+@import url("./style.css");
+.contenedorStorage{
+    padding:20px;
+}
+.contenedorSeccionStorage{
+    display: flex;
+    line-height: 1.5;
+    color: #4d5969;
+    flex-direction: column;
+}
+.tituloSeccionStorage{
+    color: #4d5969
+}
+.ngr-SS{
+    color: black;
+}
+.contenedorLeyendaGraficoStorage{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+.regularCSS,
+.systemCSS,
+.sharedCSS,
+.freeCSS
+{
+    position: relative;
+    top: 0.5rem;
+    display: inline-block;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    
+}
+.regularCSS{
+    background-image: linear-gradient(-45deg,#1970e2,#4695ff);
+}
+.systemCSS{
+    background-color: #27bcfd;
+}
+
+.sharedCSS{
+    background-color: #00d27a;
+}
+.freeCSS{
+    background-color: #edf2f9;
+}
+.contenedorGraficoStorage{
+    display: flex;
+}
+.regularGraficoStorage{
+    width: 43.8296%;
+    border-right: 2px solid #d8e2ef;
+    height: 10px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-image: linear-gradient(-45deg,#1970e2,#4695ff);
+}
+.systemGraficoStorage{
+    width: 18.5602%;
+    height: 10px;
+    background-color: #27bcfd;
+    border-right: 2px solid #d8e2ef;
+}
+.sharedGraficoStorage{
+    height: 10px;
+    width: 9.40255%;
+    background-color: #00d27a;
+    border-right: 2px solid #d8e2ef;
+}
+.freeGraficoStorage{
+    width:28.2076%;
+    height: 10px;
+    background-color: #edf2f9;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+}
+.leyendaCSS{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 8px;
+    padding-left: 15px;
+}
