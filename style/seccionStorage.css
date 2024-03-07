@@ -1,4 +1,5 @@
 @import url("./style.css");
+@import url("./fonts.css");
 .contenedorStorage{
     margin:20px;
 }
@@ -7,12 +8,17 @@
     line-height: 1.5;
     background-color: white;
     color: #4d5969;
-    flex-direction: column;
+    flex-direction: row;
+    font-family: var(--Poppins-Regular);
 }
 .tarjetaSeccionStorage{
     border-radius: 0.375rem;
     box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
     background-color: white;
+    margin-right: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    
 }
 .tituloSeccionStorage{
     color: #4d5969
@@ -88,4 +94,45 @@
     flex-wrap: nowrap;
     padding-right: 8px;
     padding-left: 15px;
+}
+
+/*Upgrade Storage*/
+
+.tituloUpgradeStorage{
+    color: #f5803e;
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+    width: 100%;
+}
+.contenedorUpgradeStorage{
+    margin: 20px;
+}
+.tarjetaUpgradeStorage{
+    border-radius: 0.375rem;
+    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+    background-image: url(https://falconreactbs4.prium.me/static/media/corner-1.dfdb6c51.png);
+    background-position: right;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+    margin-bottom: 16px;
+}
+.svgUpgradeStorage{
+    width: 0.625em;
+    position: relative;
+    top: 2px;
+    margin-left: 1px;
+}
+.linkUpgradeStorage{
+    text-decoration: none;
+    color: #db560b ;
+    font-size: .83333rem;
+
+}
+.linkUpgradeStorage:hover{
+    text-decoration: underline;
+}
+.descripcionUpgradeStorage{
+    font-size: .83333rem;
 }
