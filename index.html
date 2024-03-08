@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/dropdownSearch.css">
+    <link rel="stylesheet" href="style/dropdownNotifications.css">
+    <link rel="stylesheet" href="style/dropdownProfile.css">
+    <script src="Scripts/ButtonPulseAnimation.js" defer></script>
+    <script src="Scripts/ShoppingCartCounter.js" defer></script>
+    <script src="Scripts/NotificationsUnreadCircle.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="NavigationBarSection">
+            <div class="TopLogosContainer">
+                <img id="TopLogosFalconIcon" src="Assets/falcon.920a9ff0.png" alt="">
+                <p id="TopLogosFalconText">falcon</p>
+            </div>
+            <nav class="NavigationBarContainer">
+                <div class="NavBarSearchBar">
+                    <input id="NavBarSearchInput" type="search" placeholder="Search..." style="font-family: Poppins; font-weight: 400; font-size: 14px;">
+                    <img id="NavBarSearchIcon" src="Assets/search-svgrepo-com.svg" alt="">
+                </div>
+
+                <section class="dropdownSearch scrollbar">
+                        <section class="recentlySearch">
+                                <h2 class="searchTitles">RECENTLY BROWSED</h2>
+                                <div class="browsedFirstLine">
+                                    <svg id="dotSearch" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 8 16"><path fill-rule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/></svg>
+                                    <p class="titlesSearch">Pages</p>
+                                    <svg id="chevronRigthSearch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-chevron-right" width="20" height="20" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+                                    <p class="titlesSearch">Events</p>
+                                </div>
+                                <div class="browsedSecondLine">
+                                    <svg id="dotSearch" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 8 16"><path fill-rule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/></svg>                                    <p class="titlesSearch">E-commerce</p>
+                                    <svg id="chevronRigthSearch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-chevron-right" width="20" height="20" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+                                    <p class="titlesSearch">Customers</p>
+                                </div>
+                        </section>
+                            <section class="suggestedSearch">
+                                <h2 class="searchTitles">SUGGESTED FILTER</h2> 
+                                <p class="filtersSearch"><span id="filterCustomers">customers:</span>All customers list</p>
+                                <p class="filtersSearch"><span id="filterEvents">events:</span>Latest events in current month</p>
+                                <p class="filtersSearch"><span id="filterProducts">products:</span>Most popular products</p>
+                            </section>
+                            <section class="filesSearch">
+                                <h2 class="searchTitles">FILES</h2>
+                                <div class="searchFiles">
+                                    <img id="fotoFiles" src="Assets/iphoneFiles.png" alt="iPhone">
+                                    <span class="productFiles">iPhone</span>
+                                    <p class="nameFiles">Antony<span class="filesText">27 Sep at 10:30 AM</span></p>
+                                </div>
+                                <div class="searchFiles">
+                                    <img id="fotoFiles" src="Assets/falconFile.png" alt="Falcon version">
+                                    <span class="productFiles">Falcon v1.8.2</span>
+                                    <p class="nameFiles">John<span class="filesText">30 Sep at 12:30 PM</span></p>
+                                </div>
+                            </section>
+                            <section class="membersSearch">
+                                <h2 class="searchTitles">MEMBERS</h2>
+                                <div class="membersFiles">
+                                    <img id="memberFoto" src="Assets/member2.png" alt="foto miembro">
+                                    <span class="memberNotificationsCircle"></span>
+                                    <span class="nameMember">Anna Karinina</span>
+                                    <p class="membersDescription">Technext Limited</p>
+                                </div>
+                                <div class="membersFiles">
+                                    <img id="memberFoto" src="Assets/member.png"  alt="foto miembro">
+                                    <span class="nameMember">Antony Hopkins</span>
+                                    <p class="membersDescription">Brain Trust</p>
+                                </div>
+                                <div class="membersFiles">
+                                    <img id="memberFoto" src="Assets/member1.png"  alt="foto miembro">
+                                    <span class="nameMember">Emma Watson</span>
+                                    <p class="membersDescription">Google</p>
+                                </div>
+                            </section>
+                </section>
+
+                <section class="NavBarUtilities">
+                    <div class="NavBarUtilitiesSettings">
+                        <span class="NavBarUtilitiesSettingsPulse" id="SettingsPulse1"></span>
+                        <span class="NavBarUtilitiesSettingsPulse" id="SettingsPulse2"></span>
+                        <span class="NavBarUtilitiesSettingsButton">
+                            <svg id="NavBarSettingsIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.7369 12.3941L19.1989 12.1065C18.4459 11.7041 18.0843 10.8487 18.0843 9.99495C18.0843 9.14118 18.4459 8.28582 19.1989 7.88336L19.7369 7.59581C19.9474 7.47484 20.0316 7.23291 19.9474 7.03131C19.4842 5.57973 18.6843 4.28943 17.6738 3.20075C17.5053 3.03946 17.2527 2.99914 17.0422 3.12011L16.393 3.46714C15.6883 3.84379 14.8377 3.74529 14.1476 3.3427C14.0988 3.31422 14.0496 3.28621 14.0002 3.25868C13.2568 2.84453 12.7055 2.10629 12.7055 1.25525V0.70081C12.7055 0.499202 12.5371 0.297594 12.2845 0.257272C10.7266 -0.105622 9.16879 -0.0653007 7.69516 0.257272C7.44254 0.297594 7.31623 0.499202 7.31623 0.70081V1.23474C7.31623 2.09575 6.74999 2.8362 5.99824 3.25599C5.95774 3.27861 5.91747 3.30159 5.87744 3.32493C5.15643 3.74527 4.26453 3.85902 3.53534 3.45302L2.93743 3.12011C2.72691 2.99914 2.47429 3.03946 2.30587 3.20075C1.29538 4.28943 0.495411 5.57973 0.0322686 7.03131C-0.051939 7.23291 0.0322686 7.47484 0.242788 7.59581L0.784376 7.8853C1.54166 8.29007 1.92694 9.13627 1.92694 9.99495C1.92694 10.8536 1.54166 11.6998 0.784375 12.1046L0.242788 12.3941C0.0322686 12.515 -0.051939 12.757 0.0322686 12.9586C0.495411 14.4102 1.29538 15.7005 2.30587 16.7891C2.47429 16.9504 2.72691 16.9907 2.93743 16.8698L3.58669 16.5227C4.29133 16.1461 5.14131 16.2457 5.8331 16.6455C5.88713 16.6767 5.94159 16.7074 5.99648 16.7375C6.75162 17.1511 7.31623 17.8941 7.31623 18.7552V19.2891C7.31623 19.4425 7.41373 19.5959 7.55309 19.696C7.64066 19.7589 7.74815 19.7843 7.85406 19.8046C9.35884 20.0925 10.8609 20.0456 12.2845 19.7729C12.5371 19.6923 12.7055 19.4907 12.7055 19.2891V18.7346C12.7055 17.8836 13.2568 17.1454 14.0002 16.7312C14.0496 16.7037 14.0988 16.6757 14.1476 16.6472C14.8377 16.2446 15.6883 16.1461 16.393 16.5227L17.0422 16.8698C17.2527 16.9907 17.5053 16.9504 17.6738 16.7891C18.7264 15.7005 19.4842 14.4102 19.9895 12.9586C20.0316 12.757 19.9474 12.515 19.7369 12.3941ZM10.0109 13.2005C8.1162 13.2005 6.64257 11.7893 6.64257 9.97478C6.64257 8.20063 8.1162 6.74905 10.0109 6.74905C11.8634 6.74905 13.3792 8.20063 13.3792 9.97478C13.3792 11.7893 11.8634 13.2005 10.0109 13.2005Z" 
+                                fill="#2A7BE4">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="NavBarUtilitiesShoppingCart">
+                        <a class="NavBarUtilitiesShoppingCartLink" href="/e-commerce/shopping-cart">
+                            <span class="ShoppingCartNotificationNumber">9</span>
+                            <svg 
+                                aria-hidden="true" 
+                                focusable="false" 
+                                data-prefix="fas" 
+                                data-icon="shopping-cart" 
+                                class="NavBarUtilitiesShoppingCartIcon" 
+                                role="img" 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                viewBox="0 0 20 20"
+                                width="22"
+                                height="22"
+                                style="transform-origin: 0.5625em 0.5em;">
+                                <g transform="scale(0.03125)">
+                                    <path 
+                                        fill="rgba(0,0,0,.55)" 
+                                        d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" 
+                                        transform="translate(0, 0)">
+                                    </path>
+                                </g>
+                            </svg>
+
+                        </a>
+                    </div>
+
+                    <div class="NavBarUtilitiesNotifications">
+                        <a aria-haspopup="true" href="#" class="NavBarUtilitiesNotificationsLink" aria-expanded="false">
+                            <svg 
+                                aria-hidden="true" 
+                                focusable="false" 
+                                data-prefix="fas" 
+                                data-icon="bell" 
+                                class="NavBarUtilitiesNotificationsIcon" 
+                                role="img" 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                viewBox="0 0 25 25"
+                                width="25"
+                                height="25"
+                                style="transform-origin: 0.4375em 0.5em;">
+                                <g transform="scale(0.04125)">
+                                    <path 
+                                        fill="rgba(0,0,0,.55)" 
+                                        d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" 
+                                        transform="translate(0, 0)">
+                                    </path>
+                                </g>
+                            </svg>
+
+
+                            <span class="NavBarUtilitiesNotificationsCircle"></span>
+                            <section class="NavBarUtilitiesNotificationsDropdownMenu">
+                                <div class="NotificationsDropdownPanel">
+                                    <div class="NotificationsDropdownPanelHeader">
+                                        <h5 id="NotificationsDropdownPanelHeaderTitle">Notifications</h5>
+                                        <a id="NotificationsDropdownPanelMarkAllAsRead" href="#">Mark all as read</a>
+                                    </div>
+                                        <div class="titleNotifications">NEW</div>
+                                            <a href="#"><div class="memberNotificationContainer">
+                                                <img class="rounded-circle" src="Assets/member1.png" alt="">
+                                                <p class="memberStatus"> <strong>Emma Watson</strong> replied to your comment : "Hello world 😍"</p>
+                                                <span class="notification-time"><span class="mr-1" role="img" aria-label="Emoji">💬</span>Just Now</span>
+                                            </div></a>
+                                            <a href="#"><div class="memberNotificationContainer">
+                                                <img class="avatar-name" src="Assets/ab.png" alt="">
+                                                <p class="memberStatus"><strong>Albert Brooks</strong> reacted to<strong> Mia Khalifa's</strong> status</p>
+                                                <span class="notification-time"><span class="mr-1" role="img" aria-label="Emoji">❤️</span>9hr</span>
+                                            </div></a>
+                                            <div class="titleNotifications">EARLIER</div>
+                                            <a href="/dashboard-alt#!"><div class="notificationWeather">
+                                                <img class="rounded-circle" src="Assets/weather.png" alt="weatherIcon">
+                                                <p class="weatherStatus">The forecast today shows a low of 20℃ in California. See today's weather.</p>
+                                                <span class="notification-weather"><span class="mr-1" role="img" aria-label="Emoji">🌤️</span>9hr</span>
+                                            </div></a>
+                                    <div class="viewAllContainer">
+                                        <a class="viewAllLink" href="/pages/notifications">View all</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                    </div>
+                    <div class="NavBarUtilitiesProfile">
+                        <a class="NavBarUtilitiesProfileLink" href="#" aria-haspopup="true" aria-expanded="false">
+                            <div class="NavBarUtilitiesProfileIcon">
+                                <svg
+                                    id="NavBarUtilitiesProfileIconSVG"
+                                    viewBox="0 0 16 16" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="none">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g fill="rgba(0,0,0,.55)" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path d="M8 3a3 3 0 100 6 3 3 0 000-6zM6.5 6a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"></path>
+                                            <path d="M.25 8a7.75 7.75 0 1115.5 0A7.75 7.75 0 01.25 8zM8 1.75a6.25 6.25 0 00-5.274 9.604c.15-.194.325-.369.514-.533C3.855 10.286 4.67 10 5.5 10h5c.83 0 1.645.286 2.26.82.189.165.365.34.514.534A6.25 6.25 0 008 1.75zm0 12.5a6.228 6.228 0 01-4.238-1.656c.035-.196.153-.372.462-.641.323-.281.78-.453 1.276-.453h5c.495 0 .953.172 1.276.453.31.269.427.445.462.641A6.228 6.228 0 018 14.25z"></path>
+                                        </g> 
+                                    </g>
+                                </svg>                                                                                                                                             
+                            </div>
+                            <div class="NavBarUtilitiesProfileDropdownMenu"  tabindex="-1">
+                                <div class="ProfileDropdownCard">
+                                    <a class="ProfileDropdownCardGoPro" href="#">
+                                        <svg 
+                                            fill="#F48548" 
+                                            height="18px" 
+                                            width="18px" 
+                                            version="1.2" 
+                                            baseProfile="tiny" 
+                                            xmlns="http://www.w3.org/2000/svg" 
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                            viewBox="0 0 256 240.5" 
+                                            xml:space="preserve">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path d="M41.316,196.312h173.36v30.237H41.316V196.312z M235.842,59.236c-11.133,0-20.158,9.025-20.158,20.158 c0,3.212,0.771,6.237,2.107,8.932l-41.834,20.702l-37.704-63.706c5.92-3.512,9.901-9.949,9.901-17.331 c0-11.133-9.025-20.158-20.158-20.158s-20.158,9.025-20.158,20.158c0,7.382,3.981,13.819,9.901,17.331L80.194,108.76L39.191,88.364 c1.348-2.704,2.125-5.743,2.125-8.97c0-11.133-9.025-20.158-20.158-20.158S1,68.262,1,79.395c0,11.133,9.025,20.158,20.158,20.158 c1.34,0,2.646-0.137,3.913-0.387l15.237,76.987h175.375l16.046-77.023c1.328,0.275,2.702,0.422,4.112,0.422 c11.133,0,20.158-9.025,20.158-20.158C256,68.262,246.975,59.236,235.842,59.236z"></path>
+                                            </g>
+                                        </svg>
+                                        <span style="color: #F48548;">Go Pro</span>
+                                    </a>
+                                    <div class="ProfileDropdownCardDivider" tabindex="-1"></div>
+                                    <section class="ProfileDropdownCardUserOptions">
+                                        <a class="ProfileDropdownCardItem" href="#">Set status</a>
+                                        <a class="ProfileDropdownCardItem" href="#">Profile &amp; account</a>
+                                        <a class="ProfileDropdownCardItem" href="#">Feedback</a>
+                                    </section>
+                                    <div class="ProfileDropdownCardDivider" tabindex="-1"></div>
+                                    <section class="ProfileDropdownCardAdmin">
+                                        <a class="ProfileDropdownCardItem" href="#">Settings</a>
+                                        <a class="ProfileDropdownCardItem" href="#">Logout</a>
+                                    </section>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </nav>
+        </section>
+    </main>      
+</body>
+</html>
