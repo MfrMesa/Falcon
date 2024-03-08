@@ -1,0 +1,27 @@
+.fifthtRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 878px;
+    height: 418px;
+    margin-bottom: 1rem;
+}
+
+.bestSellingProducts{
+    display: inline-flex;
+    position: relative;
+    width: 77%;
+    height: 100%;
+    border: 1px solid black;
+    margin-right: 0.5rem;
+}
+
+.sharedFiles{
+    display: inline-flex;
+    position: relative;
+    width: 33%;
+    height: 100%;
+    border: 1px solid black;
+    margin-left: 0.5rem;
+}

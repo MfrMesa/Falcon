@@ -1,3 +1,25 @@
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    width: 878px;
+    height: 74px;
+    border: 1px solid black;
+    justify-self: left;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        left: 13rem;
+        width: 730px;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url(style/fonts.css);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -299,3 +321,4 @@ input[type="search"]:focus::-webkit-search-cancel-button,
 }
 
 /* NavBar Notifications Bell End */
+
