@@ -1,3 +1,4 @@
+
 .navbar{
     display: flex;
     align-items: center;
@@ -18,3 +19,306 @@
         width: 730px;
     }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(style/fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root{  
+    --background: #edf2f9;
+    --sidebartext: #5E6e82;
+    --blue: #2c7be5;
+    --indigo: #727cf5;
+    --purple: #6b5eae;
+    --pink: #ff679b;
+    --red: #e63757;
+    --orange: #fd7e14;
+    --yellow: #f5803e;
+    --green: #00d27a;
+    --teal: #02a8b5;
+    --cyan: #27bcfd;
+    --white: #fff;
+    --gray: #748194;
+    --gray-dark: #4d5969;
+    --primary: #2c7be5;
+    --secondary: #748194;
+    --success: #00d27a;
+    --info: #27bcfd;
+    --warning: #f5803e;
+    --danger: #e63757;
+    --light: #f9fafd;
+    --dark: #0b1727;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1540px;
+    --font-family-sans-serif: "Poppins";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EDF2F9;
+}
+
+.NavigationBarSection {
+    width: 862px;
+    padding-left: 216px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Top Logos */
+
+.TopLogosContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#TopLogosFalconIcon {
+    width: 40px;
+    height: 40px;
+}
+
+#TopLogosFalconText {
+    font-size: 1.728rem;
+    font-weight: 800;
+    color: #2C7BE5;
+    margin: 0;
+}
+
+/* Top Logos End */
+
+.NavigationBarContainer {
+    width: 100%;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavBarSearchBar {
+    position: relative;
+}
+
+#NavBarSearchInput {
+    width: 336px;
+    height: 36px;
+    padding: 5px 16px;
+    padding-left: 25px;
+    border: none;
+    outline: 1px solid #B6C1D2;
+    border-radius: 18px;
+    line-height: 1.7;
+    transition: all 0.3s ease;
+}
+
+input[type="search"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+#NavBarSearchInput::placeholder {
+    color: #B6C1D2;
+}
+
+#NavBarSearchInput:focus {
+    outline:solid 1px #669fea;
+}
+
+#NavBarSearchIcon {
+    margin-left: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 20px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+    display: block;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button,
+.container:hover input[type="search"]::-webkit-search-cancel-button {
+    display: block !important;
+}
+
+
+
+/* NAVBAR UTILITIES */
+
+.NavBarUtilities {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.NavBarUtilities a {
+    text-decoration: none;
+}
+
+/* NavBar Settings */
+
+.NavBarUtilitiesSettings {
+    display: flex;
+    height: 20px;	
+    cursor: pointer;
+}
+
+#NavBarSettingsIcon {
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.NavBarUtilitiesSettingsPulse {
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    width: 20px;
+    z-index: -1;
+    border-radius: 70px;
+}
+
+#SettingsPulse1 {
+    border: 3px solid  #50dcef;
+    animation: pulse1 3s infinite;
+}
+
+#SettingsPulse2 {
+    border: 2px solid #50dcef;
+    animation: pulse2 3s infinite;
+}
+
+@keyframes pulse1 {
+    0% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.0;
+    }
+
+    15% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: scale(2.8);
+        opacity: 0.0;
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.0;
+    }
+
+    15% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: scale(2.8);
+        opacity: 0.0;
+    }
+}
+
+/* NavBar Settings End */
+
+/* NavBar Shopping Cart */
+
+.NavBarUtilitiesShoppingCart {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.NavBarUtilitiesShoppingCartLink {
+    position: absolute;
+    display: inline-block;
+}
+.ShoppingCartNotificationNumber {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    right: -10px;
+    border-radius: 50%;
+    background-color: #F5803E;
+    color: white;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1;
+}
+
+.NavBarUtilitiesShoppingCart:hover svg path {
+    fill: #242a31;
+    transition: all 0.2s ease-in-out;
+}
+
+/* NavBar Shopping Cart End */
+
+/* NavBar Notifications Bell */
+
+.NavBarUtilitiesNotifications,  .NavBarUtilitiesNotifications a {
+    width: 25px;
+    height: 25px;
+}
+
+.NavBarUtilitiesNotifications:hover svg path {
+    fill: #2C7BE5;
+    transition: all 0.2s ease-in-out;
+}
+
+.NavBarUtilitiesNotifications svg {
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.NavBarUtilitiesNotificationsCircle {
+    width: 12px;
+    height: 12px;
+    background-color: #2C7BE5;
+    outline: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: -32px;
+    left: 8px;
+    z-index: 1;
+    display: block;
+}
+
+/* NavBar Notifications Bell End */
+
