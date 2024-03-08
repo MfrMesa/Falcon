@@ -1,0 +1,170 @@
+@import url("fontandroot.css");
+
+
+.fourthRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 878px;
+    height: 155px;
+    margin-bottom: 1rem;
+}
+
+.userStorage{
+    display: inline-flex;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin-right: 0.5rem;
+    line-height: 1.5;
+    background-color: white;
+    color: #4d5969;
+    flex-direction: row;
+    font-family: var(--Poppins-Regular);
+    border-radius: 0.375rem;
+}
+
+.storage{
+    display: inline-flex;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+    margin-left: 0.5rem;
+}
+
+.contenedorStorage{
+    margin:20px;
+    margin-top: 2.2rem;
+}
+
+.tarjetaSeccionStorage{
+    border-radius: 0.375rem;
+    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+    background-color: white;
+    width: 100%;
+    
+}
+.tituloSeccionStorage{
+    font-size: 13.3px;
+    color: #4d5969
+}
+.ngr-SS{
+    color: black;
+}
+.contenedorLeyendaGraficoStorage{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+.regularCSS,
+.systemCSS,
+.sharedCSS,
+.freeCSS
+{
+    position: relative;
+    top: 0.5rem;
+    display: inline-block;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.leyendaName {
+    font-size: 13.3px;
+    color: #94999e;
+}
+
+.regularCSS{
+    background-image: linear-gradient(-45deg,#1970e2,#4695ff);
+}
+.systemCSS{
+    background-color: #27bcfd;
+}
+
+.sharedCSS{
+    background-color: #00d27a;
+}
+.freeCSS{
+    background-color: #edf2f9;
+}
+.contenedorGraficoStorage{
+    display: flex;
+}
+.regularGraficoStorage{
+    width: 43.8296%;
+    border-right: 2px solid #d8e2ef;
+    height: 10px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-image: linear-gradient(-45deg,#1970e2,#4695ff);
+}
+.systemGraficoStorage{
+    width: 18.5602%;
+    height: 10px;
+    background-color: #27bcfd;
+    border-right: 2px solid #d8e2ef;
+}
+.sharedGraficoStorage{
+    height: 10px;
+    width: 9.40255%;
+    background-color: #00d27a;
+    border-right: 2px solid #d8e2ef;
+}
+.freeGraficoStorage{
+    width:28.2076%;
+    height: 10px;
+    background-color: #edf2f9;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+}
+.leyendaCSS{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 8px;
+    padding-left: 15px;
+}
+
+/*Upgrade Storage*/
+
+.tituloUpgradeStorage{
+    color: #f5803e;
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+    width: 100%;
+}
+.contenedorUpgradeStorage{
+    margin: 20px;
+}
+.tarjetaUpgradeStorage{
+    border-radius: 0.375rem;
+    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+    background-image: url(https://falconreactbs4.prium.me/static/media/corner-1.dfdb6c51.png);
+    background-position: right;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+    margin-bottom: 16px;
+}
+.svgUpgradeStorage{
+    width: 0.625em;
+    position: relative;
+    top: 2px;
+    margin-left: 1px;
+}
+.linkUpgradeStorage{
+    text-decoration: none;
+    color: #db560b ;
+    font-size: .83333rem;
+
+}
+.linkUpgradeStorage:hover{
+    text-decoration: underline;
+}
+.descripcionUpgradeStorage{
+    font-size: .83333rem;
+}

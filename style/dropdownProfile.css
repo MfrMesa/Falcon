@@ -1,0 +1,85 @@
+@import url("fontandroot.css");
+
+
+/* NavBar Utilities Profile */
+
+.NavBarUtilitiesProfile {
+    margin-left: -7px;
+}
+
+.NavBarUtilitiesProfileIcon {
+    display: flex;
+    align-items: center;
+}
+
+.NavBarUtilitiesProfileIcon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.NavBarUtilitiesProfileIcon:hover svg path {
+    fill: #242a31;
+    transition: all 0.2s ease-in-out;
+}
+
+.NavBarUtilitiesProfile:hover .NavBarUtilitiesProfileDropdownMenu {
+    display: block;
+}
+
+.NavBarUtilitiesProfileDropdownMenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f5f7fa;
+    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+    border-radius: 6px;
+    font-size: .83333rem;
+}
+
+.NavBarUtilitiesProfileDropdownMenu a {
+    text-decoration: none;
+}
+
+.ProfileDropdownCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.ProfileDropdownCardGoPro {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 4px 16px;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    font-weight: 600;
+}
+
+.ProfileDropdownCardUserOptions,
+.ProfileDropdownCardAdmin {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.ProfileDropdownCardDivider {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.ProfileDropdownCardItem {
+    padding: 4px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #5e6e82;
+}
+
+.ProfileDropdownCardGoPro:hover, .ProfileDropdownCardItem:hover {
+    background-color: #EDF2F9;
+    color: #232E3C;
+    transition: all .2s ease-in-out;
+}
+
+/* NavBar Utilities Profile End */
