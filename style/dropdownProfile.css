@@ -68,6 +68,9 @@
 .NavBarUtilitiesProfileDropdownMenu {
     display: none;
     position: absolute;
+    min-width: 10rem;
+    top: 4rem;
+    left: 44.5rem;
     z-index: 1;
     background-color: #f5f7fa;
     box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);

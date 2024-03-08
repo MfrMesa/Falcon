@@ -43,7 +43,7 @@
 /* NavBar Notifications Dropdown */
 
 .NavBarUtilitiesNotificationsDropdownMenu {
-    display: block;
+    display: none;
     position: relative;
     left: -290px;
     z-index: 1;
@@ -54,6 +54,10 @@
     border-radius: 6px;
     font-size: 13.3px; 
     font-weight: 400;
+}
+
+.NavBarUtilitiesNotifications:hover .NavBarUtilitiesNotificationsDropdownMenu {
+    display: block;
 }
 
 
