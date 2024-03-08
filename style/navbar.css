@@ -47,6 +47,7 @@ body {
 }
 
 .NavigationBarSection {
+    position: fixed;
     width: 862px;
     padding-left: 216px;
     font-family: "Poppins";
