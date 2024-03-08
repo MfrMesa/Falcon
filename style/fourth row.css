@@ -30,7 +30,7 @@
     position: relative;
     width: 40%;
     height: 100%;
-    border: 1px solid black;
+    background: white;
     margin-left: 0.5rem;
 }
 
@@ -147,8 +147,6 @@
     background-position: right;
     background-size: 60%;
     background-repeat: no-repeat;
-    margin-left: 8px;
-    margin-bottom: 16px;
 }
 .svgUpgradeStorage{
     width: 0.625em;
