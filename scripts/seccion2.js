@@ -75,5 +75,10 @@ function introducirEnHtml(data){
     contenedor.appendChild(elemento);
 }
 
+try{
+    getLocalizacion();
+}catch(error){
+    console.log(error);
+}
 
-getLocalizacion();
+

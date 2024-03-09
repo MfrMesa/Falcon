@@ -2,9 +2,11 @@ function quitarDisplayMenuAjuste(){
     let $display = document.getElementsByClassName("contenedorMenuAjustesDiv");
     $display=$display[0]
     if($display.style.display=="none"){
-        $display.style.display="flex"; 
+        $display.style.display="flex";
+        document.getElementsByClassName("container")[0].style="height:970px;overflow-y:hidden";
     }else{
         $display.style.display="none";
+        document.getElementsByClassName("container")[0].style="height:auto;overflow-y:auto";
     }
 }
 
@@ -12,6 +14,7 @@ setTimeout(()=>{
     let $clickMenuAjuste = document.getElementsByClassName("contenedorMenuAjustesDiv");
     $clickMenuAjuste= $clickMenuAjuste[0];
     $clickMenuAjuste.style.display="flex";
+    document.getElementsByClassName("container")[0].style="height:970px;overflow-y:hidden";
 },1000);
 
 function almacenamientoDatosMenuAjustes(){

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,214 @@
     <title>Falcon React</title>
 </head>
 <body>
+    <section style="display: none;"  class="contenedorMenuAjustesDiv">
+        <div class="parteOscuraMenuAjustesDiv">
+               
+        </div>
+        <article class="ContenedorSettingsMenuAjustes">
+            
+            <section class="settingsMenuAjustes">
+                <div class="contenedorSuperiorSettingsMenuAjustes">
+                    <h1 class="settingsTituloMenuAjustes">
+                    
+                        <svg style="width: 1em;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="palette" class="svgTituloMenuAjuste" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>
+    
+                        Settings
+                    </h1>
+                    
+                    <span onclick="quitarDisplayMenuAjuste()" class="spanButtonMenuAjustes">×</span>
+                    
+                </div>
+                <h2 class="settingsSubtituloMenuajustes">
+                    Set your own customized style
+                </h2>
+                <div class="circuloSuperiorDerecho">
+                    <circle class="circuloSuperiorDerechoSVG"/>
+                </div>
+                <div class="circuloSuperiorIzquierdo">
+                    <circle class="circuloSuperiorIzquierdoSVG"/>
+                </div>
+            </section>
+            <section class="contenedorContenidoMenuAjuste">
+
+           
+            <section class="colorSchemeMenuAjustes">
+                <h1 class="tituloColorSchemeMenuAjustes">
+                    Color Scheme
+                </h1>
+                <h2 class="subtituloColorSchemeMenuAjustes">
+                    Choose the perfect color mode for your app.
+                </h2>
+                <div class="contenedorOpcionesColorSchemeMenuAjustes">
+                    <div class="primeraOpcionColorSchemeMenuAjustes">
+                        <img src="https://falconreactbs4.prium.me/static/media/falcon-mode-default.66875604.jpg" class="imgPrimeraOpcionColorSchemeMenuAjustes" alt="Light">
+                        <div class="contenedorCheckboxOpcionesColorSchemeMenuAjustes">
+                            
+                            <label class="checkboxLight">
+                               
+                                <input type="radio" id="checkboxLightColorScheme" name="ColorSchemeValor" onclick="cambioColorRadioColorScheme()">
+                                <span class="checkmark"id="radioVerdeMenuAjustes" ></span>
+                            </label>
+                        <p for="LightColorScheme" class="lightLabel"> Light</p>
+                    </div></div>
+                    <div class="segundaOpcionColorSchemeMenuAjustes">
+                        <img src="https://falconreactbs4.prium.me/static/media/falcon-mode-dark.651bc4bd.jpg" class="imgSegundaOpcionColorSchemeMenuAjustes" alt="Dark">
+                        <div class="contenedorCheckboxOpcionesColorSchemeMenuAjustes" id="contenedorDarkCheckBoxOpcionesColorSchemeMenuAjustes">
+                            <label class="checkboxLight">
+                                <input type="radio" id="checkboxDarkColorScheme" name="ColorSchemeValor" onclick="cambioColorRadioColorScheme()" >
+                                <span class="checkmark" id="radioVerdeMenuAjustes"></span>
+                            </label>
+                                <p for="DarkColorScheme" class="darkLabel">Dark</p>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="RTLModeMenuAjustes">
+                <div class="contenedorSuperiorRTLModeAjustes">
+                    <div class="inicioRTLModeMenuajustes">
+                        <img src="https://falconreactbs4.prium.me/static/media/left-arrow-from-left.764b929a.svg" alt="" class="svgRTLModeAjustes">
+                    <h1 class="tituloRTLModeAjustes">
+                        RTL Mode
+                    </h1>
+                    </div>
+                    <div class="contenedorSliderRTL">
+                     
+                        <span class="switch">
+                            <input type="checkbox" id="inputRTLModeMenu" />
+                            <label for="inputRTLModeMenu"></label>
+                          </span>
+
+                    </div>
+                    
+                </div>
+                <h2 class="subtituloRTLModeAjustes">
+                    Switch your language direction
+                </h2>
+            </section>
+            <section class="fluidLayoutMenuAjustes">
+                <div class="contenedorSuperiorFluidLayoutModeAjustes">
+                    <img src="https://falconreactbs4.prium.me/static/media/arrows-h.31beeeb2.svg" alt="" class="svgFluidLayoutMenuAjustes">
+                    <h1 class="tituloFluidLayoutMenuAjustes">Fluid Layout</h1>
+                    <div class="contenedorSliderFL">
+                     
+                        <span class="switch">
+                            <input type="checkbox" id="inputFluidLayout" />
+                            <label for="inputFluidLayout"></label>
+                          </span>
+
+                    </div>
+                </div>
+                <h2 class="subtituloFluidLayoutMenuAjustes">
+                    Toggle container layout system
+                </h2>
+            </section>
+            <section class="navigationPositionMenuAjustes">
+                <div class="contenedorSuperiorNavigationPositionAjustes">
+                    <img src="https://falconreactbs4.prium.me/static/media/paragraph.109eeba1.svg" alt="" class="svgNavigationPositionMenuAjustes">
+                    <h1 class="titulonavigationPositionMenuAjustes">
+                        Navigation Position
+                    </h1>
+                    <span class="estadoDelnavigatoPositionMenuAjustes">
+                        New
+                    </span>
+                </div>
+                <h2 class="subtituloNavigationPositionMenuAjustes">
+                    Select a suitable navigation system for yout web application
+                </h2>
+                <div class="contenedorInferiorNavigationPosititonMenuAjustes">
+                    <div class="contenedorInputLabelNavigationPosition">
+                        <label class="checkboxLight">
+                            <input onclick="RadioNavigationPosition()" type="radio" id="checkboxVerticalNavigationPositionMenuAjustes" name="NavigationPositionValue">
+                            <span class="checkmark"></span>
+                        </label>
+                    <label for="checkboxVerticalNavigationPositionMenuAjustes" class="labelNavigationPositionMenuAjustes">Vertical</label>
+                    </div>
+                    <div class="contenedorInputLabelNavigationPosition">
+                        <label class="checkboxLight">
+                            <input onclick="RadioNavigationPosition()" type="radio" id="checkboxTopNavigationPositionMenuAjustes" name="NavigationPositionValue">
+                            <span class="checkmark"></span>
+                        </label>
+                    <label for="checkboxTopNavigationPositionMenuAjustes" class="labelNavigationPositionMenuAjustes">Top</label>
+                    </div>
+                    <div class="contenedorInputLabelNavigationPosition">
+                        <label class="checkboxLight">
+                            <input onclick="RadioNavigationPosition()" type="radio" id="checkboxComboNavigationPositionMenuAjustes" name="NavigationPositionValue">
+                            <span class="checkmark"></span>
+                        </label>
+                    <label for="checkboxComboNavigationPositionMenuAjustes" class="labelNavigationPositionMenuAjustes">Combo</label>
+                    </div>
+                    
+                    
+                    
+    
+                </div>
+            </section>
+            <section class="VerticalNavbarStyleMenuAjustes">
+                <h1 class="tituloVerticalNavbarStyleMenuAjustes">Vertical Navbar Style</h1>
+                <h2 class="subtituloVerticalNavbarStyleMenuAjustes">Switch between styles for your vertical navbar</h2>
+                <div class="lineaUnoOpcionesVerticalNavbarStyleMenuAjustes">
+                    <div class="primeraOpcionVerticalNavbarStyleMenuAjustes">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAACgBAMAAACh7d4UAAAAJFBMVEUAAADZ4u7Y4u7Y4u7P3+/Y4u/Y4u/X3+/X3+fY4e3Z4+/Y4u6oujy/AAAAC3RSTlMA799fEL+vICBwfxmGVi0AAAFuSURBVGje7ZmxbYZADIX/DhaIEnITRFQwAStQZ4RrwgZhJIrQeLl0AQlHtmws/RzvKy2kT7rT0z2ZBwAAAHA/OtrRbPN6JBPr90HR0o5l+JvPZOTtoEi0Z1NkMvJzUPT/HBRZWR5ayAwU91Z0dOT9XEVLDMOpihSv6OlIc7nrhsKpSPGKTzKyqtM9kZFXdbqrTCZevrTp9iKnG6ipR03vq0dmqmVW9b6Zm2rJqt6XuakWXe9TtcHOUTj5r8Rm7lcI6Q5R9HEHxQMFFILC38xlhb+Z+9PtUtib+eWuG4pbKZBupBuKUhVIN9INRamKjst2eLqHkxUpXtEz2XYqtCSVIgXvaVf2q1WtmFQb2YmbaqmyZiNbZWZaJvzb7Ud+u73Ib7d3Tyu/3djTLoW+emUo0MzRzKEoVYFm/vzNHAoo3On+CFK0zN/uwHRv06h0N9e9bihupWDT7d/kyOn2b3LkdPs3OXy6sckBAAAAbPwCGfkWmPcyCY0AAAAASUVORK5CYII=" alt="Transparent" class="TransparentOpcionVerticalNavbarStyleMenuAjustes">
+                       <div class="contenedorRadioLabelNavigationPositio">
+                        <label class="checkboxLight">
+                            <input type="radio" onclick="cambioColorRadioVerticalNavbarStyle()" id="radioTransparentVertical" name="OptionVerticalNavbarMenuAjustes">
+                            <span class="checkmark" id="radioVerdeMenuAjustes"></span>
+                        </label>
+                        <label for="TransparentOptionVerticalNavbarmenuAjustes">Transparent</label>
+                       </div>
+                    </div>
+                    <div class="segundaOpcionVerticalNavbarStyleMenuAjustes">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAACgBAMAAACh7d4UAAAAJ1BMVEUAAADZ4u7X3+vY4u/Z4u4iLjwgLDjW4e7Y4u8hLTwiLTvY4u4iLjzRE2uGAAAAC3RSTlMA7yC/r+8gsK+/r6eEy7YAAAEASURBVGje7do9CsJAEEBh2cIDxDJNPEJqj7C9IFik8Uh2HiGNWETY2sKwh3Jrd4phksWfvFcOC18TyGbIioiIaHmtz/G9sUtz1wZT9yYjTjFvn+bbYKzKiF4gnmnurcQtI6LQI82DtauKiFOIAAEBAQGhI+ryxM4qDGrC/mJVE87bhE2jJuxBzE24VnPvc20+nfOhrcRTlZrwqnufF6ZqQnfvK34blE9BQEBAQEBAQEBAQEBAQEBA/A5Rq4i68J52EE8N37Tycl6zkXWePe1fEOxp2dNCQEBAQEBAQEBAQEB8ljiW3+RcBGGctMmx/8pu/yhe95lw6KZtcoiIiBbXCxrJlcgtvORmAAAAAElFTkSuQmCC" alt="Inverted" class="imgInvertedOptionVerticalNavbarmenuAjustes">
+                        <div class="contenedorRadioLabelNavigationPositio">
+                            <label class="checkboxLight">
+                                <input type="radio" onclick="cambioColorRadioVerticalNavbarStyle()" id="radioInvertedVertical" name="OptionVerticalNavbarMenuAjustes">
+                                <span class="checkmark" id="radioVerdeMenuAjustes"></span>
+                            </label>
+                        <label for="InvertedOptionVerticalNavbarMenuAjustes" class="labelInvertedOptionVerticalNavbarMenuAjustes">Inverted</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="lineaDosOpcionesVerticalNavbarStyleMenuAjustes">
+                    <div class="terceraOptionVerticalNavbarMenuAjustes">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAACgCAMAAABkHTMVAAAAPFBMVEUAAAA9PUAwMEMzM0o0NEM4OEY2NkTZ4u7X3+zY4u/////m5ujY4u/W4e7Z4u7+/v79/f3Y4u7Y4u7///9FvZafAAAAEnRSTlMAAwYEEAoO7yC/8CSvsK/Bsa/EU87bAAAC/ElEQVR42u2c646jMAyFfeyF0Mu0Hfr+77oBKroaaUXSjVjnkK8z6mX6o984NsRYlUaj0Wg0Go1Go9Fo0HG5n5/bPC7yYjiFcU+uQ4JDVEjh/LIYwrgzYdvi8UzkLjPf4+6cZAM8UzkDEhn3J2w54JnMKrE7/BIQaLqEiksJgVmGhMGphBJIgEEiLxIecwKgWE551Qk+JYwhJ4xhOWVGwlxK5CW2+owEtPoS+1EkwpiC35zAJHEad+er7LmTy+1pvkS0uI17Ek6DlJQAxB3IjoRDiYgpgQTAIJGZE6U6gNchvZt4HcpHYgjlyuYQ0t5bPBLXgl2978T3em0UBImU6QBC/9vOTiLVn4pLpPq+U0EJ1B8JHDASPhObJBIEEhyRsCwJmEsJikgcUALiVKLLiYRTCa1/OR2xxDqVyI4EGCRcRgJZEk6P2Ax7bGFYTkJwnBDgcBLqMrEBqz+xwXDudMSDndf9BEPfqf6DHUQYqtMkUf/2tP5NEThKLIQiJwj2E4Ax7OwIciJ7BtBnt0OrP06A4uopxQmgMFSnTxrKoaBEKNp32n8u9ksip7rnYosObSFPYra4lZt1HW7/PBdLMlIK1D7cKwKOSDAM9+aVWHU6F5slAcBliSWYi0VmdXI6F0twAsjRAay/F0txzY6kA/iBBNxJUIwKUVw95cgJ0/r7Tqi/xFIcJ0hyAvVfs8uOBNogox+JFokm8TfAMPCO7Ckb+JOgWE6TRMcgUf9ZLEfLhkACYvWXWIbJM47ldMyxCJ8SB8wJl/NOIkBXe05AxPRc/ZQNTO+pDg81l1M2gGr6l6M7nrLpLo8UhfulU4i4nLKJEl3/a5u+7zqnYxGYJKJFv6kwOahPh/g7h+JF/LTxFj/ydPd+LbIEQlxazBKq3UT8mOt9//rp33+Ib/PrAJhOdPEWbeaHi9Z0r4vAhAHiVQOzxiLyxn4+M/M5drYCWLytGCDzc5P1BZ916QfYQkTcLqY3gAj+fLg8B5wvo5XNf3MdcWg0Go1GY+E3BgwditeyE18AAAAASUVORK5CYII=" alt="Card" class="imgCardOptionVerticalNavbarMenuAjustes">
+                        <div class="contenedorRadioLabelNavigationPositio">
+                            <label class="checkboxLight">
+                                <input type="radio" onclick="cambioColorRadioVerticalNavbarStyle()" id="radioCardVertical" name="OptionVerticalNavbarMenuAjustes">
+                                <span class="checkmark" id="radioVerdeMenuAjustes"></span>
+                            </label>
+                            <label for="CardOptionNavbarMenuAjustes" class="labelCardOptionVerticalNavbarMenuAjustes">Card</label>
+                        </div>
+                    </div>
+                    <div class="cuartaOpcionVerticalNavbarStyleMenuAjustes">
+                        <img src="data:image/png;base64,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" alt="Vibrant" class="imgVibrantVerticalNavbarMenuAjustes">
+                       <div class="contenedorRadioLabelNavigationPositio">
+                        <label class="checkboxLight">
+                            <input type="radio" onclick="cambioColorRadioVerticalNavbarStyle()" id="radioVibrantVertical" name="OptionVerticalNavbarMenuAjustes">
+                            <span class="checkmark" id="radioVerdeMenuAjustes"></span>
+                        </label>
+                            <label for="VibrantOptionVerticalNavbarMenuAjustes" class="labelVibrantOptionVericalMenuAjustes">Vibrant</label>
+                       </div>
+                    </div>
+                </div>
+            </section>
+            <section class="compraMenuAjustes">
+                <picture class="contenedorImagenPursache">
+                    <img src="https://falconreactbs4.prium.me/static/media/settings.ae4802db.png" alt="Pursache" class="imgCompraMenuAjustes">
+                </picture>
+                <section class="textoBotonCompraMenuAjustes">
+                    <h1 class="tituloCompraMenuAjustes">Like What You See</h1>
+                    <h2 class="subtituloCompraMenuAjustes">Get Falcon now and create beautiful dashboards with hundreds of widgets</h2>
+                    <button class="botonCompramenuAjustes">Purchase</button>
+                </section>
+               
+            </section>
+        </section>
+        </article>
+</section>
     <div class="container">
+        
         <div class="sidebarWrapper">
             <div class="toggleContainerSidebar">
                 <div class="tooltipContainerSidebar"> 
@@ -732,7 +939,7 @@
                                 <span class="NavBarUtilitiesSettingsPulse" id="SettingsPulse1"></span>
                                 <span class="NavBarUtilitiesSettingsPulse" id="SettingsPulse2"></span>
                                 <span class="NavBarUtilitiesSettingsButton">
-                                    <svg id="NavBarSettingsIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg onclick="quitarDisplayMenuAjuste()" id="NavBarSettingsIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M19.7369 12.3941L19.1989 12.1065C18.4459 11.7041 18.0843 10.8487 18.0843 9.99495C18.0843 9.14118 18.4459 8.28582 19.1989 7.88336L19.7369 7.59581C19.9474 7.47484 20.0316 7.23291 19.9474 7.03131C19.4842 5.57973 18.6843 4.28943 17.6738 3.20075C17.5053 3.03946 17.2527 2.99914 17.0422 3.12011L16.393 3.46714C15.6883 3.84379 14.8377 3.74529 14.1476 3.3427C14.0988 3.31422 14.0496 3.28621 14.0002 3.25868C13.2568 2.84453 12.7055 2.10629 12.7055 1.25525V0.70081C12.7055 0.499202 12.5371 0.297594 12.2845 0.257272C10.7266 -0.105622 9.16879 -0.0653007 7.69516 0.257272C7.44254 0.297594 7.31623 0.499202 7.31623 0.70081V1.23474C7.31623 2.09575 6.74999 2.8362 5.99824 3.25599C5.95774 3.27861 5.91747 3.30159 5.87744 3.32493C5.15643 3.74527 4.26453 3.85902 3.53534 3.45302L2.93743 3.12011C2.72691 2.99914 2.47429 3.03946 2.30587 3.20075C1.29538 4.28943 0.495411 5.57973 0.0322686 7.03131C-0.051939 7.23291 0.0322686 7.47484 0.242788 7.59581L0.784376 7.8853C1.54166 8.29007 1.92694 9.13627 1.92694 9.99495C1.92694 10.8536 1.54166 11.6998 0.784375 12.1046L0.242788 12.3941C0.0322686 12.515 -0.051939 12.757 0.0322686 12.9586C0.495411 14.4102 1.29538 15.7005 2.30587 16.7891C2.47429 16.9504 2.72691 16.9907 2.93743 16.8698L3.58669 16.5227C4.29133 16.1461 5.14131 16.2457 5.8331 16.6455C5.88713 16.6767 5.94159 16.7074 5.99648 16.7375C6.75162 17.1511 7.31623 17.8941 7.31623 18.7552V19.2891C7.31623 19.4425 7.41373 19.5959 7.55309 19.696C7.64066 19.7589 7.74815 19.7843 7.85406 19.8046C9.35884 20.0925 10.8609 20.0456 12.2845 19.7729C12.5371 19.6923 12.7055 19.4907 12.7055 19.2891V18.7346C12.7055 17.8836 13.2568 17.1454 14.0002 16.7312C14.0496 16.7037 14.0988 16.6757 14.1476 16.6472C14.8377 16.2446 15.6883 16.1461 16.393 16.5227L17.0422 16.8698C17.2527 16.9907 17.5053 16.9504 17.6738 16.7891C18.7264 15.7005 19.4842 14.4102 19.9895 12.9586C20.0316 12.757 19.9474 12.515 19.7369 12.3941ZM10.0109 13.2005C8.1162 13.2005 6.64257 11.7893 6.64257 9.97478C6.64257 8.20063 8.1162 6.74905 10.0109 6.74905C11.8634 6.74905 13.3792 8.20063 13.3792 9.97478C13.3792 11.7893 11.8634 13.2005 10.0109 13.2005Z" 
                                         fill="#2A7BE4">
                                         </path>
@@ -874,212 +1081,7 @@
                         </section>
                     </nav>
             </navbar>
-            <section style="display: none;"  class="contenedorMenuAjustesDiv">
-                    <div class="parteOscuraMenuAjustesDiv">
-                           
-                    </div>
-                    <article class="ContenedorSettingsMenuAjustes">
-                        
-                        <section class="settingsMenuAjustes">
-                            <div class="contenedorSuperiorSettingsMenuAjustes">
-                                <h1 class="settingsTituloMenuAjustes">
-                                
-                                    <svg style="width: 1em;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="palette" class="svgTituloMenuAjuste" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>
-                
-                                    Settings
-                                </h1>
-                                
-                                <span onclick="quitarDisplayMenuAjuste()" class="spanButtonMenuAjustes">×</span>
-                                
-                            </div>
-                            <h2 class="settingsSubtituloMenuajustes">
-                                Set your own customized style
-                            </h2>
-                            <div class="circuloSuperiorDerecho">
-                                <circle class="circuloSuperiorDerechoSVG"/>
-                            </div>
-                            <div class="circuloSuperiorIzquierdo">
-                                <circle class="circuloSuperiorIzquierdoSVG"/>
-                            </div>
-                        </section>
-                        <section class="contenedorContenidoMenuAjuste">
             
-                       
-                        <section class="colorSchemeMenuAjustes">
-                            <h1 class="tituloColorSchemeMenuAjustes">
-                                Color Scheme
-                            </h1>
-                            <h2 class="subtituloColorSchemeMenuAjustes">
-                                Choose the perfect color mode for your app.
-                            </h2>
-                            <div class="contenedorOpcionesColorSchemeMenuAjustes">
-                                <div class="primeraOpcionColorSchemeMenuAjustes">
-                                    <img src="https://falconreactbs4.prium.me/static/media/falcon-mode-default.66875604.jpg" class="imgPrimeraOpcionColorSchemeMenuAjustes" alt="Light">
-                                    <div class="contenedorCheckboxOpcionesColorSchemeMenuAjustes">
-                                        
-                                        <label class="checkboxLight">
-                                           
-                                            <input type="radio" id="checkboxLightColorScheme" name="ColorSchemeValor" onclick="cambioColorRadioColorScheme()">
-                                            <span class="checkmark"id="radioVerdeMenuAjustes" ></span>
-                                        </label>
-                                    <p for="LightColorScheme" class="lightLabel"> Light</p>
-                                </div></div>
-                                <div class="segundaOpcionColorSchemeMenuAjustes">
-                                    <img src="https://falconreactbs4.prium.me/static/media/falcon-mode-dark.651bc4bd.jpg" class="imgSegundaOpcionColorSchemeMenuAjustes" alt="Dark">
-                                    <div class="contenedorCheckboxOpcionesColorSchemeMenuAjustes" id="contenedorDarkCheckBoxOpcionesColorSchemeMenuAjustes">
-                                        <label class="checkboxLight">
-                                            <input type="radio" id="checkboxDarkColorScheme" name="ColorSchemeValor" onclick="cambioColorRadioColorScheme()" >
-                                            <span class="checkmark" id="radioVerdeMenuAjustes"></span>
-                                        </label>
-                                            <p for="DarkColorScheme" class="darkLabel">Dark</p>
-                                    
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                        <section class="RTLModeMenuAjustes">
-                            <div class="contenedorSuperiorRTLModeAjustes">
-                                <div class="inicioRTLModeMenuajustes">
-                                    <img src="https://falconreactbs4.prium.me/static/media/left-arrow-from-left.764b929a.svg" alt="" class="svgRTLModeAjustes">
-                                <h1 class="tituloRTLModeAjustes">
-                                    RTL Mode
-                                </h1>
-                                </div>
-                                <div class="contenedorSliderRTL">
-                                 
-                                    <span class="switch">
-                                        <input type="checkbox" id="inputRTLModeMenu" />
-                                        <label for="inputRTLModeMenu"></label>
-                                      </span>
-            
-                                </div>
-                                
-                            </div>
-                            <h2 class="subtituloRTLModeAjustes">
-                                Switch your language direction
-                            </h2>
-                        </section>
-                        <section class="fluidLayoutMenuAjustes">
-                            <div class="contenedorSuperiorFluidLayoutModeAjustes">
-                                <img src="https://falconreactbs4.prium.me/static/media/arrows-h.31beeeb2.svg" alt="" class="svgFluidLayoutMenuAjustes">
-                                <h1 class="tituloFluidLayoutMenuAjustes">Fluid Layout</h1>
-                                <div class="contenedorSliderFL">
-                                 
-                                    <span class="switch">
-                                        <input type="checkbox" id="inputFluidLayout" />
-                                        <label for="inputFluidLayout"></label>
-                                      </span>
-            
-                                </div>
-                            </div>
-                            <h2 class="subtituloFluidLayoutMenuAjustes">
-                                Toggle container layout system
-                            </h2>
-                        </section>
-                        <section class="navigationPositionMenuAjustes">
-                            <div class="contenedorSuperiorNavigationPositionAjustes">
-                                <img src="https://falconreactbs4.prium.me/static/media/paragraph.109eeba1.svg" alt="" class="svgNavigationPositionMenuAjustes">
-                                <h1 class="titulonavigationPositionMenuAjustes">
-                                    Navigation Position
-                                </h1>
-                                <span class="estadoDelnavigatoPositionMenuAjustes">
-                                    New
-                                </span>
-                            </div>
-                            <h2 class="subtituloNavigationPositionMenuAjustes">
-                                Select a suitable navigation system for yout web application
-                            </h2>
-                            <div class="contenedorInferiorNavigationPosititonMenuAjustes">
-                                <div class="contenedorInputLabelNavigationPosition">
-                                    <label class="checkboxLight">
-                                        <input onclick="RadioNavigationPosition()" type="radio" id="checkboxVerticalNavigationPositionMenuAjustes" name="NavigationPositionValue">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                <label for="checkboxVerticalNavigationPositionMenuAjustes" class="labelNavigationPositionMenuAjustes">Vertical</label>
-                                </div>
-                                <div class="contenedorInputLabelNavigationPosition">
-                                    <label class="checkboxLight">
-                                        <input onclick="RadioNavigationPosition()" type="radio" id="checkboxTopNavigationPositionMenuAjustes" name="NavigationPositionValue">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                <label for="checkboxTopNavigationPositionMenuAjustes" class="labelNavigationPositionMenuAjustes">Top</label>
-                                </div>
-                                <div class="contenedorInputLabelNavigationPosition">
-                                    <label class="checkboxLight">
-                                        <input onclick="RadioNavigationPosition()" type="radio" id="checkboxComboNavigationPositionMenuAjustes" name="NavigationPositionValue">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                <label for="checkboxComboNavigationPositionMenuAjustes" class="labelNavigationPositionMenuAjustes">Combo</label>
-                                </div>
-                                
-                                
-                                
-                
-                            </div>
-                        </section>
-                        <section class="VerticalNavbarStyleMenuAjustes">
-                            <h1 class="tituloVerticalNavbarStyleMenuAjustes">Vertical Navbar Style</h1>
-                            <h2 class="subtituloVerticalNavbarStyleMenuAjustes">Switch between styles for your vertical navbar</h2>
-                            <div class="lineaUnoOpcionesVerticalNavbarStyleMenuAjustes">
-                                <div class="primeraOpcionVerticalNavbarStyleMenuAjustes">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAACgBAMAAACh7d4UAAAAJFBMVEUAAADZ4u7Y4u7Y4u7P3+/Y4u/Y4u/X3+/X3+fY4e3Z4+/Y4u6oujy/AAAAC3RSTlMA799fEL+vICBwfxmGVi0AAAFuSURBVGje7ZmxbYZADIX/DhaIEnITRFQwAStQZ4RrwgZhJIrQeLl0AQlHtmws/RzvKy2kT7rT0z2ZBwAAAHA/OtrRbPN6JBPr90HR0o5l+JvPZOTtoEi0Z1NkMvJzUPT/HBRZWR5ayAwU91Z0dOT9XEVLDMOpihSv6OlIc7nrhsKpSPGKTzKyqtM9kZFXdbqrTCZevrTp9iKnG6ipR03vq0dmqmVW9b6Zm2rJqt6XuakWXe9TtcHOUTj5r8Rm7lcI6Q5R9HEHxQMFFILC38xlhb+Z+9PtUtib+eWuG4pbKZBupBuKUhVIN9INRamKjst2eLqHkxUpXtEz2XYqtCSVIgXvaVf2q1WtmFQb2YmbaqmyZiNbZWZaJvzb7Ud+u73Ib7d3Tyu/3djTLoW+emUo0MzRzKEoVYFm/vzNHAoo3On+CFK0zN/uwHRv06h0N9e9bihupWDT7d/kyOn2b3LkdPs3OXy6sckBAAAAbPwCGfkWmPcyCY0AAAAASUVORK5CYII=" alt="Transparent" class="TransparentOpcionVerticalNavbarStyleMenuAjustes">
-                                   <div class="contenedorRadioLabelNavigationPositio">
-                                    <label class="checkboxLight">
-                                        <input type="radio" onclick="cambioColorRadioVerticalNavbarStyle()" id="radioTransparentVertical" name="OptionVerticalNavbarMenuAjustes">
-                                        <span class="checkmark" id="radioVerdeMenuAjustes"></span>
-                                    </label>
-                                    <label for="TransparentOptionVerticalNavbarmenuAjustes">Transparent</label>
-                                   </div>
-                                </div>
-                                <div class="segundaOpcionVerticalNavbarStyleMenuAjustes">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAACgBAMAAACh7d4UAAAAJ1BMVEUAAADZ4u7X3+vY4u/Z4u4iLjwgLDjW4e7Y4u8hLTwiLTvY4u4iLjzRE2uGAAAAC3RSTlMA7yC/r+8gsK+/r6eEy7YAAAEASURBVGje7do9CsJAEEBh2cIDxDJNPEJqj7C9IFik8Uh2HiGNWETY2sKwh3Jrd4phksWfvFcOC18TyGbIioiIaHmtz/G9sUtz1wZT9yYjTjFvn+bbYKzKiF4gnmnurcQtI6LQI82DtauKiFOIAAEBAQGhI+ryxM4qDGrC/mJVE87bhE2jJuxBzE24VnPvc20+nfOhrcRTlZrwqnufF6ZqQnfvK34blE9BQEBAQEBAQEBAQEBAQEBA/A5Rq4i68J52EE8N37Tycl6zkXWePe1fEOxp2dNCQEBAQEBAQEBAQEB8ljiW3+RcBGGctMmx/8pu/yhe95lw6KZtcoiIiBbXCxrJlcgtvORmAAAAAElFTkSuQmCC" alt="Inverted" class="imgInvertedOptionVerticalNavbarmenuAjustes">
-                                    <div class="contenedorRadioLabelNavigationPositio">
-                                        <label class="checkboxLight">
-                                            <input type="radio" onclick="cambioColorRadioVerticalNavbarStyle()" id="radioInvertedVertical" name="OptionVerticalNavbarMenuAjustes">
-                                            <span class="checkmark" id="radioVerdeMenuAjustes"></span>
-                                        </label>
-                                    <label for="InvertedOptionVerticalNavbarMenuAjustes" class="labelInvertedOptionVerticalNavbarMenuAjustes">Inverted</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lineaDosOpcionesVerticalNavbarStyleMenuAjustes">
-                                <div class="terceraOptionVerticalNavbarMenuAjustes">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAACgCAMAAABkHTMVAAAAPFBMVEUAAAA9PUAwMEMzM0o0NEM4OEY2NkTZ4u7X3+zY4u/////m5ujY4u/W4e7Z4u7+/v79/f3Y4u7Y4u7///9FvZafAAAAEnRSTlMAAwYEEAoO7yC/8CSvsK/Bsa/EU87bAAAC/ElEQVR42u2c646jMAyFfeyF0Mu0Hfr+77oBKroaaUXSjVjnkK8z6mX6o984NsRYlUaj0Wg0Go1Go9Fo0HG5n5/bPC7yYjiFcU+uQ4JDVEjh/LIYwrgzYdvi8UzkLjPf4+6cZAM8UzkDEhn3J2w54JnMKrE7/BIQaLqEiksJgVmGhMGphBJIgEEiLxIecwKgWE551Qk+JYwhJ4xhOWVGwlxK5CW2+owEtPoS+1EkwpiC35zAJHEad+er7LmTy+1pvkS0uI17Ek6DlJQAxB3IjoRDiYgpgQTAIJGZE6U6gNchvZt4HcpHYgjlyuYQ0t5bPBLXgl2978T3em0UBImU6QBC/9vOTiLVn4pLpPq+U0EJ1B8JHDASPhObJBIEEhyRsCwJmEsJikgcUALiVKLLiYRTCa1/OR2xxDqVyI4EGCRcRgJZEk6P2Ax7bGFYTkJwnBDgcBLqMrEBqz+xwXDudMSDndf9BEPfqf6DHUQYqtMkUf/2tP5NEThKLIQiJwj2E4Ax7OwIciJ7BtBnt0OrP06A4uopxQmgMFSnTxrKoaBEKNp32n8u9ksip7rnYosObSFPYra4lZt1HW7/PBdLMlIK1D7cKwKOSDAM9+aVWHU6F5slAcBliSWYi0VmdXI6F0twAsjRAay/F0txzY6kA/iBBNxJUIwKUVw95cgJ0/r7Tqi/xFIcJ0hyAvVfs8uOBNogox+JFokm8TfAMPCO7Ckb+JOgWE6TRMcgUf9ZLEfLhkACYvWXWIbJM47ldMyxCJ8SB8wJl/NOIkBXe05AxPRc/ZQNTO+pDg81l1M2gGr6l6M7nrLpLo8UhfulU4i4nLKJEl3/a5u+7zqnYxGYJKJFv6kwOahPh/g7h+JF/LTxFj/ydPd+LbIEQlxazBKq3UT8mOt9//rp33+Ib/PrAJhOdPEWbeaHi9Z0r4vAhAHiVQOzxiLyxn4+M/M5drYCWLytGCDzc5P1BZ916QfYQkTcLqY3gAj+fLg8B5wvo5XNf3MdcWg0Go1GY+E3BgwditeyE18AAAAASUVORK5CYII=" alt="Card" class="imgCardOptionVerticalNavbarMenuAjustes">
-                                    <div class="contenedorRadioLabelNavigationPositio">
-                                        <label class="checkboxLight">
-                                            <input type="radio" onclick="cambioColorRadioVerticalNavbarStyle()" id="radioCardVertical" name="OptionVerticalNavbarMenuAjustes">
-                                            <span class="checkmark" id="radioVerdeMenuAjustes"></span>
-                                        </label>
-                                        <label for="CardOptionNavbarMenuAjustes" class="labelCardOptionVerticalNavbarMenuAjustes">Card</label>
-                                    </div>
-                                </div>
-                                <div class="cuartaOpcionVerticalNavbarStyleMenuAjustes">
-                                    <img src="data:image/png;base64,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" alt="Vibrant" class="imgVibrantVerticalNavbarMenuAjustes">
-                                   <div class="contenedorRadioLabelNavigationPositio">
-                                    <label class="checkboxLight">
-                                        <input type="radio" onclick="cambioColorRadioVerticalNavbarStyle()" id="radioVibrantVertical" name="OptionVerticalNavbarMenuAjustes">
-                                        <span class="checkmark" id="radioVerdeMenuAjustes"></span>
-                                    </label>
-                                        <label for="VibrantOptionVerticalNavbarMenuAjustes" class="labelVibrantOptionVericalMenuAjustes">Vibrant</label>
-                                   </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="compraMenuAjustes">
-                            <picture class="contenedorImagenPursache">
-                                <img src="https://falconreactbs4.prium.me/static/media/settings.ae4802db.png" alt="Pursache" class="imgCompraMenuAjustes">
-                            </picture>
-                            <section class="textoBotonCompraMenuAjustes">
-                                <h1 class="tituloCompraMenuAjustes">Like What You See</h1>
-                                <h2 class="subtituloCompraMenuAjustes">Get Falcon now and create beautiful dashboards with hundreds of widgets</h2>
-                                <button class="botonCompramenuAjustes">Purchase</button>
-                            </section>
-                           
-                        </section>
-                    </section>
-                    </article>
-            </section>
             <div class="firstandSecondRow">
                 <section class="weeklySales">
                     jj
@@ -1155,7 +1157,7 @@
                                 <div class="ciudadNombreContenedorWeather" id="ciudadNombreContenedorWeather">
                                 </div>
                                 <div class="tempertaturaContenedorWeather" id="tempertaturaContenedorWeather">
-                                    <div onclick="desplegarContenedorWeather()" class="botonTemperaturaWeather">
+                                    <div  class="botonTemperaturaWeather">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="svgbuttonWeather" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
                                     </div>
                                     <div id="desplegableWeather" style="display: none;" class="contenedorDesplegableWeather">

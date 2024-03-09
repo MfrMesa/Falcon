@@ -30,6 +30,8 @@
     position: relative;
     width: 40%;
     height: 100%;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 0.365rem;
     background: white;
     margin-left: 0.5rem;
 }
@@ -133,7 +135,7 @@
 .tituloUpgradeStorage{
     color: #f5803e;
     margin-bottom: 0.25rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 0;
     width: 100%;
 }
@@ -157,12 +159,14 @@
 .linkUpgradeStorage{
     text-decoration: none;
     color: #db560b ;
-    font-size: .83333rem;
+    font-size: .7rem;
 
 }
 .linkUpgradeStorage:hover{
     text-decoration: underline;
 }
 .descripcionUpgradeStorage{
-    font-size: .83333rem;
+    font-size: .7rem;
+    margin-bottom: 21px;
+    width: 90%;
 }
