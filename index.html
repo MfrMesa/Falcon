@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="style/topProducts.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/cabecera.css">
+    <link rel="stylesheet" href="style/card-best-selling.css">
+    <link rel="stylesheet" href="style/estilos-products.css">
+    <link rel="stylesheet" href="style/estilos-user.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/hover.css">
+    <link rel="stylesheet" href="style/saved.css">
     <link rel="stylesheet" href="style/dropdownSearch.css">
     <link rel="stylesheet" href="style/dropdownNotifications.css">
     <link rel="stylesheet" href="style/dropdownProfile.css">
@@ -1391,38 +1398,237 @@
             </div>
             <div class="fifthtRow">
                     <section class="bestSellingProducts">
-                            jj
-                            jjj
-                            jjj
-                            jjj
-                            j
-                            
+                        jjj
+                        jjjj
+                        j
+                        j
                     </section>
                     <section class="sharedFiles">
-                            jj
-                            jjj
-                            jjj
-                            jjj
-                            j
-                            
+                        <section id="products">
+                            <article class=" products-container flex-colum">
+                                <header class=" cabecera-menu">
+                                    <div> Share Files</div>
+                                    <div><a href="#">View All</a></div>
+                                </header>
+                                <section class="elements ">
+                                    <div class="archivo archivo-primero ">
+                                        <div class="img-products">
+                                            <img src="./img/reloj.jpg" alt="">
+                                        </div>
+                                        <div class="texto-archivo">
+                                            <h6><a href="">ordenador.png</a></h6>
+                                            <div>
+                                                <span class="autor">Antony</span>
+                                                <span class="fecha">Just Now</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="archivo ">
+                                        <div class="img-products">
+                                            <img src="./img/foto2.jpg" alt="">
+                                        </div>
+                                        <div class="texto-archivo">
+                                            <h6><a href="">ordenador.png</a></h6>
+                                            <div>
+                                                <span class="autor">Antony</span>
+                                                <span class="fecha">Just Now</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="archivo ">
+                                        <div class="img-products">
+                                            <img src="./img/zip.png" alt="">
+                                        </div>
+                                        <div class="texto-archivo">
+                                            <h6><a href="">ordenador.png</a></h6>
+                                            <div>
+                                                <span class="autor">Antony</span>
+                                                <span class="fecha">Just Now</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="archivo ">
+                                        <div class="img-products">
+                                            <img src="./img/foto1.jpg" alt="">
+                                        </div>
+                                        <div class="texto-archivo">
+                                            <h6><a href="">ordenador.png</a></h6>
+                                            <div>
+                                                <span class="autor">Antony</span>
+                                                <span class="fecha">Just Now</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="archivo ">
+                                        <div class="img-products">
+                                            <img src="./img/archivo.png" alt="">
+                                        </div>
+                                        <div class="texto-archivo">
+                                            <h6><a href="">ordenador.png</a></h6>
+                                            <div>
+                                                <span class="autor">Antony</span>
+                                                <span class="fecha">Just Now</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </article>
                     </section>
             </div>
             <div class="sixthRow">
                 <section class="activeUsers">
-                    jj
-                    jjj
-                    jjj
-                    jjj
-                    j
-                    
+                    <article class=" flex-colum">
+                        <header class=" cabecera-menu">
+            
+                            <div> Active Users</div>
+            
+                            <div class="dropdown">
+                                <button class="btn-menu" onclick="dropdownMenu()">
+                                    <div>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h"
+                                            class="svg-inline--fa fa-ellipsis-h fa-w-16 fs--2" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </button>
+            
+                                <div id="dropdownMenu" class="dropdown-content">
+                                    <button>View</button>
+                                    <button>Export</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" class="remove">Remove</button>
+                                </div>
+                            </div>
+            
+                        </header>
+            
+                        <section class="section-usuarios flex-colum  ">
+                            <div>
+                                <div id="usuario">
+                                    <div class="user-img">
+            
+                                        <div class="activo">
+                                            <img class="avatar" src="img/foto_usuario.jpg" alt="">
+                                        </div>
+                                    </div>
+            
+                                    <div id="nombre-user" class="flex-colum">
+                                        <h6><a href="#">Maria</a></h6>
+                                        <span>Admin</span>
+            
+                                    </div>
+                                </div>
+                                <div id="usuario">
+                                    <div class="user-img">
+            
+                                        <div class="activo">
+                                            <img class="avatar" src="img/foto_usuario.jpg" alt="">
+                                        </div>
+                                    </div>
+            
+                                    <div id="nombre-user" class="flex-colum">
+                                        <h6><a href="#">Enrique</a></h6>
+                                        <span>Moderator</span>
+            
+                                    </div>
+                                </div>
+                                <div id="usuario">
+                                    <div class="user-img">
+            
+                                        <div class="pausa">
+                                            <img class="avatar" src="img/foto_usuario.jpg" alt="">
+                                        </div>
+                                    </div>
+            
+                                    <div id="nombre-user" class="flex-colum">
+                                        <h6><a href="#">Imad</a></h6>
+                                        <span>Editor</span>
+            
+                                    </div>
+                                </div>
+                                <div id="usuario">
+                                    <div class="user-img">
+            
+                                        <div class="desconectado">
+                                            <img class="avatar" src="img/foto_usuario.jpg" alt="">
+                                        </div>
+                                    </div>
+            
+                                    <div id="nombre-user" class="flex-colum">
+                                        <h6><a href="#">Daniel</a></h6>
+                                        <span>Admin</span>
+            
+                                    </div>
+                                </div>
+                                <div id="usuario">
+                                    <div class="user-img">
+            
+                                        <div class="desconectado">
+                                            <img class="avatar" src="img/foto_usuario.jpg" alt="">
+                                        </div>
+                                    </div>
+            
+                                    <div id="nombre-user" class="flex-colum ">
+                                        <h6><a href="#">Pablo</a></h6>
+                                        <span>Editor</span>
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+            
+                        <div class="btn-footer centrado"><button> All active users > </button></div>
+                    </article>
                 </section>
                 <section class="bandwidthSaved">
-                    jj
-                    jjj
-                    jjj
-                    jjj
-                    j
-                    
+                    <article class=" flex-colum">
+
+                        <header class=" cabecera-menu">
+            
+                            <div> Active Users</div>
+            
+                            <div class="dropdown">
+                                <button class="btn-menu" onclick="dropdownMenu()">
+                                    <div>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h"
+                                            class="svg-inline--fa fa-ellipsis-h fa-w-16 fs--2" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </button>
+            
+                                <div id="dropdownMenu" class="dropdown-content">
+                                    <button>View</button>
+                                    <button>Export</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" class="remove">Remove</button>
+                                </div>
+                            </div>
+            
+                        </header>
+            
+                        <section id="section-saved" class="centrado">
+                            <div class="fillContainer">
+                                <img class="fill" src="./img/grafica.png" alt="">
+                            </div>
+                        </section>
+            
+                        <div class="btn-footer flex-row">
+                            <select id="exampleCustomSelect" class="custom-select custom-select-sm">
+                                <option>Last 6 Months</option>
+                                <option>Last Year</option>
+                                <option>Last 2 Year</option>
+                            </select>
+                            <div><a class="help" href="/dashboard-alt#!">Help</a></div>
+                        </div>
+            
+                    </article>
                 </section>
                 <section class="topProducts">
                         <div class="card_TopProducts">
