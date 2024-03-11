@@ -104,10 +104,10 @@
     position: relative;
     fill: none;
     height: 155px;
-    bottom: 284px;
+    bottom: 293px;
     height: 90px;
     width: 160px;
-    right: 20px;
+    right: 24px;
     overflow: visible;
     stroke: #2c7be5;
     stroke-width: 5;
@@ -162,9 +162,9 @@
 .GraficaMarketShare{
     overflow: hidden;
     position: relative;
-    right: 10px;
+    right: 40px;
     height: 155px;
-    width: 155px;
+    width: 160px;
 }
 .tablaMarketShare{
     margin-top: 1rem;
@@ -173,8 +173,8 @@
     position: relative;
     height: fit-content;
     fill: none;
-    right: 90px;
-    bottom: 157px;
+    right: 94px;
+    bottom: 169px;
     stroke-width: 5;
     transform: rotate(-90deg);
     stroke-dasharray:57 1 20.65;
@@ -183,8 +183,8 @@
 }
 .cantidadTituloMarketShare{
     position: relative;
-    bottom: 375px;
-    left: 40px;
+    bottom: 355px;
+    left: 35px;
     font-size: 1.44rem;
 }
 
@@ -192,7 +192,8 @@
     height: fit-content;
     fill: none;
     position: relative;
-    right: 90px;
+    right: 95px;
+    bottom: 15px;
     stroke: rgb(216, 226, 239); ;
     stroke-width: 5;
     transform: rotate(-90deg);

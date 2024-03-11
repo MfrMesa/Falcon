@@ -97,10 +97,14 @@ function cambioColorRadioColorScheme() {
     }
     if(num==1){
         localStorage.setItem("dark","true");
+        let $cambiomenuAjuste =document.getElementsByClassName("contenedorContenidoMenuAjuste")[0].style="background-color: #061325; color:white";
+        
     }else{
         localStorage.removeItem("dark");
+        let $cambiomenuAjuste =document.getElementsByClassName("contenedorContenidoMenuAjuste")[0].style="background-color: white; color:inherit";
     }
 }
+
 
 function cambioColorRadioVerticalNavbarStyle(){
     let botones = [document.getElementById("radioTransparentVertical")
