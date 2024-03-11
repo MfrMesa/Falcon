@@ -28,6 +28,7 @@
     background-color: white;
     color:#344050 ;
     width: 100%;
+    font-family: "Poppins", sans-serif;
     height: 100%;
     box-shadow: rgba(59, 65, 94, 0.1) 0px 7px 14px 0px, rgba(0, 0, 0, 0.07) 0px 3px 6px 0px;
     padding: 1rem;
@@ -71,17 +72,22 @@
     justify-content: space-between;
 }
 .contenedorMarketShare {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.55rem;
 }
 .tituloMarketShare{
     margin: 0;
+    margin-bottom: 16px;
+    
+    font-weight: 500;
+    line-height: 1.2;
+    color: #344050;
     margin-top:0.25rem ;
     margin-bottom: 0.5rem ;
-    font-size: 0.83333rem;
+    font-size: 1rem;
 }
 .tituloWeather{
     margin:0;
-    font-size: 0.83333rem;
+    font-size: 1rem;
 }
 .azulOscuroMarketShare{
     background-color: #2c7be5;
@@ -162,7 +168,7 @@
 .GraficaMarketShare{
     overflow: hidden;
     position: relative;
-    right: 40px;
+    right: 10px;
     height: 155px;
     width: 160px;
 }
@@ -181,9 +187,21 @@
     stroke: rgb(39, 188, 253);
 
 }
+.separadorDesplegableweather{
+    margin:0;
+}
+.botonDesplegableWeather{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.botonRemoveWeather{
+    padding:0;
+    padding-left: 16px;
+}
 .cantidadTituloMarketShare{
     position: relative;
     bottom: 355px;
+    font-weight: 400;
     left: 35px;
     font-size: 1.44rem;
 }
@@ -222,9 +240,12 @@
 .HuaweiTituloMarketShare,
 .SamsungTituloMarketShare,
 .AppleTituloMarketShare{
-    font-size: .69444rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #5e6e82;
     font-family: var(--Poppins-BoldItalic);
     margin: 0;
+    line-height: 1.5;
 }
 .contenedorImagenWeatherCiudadNombreContenedorWeather{
     display: flex;
@@ -233,6 +254,8 @@
 }
 .contenedorTemperaturaCiudadNombreWeather{
     display: flex;
+    position: relative;
+    top: 15px;
     width: 100%;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -240,6 +263,7 @@
 .tempertaturaContenedorWeather{
     display: flex;
     position: relative;
+    bottom: 15px;
     flex-direction: column;
     align-items: center;
 }

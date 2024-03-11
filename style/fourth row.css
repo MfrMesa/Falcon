@@ -45,11 +45,14 @@
     border-radius: 0.375rem;
     box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
     background-color: white;
+    font-family: "Poppins", sans-serif;
     width: 100%;
     
 }
 .tituloSeccionStorage{
     font-size: 13.3px;
+    font-weight: 300;
+    margin-bottom: 16px;
     color: #4d5969
 }
 .ngr-SS{
@@ -141,6 +144,7 @@
 }
 .contenedorUpgradeStorage{
     margin: 20px;
+    font-family: "Poppins", sans-serif;
 }
 .tarjetaUpgradeStorage{
     border-radius: 0.375rem;
@@ -166,7 +170,7 @@
     text-decoration: underline;
 }
 .descripcionUpgradeStorage{
-    font-size: .7rem;
+    font-size: 0.7rem;
     margin-bottom: 21px;
     width: 90%;
 }
