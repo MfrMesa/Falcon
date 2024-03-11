@@ -4,10 +4,10 @@
 .sixthRow {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 55% 45%;
+    grid-template-rows: 50% 50%;
     align-items: start;
     justify-content: left;
-    height: 777px;
+    height: 792px;
     width: 878px;
     margin-bottom: 1rem;
     gap: 1rem;
@@ -40,5 +40,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    border: 1px solid black;
+    background-color: #edf2f9;
+    justify-content: center;
+    align-items: center;
 }

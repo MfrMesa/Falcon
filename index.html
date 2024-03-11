@@ -13,17 +13,18 @@
     <link rel="stylesheet" href="style/fourth row.css">
     <link rel="stylesheet" href="style/fifth row.css">
     <link rel="stylesheet" href="style/sixth row.css">
+    <link rel="stylesheet" href="style/topProducts.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/dropdownSearch.css">
     <link rel="stylesheet" href="style/dropdownNotifications.css">
     <link rel="stylesheet" href="style/dropdownProfile.css">
     <link rel="stylesheet" href="style/menuAjustes.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Falcon React</title>
 </head>
 <body>
-    <section style="display: none;"  class="contenedorMenuAjustesDiv">
+    <!-- <section style="display: none;"  class="contenedorMenuAjustesDiv">
         <div class="parteOscuraMenuAjustesDiv"></div>
         <article class="ContenedorSettingsMenuAjustes">
             <section class="settingsMenuAjustes">
@@ -91,11 +92,11 @@
                     </h1>
                     </div>
                     <div class="contenedorSliderRTL">
-                     
+                    
                         <span class="switch">
                             <input type="checkbox" id="inputRTLModeMenu" />
                             <label for="inputRTLModeMenu"></label>
-                          </span>
+                        </span>
 
                     </div>
                     
@@ -109,11 +110,11 @@
                     <img src="https://falconreactbs4.prium.me/static/media/arrows-h.31beeeb2.svg" alt="" class="svgFluidLayoutMenuAjustes">
                     <h1 class="tituloFluidLayoutMenuAjustes">Fluid Layout</h1>
                     <div class="contenedorSliderFL">
-                     
+                    
                         <span class="switch">
                             <input type="checkbox" id="inputFluidLayout" />
                             <label for="inputFluidLayout"></label>
-                          </span>
+                        </span>
 
                     </div>
                 </div>
@@ -223,7 +224,7 @@
             </section>
         </section>
         </article>
-</section>
+</section> -->
     <div class="container">
         <div class="sidebarWrapper">
             <div class="toggleContainerSidebar">
@@ -243,7 +244,7 @@
             <div class="sideCollapser collapsed scrollbar">
                 <ul class="navbar-nav flex-column">
                     <li class="navItem">
-                        <a class="dropdownTitle" href="home">
+                        <a class="dropdownTitle" href="#home">
                             <div class="itemContainer">
                                 <svg class="navIcon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-pie" class="svg-inline--fa fa-chart-pie fa-w-17 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512"><path fill="currentColor" d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z"></path>
                                 </svg>
@@ -1075,7 +1076,6 @@
                         </section>
                     </nav>
             </navbar>
-            
             <div class="firstandSecondRow">
                 <section class="weeklySales">
                     jj
@@ -1196,7 +1196,7 @@
                                                 <div class="name">Raven Pro</div>
                                                 <div class="percentage">38%</div>
                                             </div>
-                                            </div>
+                                        </div>
                                         <div class="der_card_runningProjects">
                                             <div class="contenedor_bh_runningProjects">
                                                 <div class="hours">12:50:00</div>
@@ -1310,23 +1310,25 @@
                                                 <option value="November" class="November">November</option>
                                                 <option value="December" class="December">December</option>
                                             </select>
-                                        </div>   
-                                        <div class="contenedor_menu_b_totalSales">
-                                                <button class="button_totalSales" type="button" onclick="optionsButton()" >...</button>
-                                                <div class="menu_button_totalSales" >
-                                                    <div class="items_menu_totalSales">
-                                                        <button onclick="viewOption()" class="view_opt_totalSales" >View</button>
-                                                        <button onclick="exportOption()" class="export_opt_totalSales">Export</button>
-                                                    </div>
-                                                    <button onclick="removeOption()" class="remove_opt_totalSales">Remove</button>   
-                                                </div>
-                                            </div>
+                                        </div>  
                                     </div>
+                                        <div class="contenedor_menu_b_totalSales">
+                                            <button class="button_totalSales" type="button" id="menuButton_totalSales" >...</button>
+                                            <div  id="menuContainer_totalSales" class="menu_button_totalSales" >
+                                                
+                                                <div class="items_menu_totalSales">
+                                                    <button  id="viewOption_totalSales" class="view_opt_totalSales" >View</button>
+                                                    <button id="exportOption_totalSales" class="export_opt_totalSales">Export</button>
+                                                </div>
+                
+                                                <button  id="removeOption_totalSales" class="remove_opt_totalSales">Remove</button>   
+                                            </div>
+                                        </div>
                                 </header>
                             </div>
                             <section class="charts_section_totalSales">
-                                <div>
-                                    <canvas id="chart_totalSales"></canvas>
+                                <div class="chartSalesContainer">
+                                    <canvas id="chart_totalSales" style="display: flex; height: 100%; width: 100%;"></canvas>
                                 </div>
                             </section>
                         </section>
@@ -1423,12 +1425,29 @@
                     
                 </section>
                 <section class="topProducts">
-                    jj
-                    jjj
-                    jjj
-                    jjj
-                    j
-                    
+                        <div class="card_TopProducts">
+                            <div class="contenedor_TopProducts">
+                                <header class="header_TopProducts">
+                                    <div>
+                                        <h6 class="h6_TopProducts">Top Produtcs</h6>
+                                    </div>
+                                    <div class="contenedor_menu_bp_TopProducts">
+                                        <p class="p_TopProducts">View Details</p>
+                                        <button class="button_TopProducts" type="button" onclick="optionsButton()" >...</button>
+                                    </div>
+                                    <div class="menu_button_TopProducts" >
+                                        <div class="items_menu_TopProducts">
+                                            <button onclick="viewOption()" class="view_opt_TopProducts" >View</button>
+                                            <button onclick="exportOption()" class="export_opt_TopProducts">Export</button>
+                                        </div>
+                                        <button onclick="removeOption()" class="remove_opt_TopProducts">Remove</button>   
+                                    </div>
+                                </header>
+                            </div>
+                            <div class="chartContainer">
+                                <canvas id="chart_TopProducts" style="display: flex; height: 100%; width: 100%;"></canvas>
+                            </div>
+                        </div>
                 </section>
             </div>
             <footer class="footerFooter">
@@ -1448,6 +1467,6 @@
 <script src="scripts/menuAjustes.js"></script>
 <script src="scripts/totalSales.js"></script>
 <script src="scripts/dropdown.js"></script>
-
+<script src="scripts/TopProducts.js"></script>
 
 </html>

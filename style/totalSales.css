@@ -5,7 +5,6 @@
     position: relative;
     width: 50%;
     height: 100%;
-    /* border: 1px solid black; */
     margin-left: 0.5rem;
     justify-content: center;
     align-items: center;
@@ -13,6 +12,16 @@
     font-family: "Poppins", sans-serif;
 }
 
+.contenedor_header_totalSales{
+    background-color: #F9FAFD;
+    height: 44px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 44px;
+}
 
   .card_totalSales {
     width: 431px;
@@ -24,33 +33,25 @@
   }
 
   .header_totalSales {
-    background-color: white;
     color: #5e6e82;
     margin: 0px -15px;
     display: flex;
     justify-content: left;
     align-items: center;
     text-align: left;
-    width: 431px;
-    height: 29px;
+    width: 100%;
+    height: 100%;
   }
 
-  .contenedor_header_totalSales{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    text-align: left;
-    width: 431px;
-    height: 29px;
-    padding: 16px 20px 0px;
-  }
 
   .h6_totalSales {
-    width: 281.7px;
+    width: 100%;
     height: 16px;
     padding: 0px 15px;
-    font-weight: bolder;
-    font-size: medium;
+    font-size: 13.3px;
+    font-weight: 500;
+    color: #5e6e82;
+    margin: 0px 15px;
   }
 
   .select_totalSales{
@@ -59,14 +60,14 @@
     justify-content: center;
     width: 125.6px;
     height: 29px;
-    font-size: smaller;
-    font-weight: bolder;
+    font-size: 13.3px;
+    font-weight: 500;
     color: #5e6e82;
     border-radius: 3px;
     margin: 0px 8px 0px 0px;
     padding: 3px 32px 3px 12px;
     white-space: nowrap;
-    
+    border: 1px solid #B6C1D2;
   }
 
   .January{
@@ -237,7 +238,7 @@
   }
 
   .button_totalSales{
-    background-color: white;
+    background-color: #F9FAFD;
     border: none;
     font-weight: bold;
     color: #748194;
@@ -257,9 +258,6 @@
     margin: 2px 0px 0px;
   }
 
-  /* .contenedor_s_totalSales{
-
-  } */
 
   .items_menu_totalSales{
     cursor: pointer;
@@ -320,18 +318,24 @@
     width: 158.4px;
   }
 
+.chartSalesContainer{
+  width: 383px;
+  height: 300px;
+  margin: 0.5rem;
+}
+
   .charts_section_totalSales{
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 431px;
-    height: 343.8px;
+    width: 100%;
+    height: 100%;
   }
 
   #chart_totalSales {
-    width: 431px;
+    width: 100%;
     height: 300px;
     background-color: #fff;
   }

@@ -6,7 +6,7 @@
     --backgroundcolor: #edf2f9;
     --divider:#d8e2ef;
     --backgroungtag:  #d5e5fa;
-    --svgColor: #c1c9d3; 
+    --svgColor: rgb(193, 201, 211); 
     --ligthblack: #344050;
     --brick: #c46632;
     --ligthbrick: #fde6d8;
@@ -16,7 +16,7 @@
     --pastelblue: #5da4c4;
     --background: #edf2f9;
     --sidebartext: #5E6e82;
-    --blue: #2c7be5;
+    --blue: rgb(44, 123, 229);
     --indigo: #727cf5;
     --purple: #6b5eae;
     --pink: #ff679b;
