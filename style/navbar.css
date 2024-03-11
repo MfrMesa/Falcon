@@ -48,7 +48,7 @@ body {
 
 .NavigationBarSection {
     position: fixed;
-    width: 862px;
+    width: 100%;
     padding-left: 216px;
     font-family: "Poppins";
     display: flex;
@@ -81,6 +81,8 @@ body {
 
 /* Top Logos End */
 
+/* Navigation Bar */
+
 .NavigationBarContainer {
     width: 100%;
     padding: 8px 16px;
@@ -91,6 +93,7 @@ body {
 
 .NavBarSearchBar {
     position: relative;
+    margin-left: 3.8rem;
 }
 
 #NavBarSearchInput {
@@ -99,9 +102,10 @@ body {
     padding: 5px 16px;
     padding-left: 25px;
     border: none;
-    outline: 1px solid #B6C1D2;
+    outline: 0.5px solid #e3e7ed;
     border-radius: 18px;
-    line-height: 1.7;
+    font-size: 30px;
+    line-height: 1.5;
     transition: all 0.3s ease;
 }
 
@@ -127,16 +131,35 @@ input[type="search"] {
     width: 20px;
 }
 
+/* Input Cancel Search Button */
+
 input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: searchfield-cancel-button;
-    display: block;
+    -webkit-appearance: none;
+}  
+
+#NavBarSearchCancel {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
 }
 
-input[type="search"]:focus::-webkit-search-cancel-button,
-.container:hover input[type="search"]::-webkit-search-cancel-button {
-    display: block !important;
+#NavBarSearchCancelSVG:hover {
+    fill: #404040
 }
 
+#NavBarSearchInput:focus:not(:placeholder-shown) + #NavBarSearchCancel,
+#NavBarSearchInput:not(:placeholder-shown):focus + #NavBarSearchCancel {
+  display: block;
+}
+
+/* NavBar Cancel Search Button End */
 
 
 /* NAVBAR UTILITIES */
@@ -296,7 +319,7 @@ input[type="search"]:focus::-webkit-search-cancel-button,
     top: -32px;
     left: 8px;
     z-index: 1;
-    display: block;
+    display: inline-block;
 }
 
 /* NavBar Notifications Bell End */
