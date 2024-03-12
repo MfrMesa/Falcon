@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
+  Chart.defaults.font.family = 'Poppins';
+  Chart.defaults.font.size = 14;
+  Chart.defaults.font.weight = 300;
+
+  Chart.Tooltip.positioners.custom = function(elements, eventPosition) {
+    var tooltip = this;
+    return {
+        x: eventPosition.x,
+        y: eventPosition.y,
+    };
+  };
+
   const ctx = document.getElementById('ChartWeeklySalesGraph').getContext('2d');
 
   let weeklySalesChart = new Chart(ctx, {
@@ -9,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         label: 'Daily Sales',
         data: [6000, 10000, 7500, 4000, 3500, 5500, 6000],
         backgroundColor: 'rgb(44, 123, 229)',
-        hoverBackgroundColor: 'rgba(44, 123, 229',
+        hoverBackgroundColor: 'rgba(44, 123, 229)',
       },
       {
         label: 'Background Bars',
@@ -19,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }],
     },
     options: {
-      animation: false,
       indexAxis: 'x',
       barPercentage: 0.3,
       categoryPercentage: 0.8,
@@ -30,8 +41,9 @@ document.addEventListener('DOMContentLoaded', function () {
           display: false,
         },
         tooltip: {
+          position: 'custom',
+          caretSize: 0,
           intersect: false,
-          position: 'nearest',
           displayColors: false,
           backgroundColor: '#FFFFFF',
           borderColor: 'rgba(0,0,0,.1)',
