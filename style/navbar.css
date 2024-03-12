@@ -122,6 +122,11 @@ input[type="search"] {
     outline:solid 1px #669fea;
 }
 
+#NavBarSearchInput:focus ~ .dropdownSearch,
+#NavBarSearchInput:not(:placeholder-shown) ~ .dropdownSearch {
+display: block; /* Show the dropdown when the search bar is focused or not empty */
+}
+
 #NavBarSearchIcon {
     margin-left: 5px;
     position: absolute;

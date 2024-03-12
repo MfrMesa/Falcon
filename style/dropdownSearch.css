@@ -63,6 +63,11 @@
     font-family: "Open Sans", sans-serif;
 }
 
+#NavBarSearchInput:focus ~ .dropdownSearch,
+#NavBarSearchInput:not(:placeholder-shown) ~ .dropdownSearch {
+display: block; /* Show the dropdown when the search bar is focused or not empty */
+}
+
 
 .scrollbar {
     scrollbar-color: rgba(116, 129, 148, .3) transparent;
