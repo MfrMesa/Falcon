@@ -13,6 +13,7 @@
     <script src="Scripts/NotificationsUnreadCircle.js" defer></script>
     <script src="Scripts/SearchInputCancelButton.js" defer></script>
     <script src="Scripts/NotificationsAllRead.js" defer></script>
+    <script src="Scripts/DropdownSearchMenu.js" defer></script>
 </head>
 <body>
     <main>
@@ -37,58 +38,58 @@
                 </div>
 
                 <section class="dropdownSearch scrollbar">
-                        <section class="recentlySearch">
-                                <h2 class="searchTitles">RECENTLY BROWSED</h2>
-                                <div class="browsedFirstLine">
-                                    <svg id="dotSearch" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 8 16"><path fill-rule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/></svg>
-                                    <p class="titlesSearch">Pages</p>
-                                    <svg id="chevronRigthSearch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-chevron-right" width="20" height="20" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                                    <p class="titlesSearch">Events</p>
-                                </div>
-                                <div class="browsedSecondLine">
-                                    <svg id="dotSearch" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 8 16"><path fill-rule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/></svg>                                    <p class="titlesSearch">E-commerce</p>
-                                    <svg id="chevronRigthSearch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-chevron-right" width="20" height="20" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                                    <p class="titlesSearch">Customers</p>
-                                </div>
-                        </section>
-                            <section class="suggestedSearch">
-                                <h2 class="searchTitles">SUGGESTED FILTER</h2> 
-                                <p class="filtersSearch"><span id="filterCustomers">customers:</span>All customers list</p>
-                                <p class="filtersSearch"><span id="filterEvents">events:</span>Latest events in current month</p>
-                                <p class="filtersSearch"><span id="filterProducts">products:</span>Most popular products</p>
-                            </section>
-                            <section class="filesSearch">
-                                <h2 class="searchTitles">FILES</h2>
-                                <div class="searchFiles">
-                                    <img id="fotoFiles" src="Assets/iphoneFiles.png" alt="iPhone">
-                                    <span class="productFiles">iPhone</span>
-                                    <p class="nameFiles">Antony<span class="filesText">27 Sep at 10:30 AM</span></p>
-                                </div>
-                                <div class="searchFiles">
-                                    <img id="fotoFiles" src="Assets/falconFile.png" alt="Falcon version">
-                                    <span class="productFiles">Falcon v1.8.2</span>
-                                    <p class="nameFiles">John<span class="filesText">30 Sep at 12:30 PM</span></p>
-                                </div>
-                            </section>
-                            <section class="membersSearch">
-                                <h2 class="searchTitles">MEMBERS</h2>
-                                <div class="membersFiles">
-                                    <img id="memberFoto" src="Assets/member2.png" alt="foto miembro">
-                                    <span class="memberNotificationsCircle"></span>
-                                    <span class="nameMember">Anna Karinina</span>
-                                    <p class="membersDescription">Technext Limited</p>
-                                </div>
-                                <div class="membersFiles">
-                                    <img id="memberFoto" src="Assets/member.png"  alt="foto miembro">
-                                    <span class="nameMember">Antony Hopkins</span>
-                                    <p class="membersDescription">Brain Trust</p>
-                                </div>
-                                <div class="membersFiles">
-                                    <img id="memberFoto" src="Assets/member1.png"  alt="foto miembro">
-                                    <span class="nameMember">Emma Watson</span>
-                                    <p class="membersDescription">Google</p>
-                                </div>
-                            </section>
+                    <section class="recentlySearch">
+                            <h2 class="searchTitles">RECENTLY BROWSED</h2>
+                            <div class="browsedFirstLine">
+                                <svg id="dotSearch" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 8 16"><path fill-rule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/></svg>
+                                <p class="titlesSearch">Pages</p>
+                                <svg id="chevronRigthSearch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-chevron-right" width="20" height="20" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+                                <p class="titlesSearch">Events</p>
+                            </div>
+                            <div class="browsedSecondLine">
+                                <svg id="dotSearch" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 8 16"><path fill-rule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/></svg>                                    <p class="titlesSearch">E-commerce</p>
+                                <svg id="chevronRigthSearch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-chevron-right" width="20" height="20" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+                                <p class="titlesSearch">Customers</p>
+                            </div>
+                    </section>
+                    <section class="suggestedSearch">
+                        <h2 class="searchTitles">SUGGESTED FILTER</h2> 
+                        <p class="filtersSearch"><span id="filterCustomers">customers:</span>All customers list</p>
+                        <p class="filtersSearch"><span id="filterEvents">events:</span>Latest events in current month</p>
+                        <p class="filtersSearch"><span id="filterProducts">products:</span>Most popular products</p>
+                    </section>
+                    <section class="filesSearch">
+                        <h2 class="searchTitles">FILES</h2>
+                        <div class="searchFiles">
+                            <img id="fotoFiles" src="Assets/iphoneFiles.png" alt="iPhone">
+                            <span class="productFiles">iPhone</span>
+                            <p class="nameFiles">Antony<span class="filesText">27 Sep at 10:30 AM</span></p>
+                        </div>
+                        <div class="searchFiles">
+                            <img id="fotoFiles" src="Assets/falconFile.png" alt="Falcon version">
+                            <span class="productFiles">Falcon v1.8.2</span>
+                            <p class="nameFiles">John<span class="filesText">30 Sep at 12:30 PM</span></p>
+                        </div>
+                    </section>
+                    <section class="membersSearch">
+                        <h2 class="searchTitles">MEMBERS</h2>
+                        <div class="membersFiles">
+                            <img id="memberFoto" src="Assets/member2.png" alt="foto miembro">
+                            <span class="memberNotificationsCircle"></span>
+                            <span class="nameMember">Anna Karinina</span>
+                            <p class="membersDescription">Technext Limited</p>
+                        </div>
+                        <div class="membersFiles">
+                            <img id="memberFoto" src="Assets/member.png"  alt="foto miembro">
+                            <span class="nameMember">Antony Hopkins</span>
+                            <p class="membersDescription">Brain Trust</p>
+                        </div>
+                        <div class="membersFiles">
+                            <img id="memberFoto" src="Assets/member1.png"  alt="foto miembro">
+                            <span class="nameMember">Emma Watson</span>
+                            <p class="membersDescription">Google</p>
+                        </div>
+                    </section>
                 </section>
 
                 <section class="NavBarUtilities">
