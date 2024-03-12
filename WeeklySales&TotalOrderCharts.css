@@ -17,6 +17,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 
 /* ChartWeeklySales */
@@ -28,6 +29,7 @@ body {
     flex-direction: column;
     font-family: "Poppins", sans-serif;
     border-radius: .375rem;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -50,10 +52,36 @@ body {
     gap: 8px;
 }
 
+#ChartWeeklySalesHeaderTooltip {
+    
+}
+
+.HeaderTooltipDropdown {
+    display: none;
+    width: 13rem;
+    background-color: black;
+    color: white;
+    padding: 10px 8px;
+    border-radius: .275rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#ChartWeeklySalesHeaderTooltip:hover .HeaderTooltipDropdown {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 2.3rem;
+    left: 1rem;
+}
+
 .ChartData {
     width: 100%;
     height: 100%;
     padding: 20px;
+    padding-top: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,6 +110,7 @@ body {
 
 .ChartDataGraph {
     width: 136px;
+    height: 61px;
 }
 
 #ChartWeeklySalesGraph {
@@ -105,6 +134,7 @@ body {
     font-family: "Poppins", sans-serif;
     border-radius: .375rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 #ChartTotalOrderInfo .ChartDataSideInfo .ChartSecondaryInfo {
