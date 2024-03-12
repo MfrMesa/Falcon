@@ -30,19 +30,17 @@ document.addEventListener('DOMContentLoaded', function () {
           display: false,
         },
         tooltip: {
-          enabled: [true, false],
+          intersect: false,
           position: 'nearest',
           displayColors: false,
           backgroundColor: '#FFFFFF',
           borderColor: 'rgba(0,0,0,.1)',
+          padding: 12,
           borderWidth: 1,
-          padding: 10,
-          titleFontSize: 16,
-          bodyFontSize: 14,
-          titleFontFamily: 'Poppins',
-          bodyFontFamily: 'Poppins',
-          titleColor: '#000000',
           bodyColor: '#000000',
+          filter: function (tooltipItem) {
+            return tooltipItem.datasetIndex === 0;
+          },
           callbacks: {
             label: (context) => {
               const { datasetIndex, label, formattedValue } = context;
