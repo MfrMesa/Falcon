@@ -39,3 +39,17 @@
  
 }
 
+#viewall:active{
+    color: black;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.08), 0 1px 1.5px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    background-color: #b9b7b7d2;
+    border: #b9b7b7d2;
+}
+
+h6 a:hover{
+    text-decoration: underline;
+}
+.help a:hover{
+    text-decoration: underline;
+    color: var(--color-primary-letter);
+}

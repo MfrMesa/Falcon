@@ -1,4 +1,4 @@
-@import url("fontandroot.css");
+@import url(fontandroot.css);
 
 :root{  
     --black: black;
@@ -72,6 +72,7 @@
 
 body{
     background-color: var(--backgroundcolor);
+    width: 100%;
 }
 
 
@@ -99,9 +100,10 @@ body{
     position: fixed;
     width: 100%;
     max-width: fit-content;
+    height: 2350px;
     top: 0;
     font-family: 'Poppins';
-    /* padding-top: 0.6rem; */
+    padding-top: 4rem;
     line-height: 1.8;
     font-weight: 500;
 }
@@ -145,6 +147,9 @@ body{
     justify-content: center;
     background-color: var(--backgroundcolor);
     z-index: 100;
+    margin-left: 1rem;
+    position: fixed;
+    background-color: rgba(237, 242, 249, 0.9);
 }
 
 .tooltipContainerSidebar {
@@ -153,11 +158,12 @@ body{
     width: 135px;
     border-radius: 4px;
     display: none;
-    right: 95%;
+    right: 100%;
     margin-top: -15px;
     position: absolute;
     z-index: 1;
     height: 35px;
+    font-family: "Poppins";
 }
 
 .tooltipSidebar{
@@ -486,7 +492,8 @@ body{
     .container {
         flex-direction: column;
         padding-inline: 1rem;
-        max-width: 1140px;
+        width: 950px;
+        left: 0;
     }
 
     .sideCollapser {
@@ -510,6 +517,10 @@ body{
         width: 100%;
         display: block;
         padding-inline: 1rem;
+    }
+
+    .toggleContainerSidebar{
+        margin-left: -0.5rem;
     }
 }  
 
@@ -536,7 +547,7 @@ body{
 
 
 
-@media (max-width: 576px){
+@media (max-width: 586px){
 
     body{
         width: 578px;
@@ -557,16 +568,6 @@ body{
         width: 478px;
     }
 }  
-
-
-
-
-
-
-
-
-
-
 
 
 

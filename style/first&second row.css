@@ -6,12 +6,18 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    flex-wrap: nowrap;
     width: 100%;
     height: 2350px;
-    width: 950px;
     padding-left: 15px;
     right: 1rem;
     margin-left: 17.5rem;
+}
+
+.innerContainer{
+    margin-top: 5rem;
+    height: 100%;
+    width: 950px;
 }
 
 .firstandSecondRow {
@@ -21,17 +27,15 @@
     justify-content: right;
     flex-wrap: wrap;
     width: 878px;
-    height: 350px;
+    height: 320px;
     margin-bottom: 1rem;
 }
 
 .weeklySales{
     display: inline-flex;
     position: relative;
-    max-width: 431px;
-    width: 50%;
-    height: 50%;
-    border: 1px solid black;
+    width: 431px;
+    height: 47%;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -39,10 +43,83 @@
 .totalOrder{
     display: inline-flex;
     position: relative;
-    max-width: 431px;
-    width: 50%;
-    height: 50%;
-    border: 1px solid black;
+    width: 431px;
+    height: 47%;
     margin-left: 0.5rem;
     margin-bottom: 1rem;
+}
+
+
+@media (max-width: 1200px){
+    
+    .containerCenter {
+        margin-left: 0;
+        height: 8000px;
+        width: 950px;
+    }
+
+    .innerContainer{
+        height: 8000px;
+        flex-direction: column;
+        display: flex;
+        width: 950px;
+    }
+
+}  
+
+
+@media (max-width: 983px){
+    
+    .firstandSecondRow{
+        width: 690px;
+        margin-right: 0;
+    }
+
+    .weeklySales,
+    .totalOrder{
+        width: 335px;
+        margin-right: 0;
+    }
+
+    .containerCenter {
+        width:730px;
+    }
+
+    .innerContainer{
+        width:730px;
+    }
+}
+
+@media (max-width: 768px){
+    
+    .firstandSecondRow{
+        width: 510px;
+    }
+
+    .weeklySales,
+    .totalOrder{
+        width: 510px;
+        margin-right: -0.5rem;
+    }
+
+    .containerCenter {
+        width:600px;
+    }
+
+    .innerContainer{
+        width:600px;
+    }
+}
+
+@media (max-width: 586px){
+
+    .firstandSecondRow{
+        width: 535px;
+    }
+
+    .weeklySales,
+    .totalOrder{
+        width: 535px;
+        margin-right: -0.5rem;
+    }
 }

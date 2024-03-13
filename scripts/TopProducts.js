@@ -65,6 +65,13 @@ function optionsButton() {
             ticks: {
               stepSize: 20
             },
+            border: {
+              dash: [5,5],
+              display: false,
+              drawBorder: false,
+            },
+            min: 0,
+            max: 100,
           }
         },
         elements: {

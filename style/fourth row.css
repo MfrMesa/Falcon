@@ -1,9 +1,13 @@
-@import url("fontandroot.css");
+@import url(fontandroot.css);
 
 
 .fourthRow {
     display: flex;
     flex-direction: row;
+    /* display: grid; */
+    position: relative;
+    /* grid-template-columns: 65% 35%;
+    grid-template-rows: 1fr; */
     align-items: center;
     justify-content: right;
     width: 878px;
@@ -12,26 +16,30 @@
 }
 
 .userStorage{
+    /* grid-column: 1;
+    grid-row: 1; */
     display: inline-flex;
     position: relative;
-    width: 60%;
+    width: 510px;
     height: 100%;
+    display: flex;
     margin-right: 0.5rem;
     line-height: 1.5;
     background-color: white;
     color: #4d5969;
-    flex-direction: row;
     font-family: var(--Poppins-Regular);
     border-radius: 0.375rem;
 }
 
 .storage{
     display: inline-flex;
+    /* grid-column: 2;
+    grid-row: 1; */
     position: relative;
-    width: 40%;
+    width: 352px;
     height: 100%;
     font-family: "Open Sans", sans-serif;
-    border-radius: 0.365rem;
+    border-radius: 0.375rem;
     background: white;
     margin-left: 0.5rem;
 }
@@ -47,11 +55,12 @@
     background-color: white;
     font-family: "Poppins", sans-serif;
     width: 100%;
+    height: 100%;
     
 }
 .tituloSeccionStorage{
     font-size: 13.3px;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 16px;
     color: #4d5969
 }
@@ -137,40 +146,81 @@
 
 .tituloUpgradeStorage{
     color: #f5803e;
-    margin-bottom: 0.25rem;
-    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 19.2px;
     margin-top: 0;
     width: 100%;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
 }
 .contenedorUpgradeStorage{
     margin: 20px;
     font-family: "Poppins", sans-serif;
+    width: 100%;
+    color: #94999e;
+    height: 100%;
 }
+
 .tarjetaUpgradeStorage{
     border-radius: 0.375rem;
     box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
     background-image: url(https://falconreactbs4.prium.me/static/media/corner-1.dfdb6c51.png);
     background-position: right;
-    background-size: 60%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
+
 .svgUpgradeStorage{
     width: 0.625em;
     position: relative;
     top: 2px;
     margin-left: 1px;
 }
+
 .linkUpgradeStorage{
     text-decoration: none;
     color: #db560b ;
-    font-size: .7rem;
-
+    font-size: 13.3px;
+    font-family: "Poppins", sans-serif;
 }
 .linkUpgradeStorage:hover{
     text-decoration: underline;
 }
 .descripcionUpgradeStorage{
-    font-size: 0.7rem;
+    font-size: 13.3px;
     margin-bottom: 21px;
     width: 90%;
+    font-family: "Open Sans", sans-serif;
 }
+
+@media (max-width: 983px){
+
+    .fourthRow{
+    width: 690px;
+    flex-wrap: wrap;
+    flex-direction: column;
+      /* margin-top: 1rem; */
+    }
+
+    .userStorage{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .tarjetaSeccionStorage{
+        width: 100%;
+    }
+
+    .storage{
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    .tarjetaUpgradeStorage{
+        width: 100%;
+    }
+    }
+

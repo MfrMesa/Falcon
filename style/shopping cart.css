@@ -1,4 +1,4 @@
-@import url("fontandroot.css");
+@import url(fontandroot.css);
 
 
 * {
@@ -40,6 +40,7 @@ body{
     padding-inline: 15px;
     right: 1rem;
     margin-left: 16rem;
+    margin-top: 5rem;
 }
 
 
@@ -398,7 +399,7 @@ footer {
     position: relative;
     color: var(--secondary);
     font-size: 13.3px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: "Open Sans", sans-serif;
 }
 

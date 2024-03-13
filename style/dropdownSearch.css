@@ -1,5 +1,43 @@
-@import url("fontandroot.css");
-
+:root{ 
+    --svgColor: #c1c9d3; 
+    --ligthblack: #344050;
+    --brick: #c46632;
+    --ligthbrick: #fde6d8;
+    --watergreen: #5bb891;
+    --ligthwatergreen: #ccf6e4;
+    --ligthblue:#d4f2ff;
+    --pastelblue: #5da4c4;
+    --background: #edf2f9;
+    --sidebartext: #5E6e82;
+    --blue: #2c7be5;
+    --indigo: #727cf5;
+    --purple: #6b5eae;
+    --pink: #ff679b;
+    --red: #e63757;
+    --orange: #fd7e14;
+    --yellow: #f5803e;
+    --green: #00d27a;
+    --teal: #02a8b5;
+    --cyan: #27bcfd;
+    --white: #fff;
+    --gray: #748194;
+    --gray-dark: #4d5969;
+    --primary: #2c7be5;
+    --secondary: #748194;
+    --success: #00d27a;
+    --info: #27bcfd;
+    --warning: #f5803e;
+    --danger: #e63757;
+    --light: #f9fafd;
+    --dark: #0b1727;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1540px;
+    --font-family-sans-serif: "Poppins";
+}
 
 
 .dropdownSearch {

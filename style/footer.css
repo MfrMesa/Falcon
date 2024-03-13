@@ -1,8 +1,8 @@
-@import url("fontandroot.css");
+@import url(fontandroot.css);
 
 
 .footerFooter {
-    margin-top: 2rem;
+    margin-top: 4rem;
     width: 878px;
 }
 
@@ -14,8 +14,8 @@
     position: relative;
     color: var(--secondary);
     font-size: 13.3px;
-    font-family: 'Open Sans Condensed'; 
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
 }
 
 .linkFooter {
