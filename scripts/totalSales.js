@@ -110,6 +110,20 @@ menuButton.addEventListener('click', toggleMenu);
     const hiddenLabels = [3, 7, 11, 15, 19, 23];
     const chartOptions = {
         plugins: {
+            annotation: {
+                annotations: {
+                  line1: {
+                    display: false,
+                    type: "line",
+                    mode: "x",
+                    scaleID: "x",
+                    value: "",
+                    borderColor: "rgb(189,199,209)",
+                    borderWidth: 1,
+                    borderDash: [5, 5],
+                  },
+                },
+            },
             legend: false,
             tooltip: {
                 enabled: true,
@@ -126,6 +140,9 @@ menuButton.addEventListener('click', toggleMenu);
                     },
                 },
             },
+        },
+        animation: {
+            duration: 0
         },
         scales: {
             y: {
@@ -265,52 +282,23 @@ menuButton.addEventListener('click', toggleMenu);
         options: chartOptions,
     });
     
-    chart_totalSales.addEventListener('mousemove', function (evt) {
-      var rect = chart_totalSales.getBoundingClientRect();
-      var mouseX = evt.clientX - rect.left;
-      var mouseY = evt.clientY - rect.top;
-      var xAxis = chart.scales['x'];
-      var yAxis = chart.scales['y'];
-  
-      var xValue = xAxis.getValueForPixel(mouseX);
-      var yValue = yAxis.getValueForPixel(mouseY);
-  
-      // Dibujar la línea punteada solo si el cursor está dentro del área del gráfico
-      if (mouseX >= xAxis.left && mouseX <= xAxis.right && mouseY >= yAxis.top && mouseY <= yAxis.bottom) {
-          drawDashedLine(ctx, xAxis.getPixelForValue(xValue), chart_totalSales.height, yValue);
-  
-          // Actualizar el efecto hover
-          var dataset = chart.getDatasetMeta(0);
-          var elements = dataset.data;
-          for (var i = 0; i < elements.length; i++) {
-              var element = elements[i];
-              var hitRadius = element._options.hitRadius;
-              var distance = Math.abs(element._model.x - mouseX);
-              if (distance < hitRadius) {
-                  element._model.radius = element._options.hoverRadius;
-                  element._model.borderWidth = element._options.hoverBorderWidth;
-              } else {
-                  element._model.radius = element._options.radius;
-                  element._model.borderWidth = element._options.borderWidth;
-              }
-          }
-  
-          // Actualizar el gráfico
-          chart.update();
-      }
-  });
-  
-  
-  function drawDashedLine(context, x, y, yValue) {
-      context.save();
-      context.setLineDash([5, 5]);
-      context.strokeStyle = "#DBE0E8";
-      context.beginPath();
-      context.moveTo(x, 0);
-      context.lineTo(x, y);
-      context.stroke();
-      context.restore();
-  }
+    chart.canvas.addEventListener("mousemove", (event) => {
+        const mouseX = event.clientX - ctx.canvas.getBoundingClientRect().left;
+        const xAxis = chart.scales["x"];
+        const xValue = xAxis.getValueForPixel(mouseX);
+        chart.options.plugins.annotation.annotations.line1.value = xValue;
+        chart.update();
+      });
+      chart.canvas.addEventListener("mouseover", () => {
+        const line = chart.options.plugins.annotation.annotations.line1
+        line.display = true
+        chart.update();
+      });
+      ctx.canvas.addEventListener("mouseleave", () => {
+        const line = chart.options.plugins.annotation.annotations.line1
+        line.display = false
+        chart.update();
+      });
 
     document.querySelector(".select_totalSales").addEventListener("change", function () {
         const selectedMonth = this.value;
