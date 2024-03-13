@@ -29,6 +29,7 @@ body {
     border-radius: 0.375rem;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease-in-out;
 }
 
 .ChartHeader {

@@ -14,6 +14,7 @@
     height: 418px;
     margin-bottom: 1rem;
     gap: 0.5rem;
+    transition: 0.2s ease-in-out;
 }
 
 .bestSellingProducts{
@@ -23,6 +24,7 @@
     position: relative;
     width: 605px;
     height: 100%;
+    transition: 0.2s ease-in-out;
 }
 
 .sharedFiles{
@@ -34,6 +36,7 @@
     height: 100%;
     font-family: "Open Sans", sans-serif;
     margin-left: 0.5rem;
+    transition: 0.2s ease-in-out;
 }
 
 

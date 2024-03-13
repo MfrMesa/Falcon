@@ -14,7 +14,7 @@ function removeItem(button) {
 //Click Toggle
 
 document.addEventListener("DOMContentLoaded", () => {
-    const miBoton = document.getElementById("toggleNav");
+    const miBoton = document.getElementById("toggleNavSidebar");
     const shoppingCart = document.querySelector(".shoppingCart");
     const shoppingCartContainer = document.querySelector(".shoppingCartContainer");
 

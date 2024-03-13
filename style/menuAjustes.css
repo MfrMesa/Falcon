@@ -122,18 +122,24 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: white;
     transition: transform 0.2s ease;
     transform: scale(1);
   }
   
+  .scrollbar {
+    scrollbar-color: rgba(116,129,148,.3) transparent;
+    scrollbar-width: thin;
+    overflow: auto;
+}
+
   .checkboxLight input[type="checkbox"]:checked + .checkmark:after {
     content: "";
     display: block;
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: white;
     transition: transform 0.2s ease;
     transform: scale(1);
   }
@@ -229,12 +235,12 @@
 .darkLabel{
     position: relative;
     line-height: 1.45rem;
-    font-size: .83333rem;
+    font-size: 13.3px;
     margin-left: 6px;
 }
 .lightLabel{
     line-height: 1.45rem;
-    font-size: .83333rem;
+    font-size: 13.3px;
     margin-left: 6px;
 }
 .inicioRTLModeMenuajustes{
@@ -250,13 +256,15 @@
 .parteOscuraMenuAjustesDiv{
     width: calc(100vw - 350px);
     height: 100%;
-    background-color: #5e6e82;
-    opacity: 0.3;
+    background-color: #1d2024;
+    opacity: 0.5;
+    z-index: 101;
 }
 .contenedorContenidoMenuAjuste{
     overflow: hidden;
     overflow-y: auto;
-    max-height:calc(100vh - 69px) ;
+    max-height:calc(100vh - 69px);
+    background-color: white;
 }
 .ContenedorSettingsMenuAjustes{
     display: flex;
@@ -266,7 +274,7 @@
     overflow: hidden;
 }
 .svgTituloMenuAjuste{
-    font-size: 1rem;
+    font-size: 13.3px;
     margin-right: 0.5rem;
 }
 .settingsTituloMenuAjustes{
@@ -284,9 +292,9 @@
     text-decoration: none;
     cursor: pointer;
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 20px;
     opacity: .80;
-    z-index: 3;
+    z-index: 1000;
     text-shadow: 0 1px 0 #fff;
 }
 .spanButtonMenuAjustes:hover{
@@ -311,7 +319,7 @@
 .settingsSubtituloMenuajustes{
     position: relative;
     z-index: 5;
-    font-size: 0.83333rem;
+    font-size: 13.3px;
     font-weight: 400;
     opacity: 0.75;
     margin-left: 1.25rem;
@@ -328,12 +336,12 @@
 }
 .subtituloColorSchemeMenuAjustes{
     margin-bottom: 1rem;
-    font-size: 0.83333rem;
+    font-size: 13.3px;
     font-weight: 400;
     line-height: 1.5;
     color: #5e6e82;
     text-align: left;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .contenedorOpcionesColorSchemeMenuAjustes{
     display: grid;
@@ -411,7 +419,7 @@
     flex-wrap: nowrap;
     width: 272px;
     gap: 16px;
-    font-size: .83333rem;
+    font-size: 13.3px;
     margin-top: 1rem;
     margin-left: 25px;
 }
@@ -426,22 +434,38 @@
 .subtituloNavigationPositionMenuAjustes,.subtituloCompraMenuAjustes
 {
     margin-left: 25px;
-    font-size:0.83333rem ;
+    font-size: 13.3px;
     width: 272px;
-    font-family: 'Poppins Thin';
+    color: #8f8f90;
+    font-weight: 400;
+    font-family: 'Poppins';
 }
+/* 
+.subtituloVerticalNavbarStyleMenuAjustes{
+    font-size: 13.3px;
+    color: #344050;
+    font-weight: 400;
+    font-family: 'Poppins';
+} */
 .tituloFluidLayoutMenuAjustes,
 .tituloRTLModeAjustes,
 .tituloColorSchemeMenuAjustes,
 .titulonavigationPositionMenuAjustes,
-.tituloVerticalNavbarStyleMenuAjustes,
-.tituloCompraMenuAjustes
+.tituloVerticalNavbarStyleMenuAjustes
 {
-    
-    font-size: 1rem;
+    font-size: 16px;
+    color: var(--sidebartext);
+    font-weight: 600;
 }
+
+.tituloCompraMenuAjustes {
+    font-size: 19px;
+    color: var(--sidebartext);
+    font-weight: 600;
+}
+
 .labelNavigationPositionMenuAjustes{
-    font-size: .83333rem;
+    font-size: 13.3px;
     font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-weight: 500;
     line-height: 1.45rem;
@@ -449,7 +473,7 @@
     color: #5e6e82;
 }
 .subtituloVerticalNavbarStyleMenuAjustes{
-    font-size:0.83333rem ;
+    font-size: 13.3px;
     font-family: 'Poppins Thin';
     margin-bottom: 1rem;
     
@@ -457,7 +481,7 @@
 .labelVerticalNavigationPositionMenuAjustes,
 .labelTopNavigationPositionMenuAjustes,
 .labelComboNavigationPositionMenuAjustes{
-    font-size: .83333rem;
+    font-size: 13.3px;
     font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-weight: 500;
     color: #5e6e82;
@@ -496,15 +520,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
 }
 .botonCompramenuAjustes{
     color: white;
     background-color: #1a68d1;
     border-color: #1862c6;
     border: 1px solid transparent;
-    width: 75.297px;
-    height: 24px;
+    width: 108px;
+    height: 35px;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins";
 }
 
 .estadoDelnavigatoPositionMenuAjustes{
@@ -514,7 +544,24 @@
     padding-right: 0.71111em;
     padding-left: 0.71111em;
     border-radius: 10rem;
-    font-size: 0.69444rem;
+    font-size: 11px;
     vertical-align: baseline;
     padding: 0.35556em 0.71111em;
+}
+
+
+.TransparentOptionmenuAjustes,
+.labelInvertedOptionVerticalNavbarMenuAjustes,
+.labelCardOptionVerticalNavbarMenuAjustes,
+.labelVibrantOptionVericalMenuAjustes{
+    font-size: 13.3px;
+}
+
+.subtituloCompraMenuAjustes{
+    font-size: 13.3px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: var(--sidebartext);
+    text-align: center;
+    margin-left: 0;
 }

@@ -14,6 +14,7 @@
     height: 388.6px;
     width: 878px;
     margin-bottom: 1rem;
+    transition: 0.2s ease-in-out;
 }
 
 .runningProjects{
@@ -30,6 +31,7 @@
     box-sizing: border-box;
     font-size: 13.3px;
     font-weight: 400;
+    transition: 0.2s ease-in-out;
 }
 
 .body_runningProjects{
@@ -421,19 +423,12 @@
 
   .thirdRow{
       width: 930px;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 1fr);
+      flex-wrap: wrap;
   }
 
   .runningProjects{
-      grid-column: 1;
-      grid-row: 1;
-      width: 100%;
-  }
-
-  .totalSales{
-      grid-column: 1;
-      grid-row: 2;
+      width: 930px;
+      display: flex;
   }
 }
 
@@ -443,6 +438,10 @@
   .thirdRow{
       width: 690px;
   }
+
+  .runningProjects{
+    width: 100%;
+}
 }
 
 @media (max-width: 768px){
@@ -450,6 +449,10 @@
   .thirdRow{
       width: 510px;
   }
+
+  .runningProjects{
+    width: 100%;
+}
 }
 
 @media (max-width: 576px) {
@@ -457,4 +460,8 @@
   .thirdRow{
       width: 513px;
   }
+
+  .runningProjects{
+    width: 100%;
+}
 }

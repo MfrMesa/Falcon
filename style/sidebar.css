@@ -119,6 +119,7 @@ body{
     padding-top: 0.6rem;
     height: calc(100vh - 4.3125rem);
     overflow-y: auto;
+    overflow-x: hidden;
     font-family: 'Poppins';
     line-height: 1.8;
     font-weight: 500;
@@ -146,7 +147,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: var(--backgroundcolor);
-    z-index: 100;
+    z-index: 1;
     margin-left: 1rem;
     position: fixed;
     background-color: rgba(237, 242, 249, 0.9);
@@ -498,11 +499,11 @@ body{
 
     .sideCollapser {
         display: flex;
-        visibility: hidden;
+        visibility: hidden; 
         flex-direction: column;
-        max-width: 930px;
+        width: 930px;
         width: fit-content;
-        z-index: 2;
+        z-index: 100;
     }
 
     .sidebarWrapper{

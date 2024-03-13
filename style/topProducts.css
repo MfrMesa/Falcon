@@ -8,6 +8,7 @@
     border-radius: 0.375rem;
     overflow: hidden;
     background-color: white;
+    transition: 0.2s ease-in-out;
   }
 
   .header_TopProducts {
@@ -66,21 +67,20 @@
   }
 
   .button_TopProducts{
-    background-color: #f9fafd;
+    background-color: white;
     border: none;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: larger;
     color: #748194;
+    padding: 8px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 37.109px;
-    height: 29px;
-    margin: 3px 12px;
-    text-align: center;
-    position: relative;
-    cursor: pointer;
-    border-radius: 0.2rem;
+    width: 12.7px;
+    height: 22.6px;
+    padding: 3px 12px;
+    margin-right: 0.5rem;
   }
 
 
@@ -101,7 +101,7 @@
     right: 12px;
     border: 1px solid  #d8e2ef;
     border-radius: 3px;
-    display: flex;
+    display: none;
     align-items: start;
     width: 158.4 px;
     height: 100.8px;

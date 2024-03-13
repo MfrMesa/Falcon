@@ -32,7 +32,7 @@
     <title>Falcon React</title>
 </head>
 <body>
-    <!-- <section style="display: none;"  class="contenedorMenuAjustesDiv">
+    <section style="display: none;"  class="contenedorMenuAjustesDiv">
         <div class="parteOscuraMenuAjustesDiv"></div>
         <article class="ContenedorSettingsMenuAjustes">
             <section class="settingsMenuAjustes">
@@ -55,7 +55,7 @@
                     <circle class="circuloSuperiorIzquierdoSVG"/>
                 </div>
             </section>
-            <section class="contenedorContenidoMenuAjuste">
+            <section class="contenedorContenidoMenuAjuste scrollbar">
 
            
             <section class="colorSchemeMenuAjustes">
@@ -182,7 +182,7 @@
                             <input type="radio" onclick="cambioColorRadioVerticalNavbarStyle()" id="radioTransparentVertical" name="OptionVerticalNavbarMenuAjustes">
                             <span class="checkmark" id="radioVerdeMenuAjustes"></span>
                         </label>
-                        <label for="TransparentOptionVerticalNavbarmenuAjustes">Transparent</label>
+                        <label for="TransparentOptionVerticalNavbarmenuAjustes" class="TransparentOptionVerticalNavbarmenuAjustes">Transparent</label>
                        </div>
                     </div>
                     <div class="segundaOpcionVerticalNavbarStyleMenuAjustes">
@@ -224,7 +224,7 @@
                     <img src="https://falconreactbs4.prium.me/static/media/settings.ae4802db.png" alt="Pursache" class="imgCompraMenuAjustes">
                 </picture>
                 <section class="textoBotonCompraMenuAjustes">
-                    <h1 class="tituloCompraMenuAjustes">Like What You See</h1>
+                    <h1 class="tituloCompraMenuAjustes">Like What You See?</h1>
                     <h2 class="subtituloCompraMenuAjustes">Get Falcon now and create beautiful dashboards with hundreds of widgets</h2>
                     <button class="botonCompramenuAjustes">Purchase</button>
                 </section>
@@ -232,7 +232,7 @@
             </section>
         </section>
         </article>
-</section> -->
+</section>
     <div class="container">
             <div class="toggleContainerSidebar">
                 <div class="tooltipContainerSidebar"> 
@@ -1320,48 +1320,60 @@
                     </div>
                 </section>
                 <section class="totalSales">
-                        <section class="card_totalSales">
-                            <div class="contenedor_header_totalSales">
-                                <header class="header_totalSales">
-                                    <h6 class="h6_totalSales">Total Sales</h6>
-                                    <div class="contenedor_sb_totalSales">
-                                        <div class="contenedor_s_totalSales">
-                                            <select class="select_totalSales">
-                                                <option value="January" class="January">January</option>
-                                                <option value="February" class="February">February</option>
-                                                <option value="March" class="March">March</option>
-                                                <option value="April" class="April">April</option>
-                                                <option value="May" class="May">May</option>
-                                                <option value="June" class="June">June</option>
-                                                <option value="July" class="July">July</option>
-                                                <option value="August" class="August">August</option>
-                                                <option value="September" class="September">September</option>
-                                                <option value="October" class="October">October</option>
-                                                <option value="November" class="November">November</option>
-                                                <option value="December" class="December">December</option>
-                                            </select>
-                                        </div>  
+                    <section class="card_totalSales">
+
+                        <div class="contenedor_header_totalSales">
+                            <header class="header_totalSales">
+                                <h6 class="h6_totalSales">Total Sales</h6>
+                        
+                                <div class="contenedor_sb_totalSales">
+                                    <div class="select_container_totalSales">
+                                        <select id="select_Mes" class="select_totalSales">
+                                            <option value="Jan" class="January">January</option>
+                                            <option value="Feb" class="February">February</option>
+                                            <option value="Mar" class="March">March</option>
+                                            <option value="Apr" class="April">April</option>
+                                            <option value="May" class="May">May</option>
+                                            <option value="Jun" class="June">June</option>
+                                            <option value="Jul" class="July">July</option>
+                                            <option value="Aug" class="August">August</option>
+                                            <option value="Sep" class="September">September</option>
+                                            <option value="Oct" class="October">October</option>
+                                            <option value="Nov" class="November">November</option>
+                                            <option value="Dec" class="December">December</option>
+                                        </select>
                                     </div>
-                                        <div class="contenedor_menu_b_totalSales">
-                                            <button class="button_totalSales" type="button" id="menuButton_totalSales" >...</button>
-                                            <div  id="menuContainer_totalSales" class="menu_button_totalSales" >
-                                                
-                                                <div class="items_menu_totalSales">
-                                                    <button  id="viewOption_totalSales" class="view_opt_totalSales" >View</button>
-                                                    <button id="exportOption_totalSales" class="export_opt_totalSales">Export</button>
-                                                </div>
-                
-                                                <button  id="removeOption_totalSales" class="remove_opt_totalSales">Remove</button>   
+                    
+                                    <div class="contenedor_menu_b_totalSales">
+                                        <button  class="button_totalSales" type="button" id="menuButton_totalSales"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="svg-inline--fa fa-ellipsis-h fa-w-16 fs--2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg></button>
+                                        <div id="menuContainer_totalSales" class="menu_button_totalSales">
+                                            <div class="items_menu_totalSales">
+                                                <button id="viewOption_totalSales" class="menu-option view_opt_totalSales">View</button>
+                                                <button id="exportOption_totalSales" class="menu-option export_opt_totalSales">Export</button>
                                             </div>
+                                            <div class="separador"></div>
+                                            <button id="removeOption_totalSales" class="menu-option remove_opt_totalSales">Remove</button>
                                         </div>
-                                </header>
-                            </div>
-                            <section class="charts_section_totalSales">
-                                <div class="chartSalesContainer">
-                                    <canvas id="chart_totalSales" style="display: flex; height: 100%; width: 100%;"></canvas>
+                                    </div>
                                 </div>
-                            </section>
+                            </header>
+                        </div>
+                    
+                        <section class="charts_section_totalSales">
+                            <div>
+                                <canvas id="chart_totalSales"></canvas>
+                            </div>
+                            <div class="leyendaChart">
+                                <p class="mes-x-value" id="mes1"><span class="mesNombre">Jan</span> 1</p>
+                                <p class="mes-x-value" id="mes2"><span class="mesNombre">Jan</span> 5</p>
+                                <p class="mes-x-value" id="mes3"><span class="mesNombre">Jan</span> 9</p>
+                                <p class="mes-x-value" id="mes4"><span class="mesNombre">Jan</span> 13</p>
+                                <p class="mes-x-value" id="mes5"><span class="mesNombre">Jan</span> 17</p>
+                                <p class="mes-x-value" id="mes6"><span class="mesNombre">Jan</span> 21</p>
+                                <p class="mes-x-value" id="mes7"><span class="mesNombre">Jan</span> 25</p>
+                            </div>
                         </section>
+                    </section>
                 </section>
             </div>
             <div class="fourthRow">
@@ -1879,30 +1891,30 @@
                     </article>
                 </section>
                 <section class="topProducts">
-                        <div class="card_TopProducts">
-                            <div class="contenedor_TopProducts">
-                                <header class="header_TopProducts">
-                                    <div>
-                                        <h6 class="h6_TopProducts">Top Produtcs</h6>
+                    <div class="card_TopProducts">
+                        <div class="contenedor_TopProducts">
+                            <header class="header_TopProducts">
+                                <div>
+                                    <h6 class="h6_TopProducts">Top Produtcs</h6>
+                                </div>
+                                <div class="contenedor_menu_bp_TopProducts">
+                                    <p class="p_TopProducts">View Details</p>
+                                    <button class="button_TopProducts" type="button" onclick="optionsButton()" >...</button>
+                                </div>
+                                <div class="menu_button_TopProducts" >
+                                    <div class="items_menu_TopProducts">
+                                        <button onclick="viewOption()" class="view_opt_TopProducts" >View</button>
+                                        <button onclick="exportOption()" class="export_opt_TopProducts">Export</button>
                                     </div>
-                                    <div class="contenedor_menu_bp_TopProducts">
-                                        <p class="p_TopProducts">View Details</p>
-                                        <button class="button_TopProducts" type="button" onclick="optionsButton()" >...</button>
-                                    </div>
-                                    <div class="menu_button_TopProducts" >
-                                        <div class="items_menu_TopProducts">
-                                            <button onclick="viewOption()" class="view_opt_TopProducts" >View</button>
-                                            <button onclick="exportOption()" class="export_opt_TopProducts">Export</button>
-                                        </div>
-                                        <button onclick="removeOption()" class="remove_opt_TopProducts">Remove</button>   
-                                    </div>
-                                </header>
-                            </div>
-                            <div class="chartContainer">
-                                <canvas id="chart_TopProducts" style="display: flex; height: 100%; width: 100%;"></canvas>
-                            </div>
+                                    <button onclick="removeOption()" class="remove_opt_TopProducts">Remove</button>   
+                                </div>
+                            </header>
                         </div>
-                </section> 
+                        <div class="chartContainer">
+                            <canvas id="chart_TopProducts" style="display: flex; height: 100%; width: 100%;"></canvas>
+                        </div>
+                    </div>
+            </section>
             </div>
             <footer class="footerFooter">
                 <div class="contentText">

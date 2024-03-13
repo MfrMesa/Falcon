@@ -4,6 +4,7 @@
 .footerFooter {
     margin-top: 4rem;
     width: 878px;
+    transition: 0.2s ease-in-out;
 }
 
 .contentText {
