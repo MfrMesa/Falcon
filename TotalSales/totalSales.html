@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="totalSales.css">
+</head>
+<body class="body_totalSales">
+
+    <section class="card_totalSales">
+
+        <div class="contenedor_header_totalSales">
+            <header class="header_totalSales">
+                <h6 class="h6_totalSales">Total Sales</h6>
+        
+                <div class="contenedor_sb_totalSales">
+                    <div class="select_container_totalSales">
+                        <select id="select_Mes" class="select_totalSales">
+                            <option value="Jan" class="January">January</option>
+                            <option value="Feb" class="February">February</option>
+                            <option value="Mar" class="March">March</option>
+                            <option value="Apr" class="April">April</option>
+                            <option value="May" class="May">May</option>
+                            <option value="Jun" class="June">June</option>
+                            <option value="Jul" class="July">July</option>
+                            <option value="Aug" class="August">August</option>
+                            <option value="Sep" class="September">September</option>
+                            <option value="Oct" class="October">October</option>
+                            <option value="Nov" class="November">November</option>
+                            <option value="Dec" class="December">December</option>
+                        </select>
+                    </div>
+    
+                    <div class="contenedor_menu_b_totalSales">
+                        <button  class="button_totalSales" type="button" id="menuButton_totalSales"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="svg-inline--fa fa-ellipsis-h fa-w-16 fs--2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg></button>
+                        <div id="menuContainer_totalSales" class="menu_button_totalSales">
+                            <div class="items_menu_totalSales">
+                                <button id="viewOption_totalSales" class="menu-option view_opt_totalSales">View</button>
+                                <button id="exportOption_totalSales" class="menu-option export_opt_totalSales">Export</button>
+                            </div>
+                            <div class="separador"></div>
+                            <button id="removeOption_totalSales" class="menu-option remove_opt_totalSales">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    
+        <section class="charts_section_totalSales">
+            <div>
+                <canvas id="chart_totalSales"></canvas>
+            </div>
+            <div class="leyendaChart">
+                <p class="mes-x-value" id="mes1"><span class="mesNombre">Jan</span> 1</p>
+                <p class="mes-x-value" id="mes2"><span class="mesNombre">Jan</span> 5</p>
+                <p class="mes-x-value" id="mes3"><span class="mesNombre">Jan</span> 9</p>
+                <p class="mes-x-value" id="mes4"><span class="mesNombre">Jan</span> 13</p>
+                <p class="mes-x-value" id="mes5"><span class="mesNombre">Jan</span> 17</p>
+                <p class="mes-x-value" id="mes6"><span class="mesNombre">Jan</span> 21</p>
+                <p class="mes-x-value" id="mes7"><span class="mesNombre">Jan</span> 25</p>
+            </div>
+        </section>
+    </section>
+    
+    <script src="totalSales.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
