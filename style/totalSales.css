@@ -29,10 +29,10 @@
   color: #5e6e82;
   margin: 0px -15px;
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
   text-align: left;
-  width: 512px;
+  width: 100%;
   height: 29px;
 }
 
@@ -41,18 +41,21 @@
   justify-content: left;
   align-items: center;
   text-align: left;
-  width: 512px;
+  width: 100%;
   height: 29px;
   padding: 16px 20px 0px;
 }
 
 .h6_totalSales {
-  width: 281.7px;
+  margin: 0;
   height: 16px;
-  padding: 0px 15px;
-  font-weight: bolder;
-  font-size: medium;
-  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-left: 2rem;
+  margin-right: 3rem;
+  display: flex;
+  text-align: left;
+  font-size: 13.3px;
+  font-weight: 500;
+  color: #344050;
 }
 
 .select_container_totalSales {
@@ -270,13 +273,13 @@ background-color:  #EDF2F9;
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 522px;
-  height: 343.8px;
+  width: 450px;
+  height: 450px;
 }
 
 #chart_totalSales {
-  width: 482px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
 }
 
