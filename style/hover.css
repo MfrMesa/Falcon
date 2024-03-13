@@ -1,0 +1,55 @@
+.btn-menu:hover{
+    border:1px solid rgb(201, 197, 197);
+    color:black;
+    box-shadow: 0 7px 14px 0 rgba(59, 65, 94, .1), 0 3px 6px 0 rgba(68, 68, 68, 0.07);
+   
+}
+.no-hover:hover {
+    box-shadow: none;
+    border:1px solid transparent;
+}
+.btn-menu-focus{
+    background-color: rgb(221, 218, 218);
+    color:black;
+}
+
+.btn-footer button:hover{
+    color: #1657af;
+    text-decoration: underline;
+}
+
+#dropdownMenu .remove:hover{
+    color: #e63757;
+    background-color: #edf2f9;
+    border-radius: 0;
+}
+#dropdownMenu button:hover{
+    color: #344050;
+    background-color: #edf2f9;
+    border-radius: 0;
+}
+
+/* PRODUCTS */
+.cabecera-menu a:hover{
+   color: #4471ac;
+    text-decoration: underline;
+}
+.texto-archivo h6 a:hover{
+   text-decoration: underline;
+ 
+}
+
+#viewall:active{
+    color: black;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.08), 0 1px 1.5px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    background-color: #b9b7b7d2;
+    border: #b9b7b7d2;
+}
+
+h6 a:hover{
+    text-decoration: underline;
+}
+.help a:hover{
+    text-decoration: underline;
+    color: var(--color-primary-letter);
+}

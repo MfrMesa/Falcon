@@ -1,0 +1,577 @@
+@import url(fontandroot.css);
+
+:root{  
+    --black: black;
+    --grayText: #364052;
+    --backgroundcolor: #edf2f9;
+    --divider:#d8e2ef;
+    --backgroungtag:  #d5e5fa;
+    --svgColor: rgb(193, 201, 211); 
+    --ligthblack: #344050;
+    --brick: #c46632;
+    --ligthbrick: #fde6d8;
+    --watergreen: #5bb891;
+    --ligthwatergreen: #ccf6e4;
+    --ligthblue:#d4f2ff;
+    --pastelblue: #5da4c4;
+    --background: #edf2f9;
+    --sidebartext: #5E6e82;
+    --blue: rgb(44, 123, 229);
+    --indigo: #727cf5;
+    --purple: #6b5eae;
+    --pink: #ff679b;
+    --red: #e63757;
+    --orange: #fd7e14;
+    --yellow: #f5803e;
+    --green: #00d27a;
+    --teal: #02a8b5;
+    --cyan: #27bcfd;
+    --white: #fff;
+    --gray: #748194;
+    --gray-dark: #4d5969;
+    --primary: #2c7be5;
+    --secondary: #748194;
+    --success: #00d27a;
+    --info: #27bcfd;
+    --warning: #f5803e;
+    --danger: #e63757;
+    --light: #f9fafd;
+    --dark: #0b1727;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1540px;
+    --font-family-sans-serif: "Poppins";
+    --Poppins-Black:"Poppins Black";
+    --Poppins-Black-Italic:"Poppins Black Italic";
+    --Poppins-Bold:"Poppins Bold";
+    --Poppins-Light:"Poppins Light";
+    --Poppins-Thin:"Poppins Thin";
+    --Poppins-ExtraBold: "Poppins ExtraBold";
+    --Poppins-Light-Italic:"Poppins Light Italic";
+    --Poppins-Regular:"Poppins Regular";
+    --Poppins-Medium:"Poppins Medium";
+    --Poppins-SemiBold-Italic:"Poppins SemiBold Italic";
+    --Poppins-Semibold:"Poppins semiBold";
+    --Poppins-Bold-Italic:"Poppins Bold Italic";
+    --Poppins-Thin-Italic:"Poppins Thin Italic";
+    --Poppins-ExtraLight-Italic:"Poppins ExtraLight Italic";
+    --Poppins-ExtraBold-Italic:"Poppins ExtraBold Italic";
+    --Poppins-Italic:"Poppins Italic";
+    --Texto-Normal:font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--backgroundcolor);
+    width: 100%;
+}
+
+
+/*Contenedor General*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 2350px;
+    width: 1300px;
+    padding-inline: 15px;
+    right: 1rem;
+    left: 10rem;
+}
+
+
+/* Sidebar */
+
+.sidebarWrapper{
+    padding-inline: 15px;
+    margin-right: 1rem;
+    display: block;
+    position: fixed;
+    width: 100%;
+    max-width: fit-content;
+    height: 2350px;
+    top: 0;
+    font-family: 'Poppins';
+    padding-top: 4rem;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+.sideCollapser {
+    visibility: visible;
+    background-color: var(--backgroundcolor);
+    position: relative;
+    display: inline-block;
+    width: 215px;
+    transition: all .2s ease-in-out;
+    padding-top: 0.6rem;
+    height: calc(100vh - 4.3125rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Poppins';
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+
+
+/* Scrollbar */
+
+.scrollbar {
+    scrollbar-color: rgba(116,129,148,.3) transparent;
+    scrollbar-width: thin;
+    overflow: auto;
+}
+
+
+
+/* Tooltip/Toggle */
+
+.toggleContainerSidebar {
+    width: 180px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundcolor);
+    z-index: 1;
+    margin-left: 1rem;
+    position: fixed;
+    background-color: rgba(237, 242, 249, 0.9);
+}
+
+.tooltipContainerSidebar {
+    position: relative;
+    background-color: var(--black);
+    width: 135px;
+    border-radius: 4px;
+    display: none;
+    right: 100%;
+    margin-top: -15px;
+    position: absolute;
+    z-index: 1;
+    height: 35px;
+    font-family: "Poppins";
+}
+
+.tooltipSidebar{
+    font-size: 13px;
+    color: var(--backgroundcolor);
+    text-align: center;
+    padding: 10px 5px 5px 8px;
+}
+
+.tooltipContainerSidebar .tooltipSidebar::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%; 
+    margin-top: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+.toggleContainerSidebar:hover .tooltipContainerSidebar {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Menu Icon */
+
+.iconContainerSidebar {
+    display: inline-flex;
+    width: 30%;
+    height: 100%;
+    margin-top: 1rem;
+}
+
+.iconToggleSidebar {
+    height: 3rem;
+    width: 3rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent; 
+    border: 1px solid transparent;
+    text-align: center;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.iconToggleSidebar:hover {
+    background-color: #d9e3f5; 
+}
+
+.iconToggleSidebar.clicked {
+    border: 3.5px solid #c7d8ed;
+    background-color: #d9e3f5;  
+}
+
+.navbar-toggle-icon {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 2.2px;
+    background-color: var(--sidebartext);
+    border-radius: 3px;
+}
+
+.navbar-toggle-icon::before,
+.navbar-toggle-icon::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    background-color: var(--sidebartext);
+    border-radius: 2px;
+    margin-left: -10px;
+}
+
+.navbar-toggle-icon::before {
+    height: 2px;
+    top: -5px;
+}
+
+.navbar-toggle-icon::after {
+    bottom: -6px;
+    height: 1.7px;
+}
+
+.iconToggleSidebar.clicked .navbar-toggle-icon{
+    width: 12px;
+    margin-left: -5px;
+}
+
+.iconToggleSidebar.clicked .navbar-toggle-icon::before,
+.iconToggleSidebar.clicked .navbar-toggle-icon::after{
+    width: 18px;
+    margin-left: -7px;
+}
+
+
+/* Chevron */
+
+#downchevroninner {
+    display: inline-flex;
+    font-weight:lighter;
+    color: var(--sidebartext);
+    justify-self: right;
+    height: 20px;
+    width: 15px;
+    align-self: center;
+    margin-right: 1rem;
+    transition: all .2s ease-in-out;
+    transform-origin: center;
+}
+
+#downchevroncategories .cls-1 {
+    color: var(--sidebartext);
+    height: 20px;
+    width: 20px;
+    transition: all .2s ease-in-out;
+    transform-origin: center;
+}
+
+
+/* Listas */
+
+.navTitle {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+
+.navIcon {
+    width: 18px;
+    height: 16px;
+    margin-top: 0.1rem;
+}
+
+
+.navItem,
+.dobbleDrop,
+.dropItems {
+    list-style: none;
+    font-size: 13px;
+}
+
+
+.dropdownTitle,
+.dropTitle,
+.dobbleDropLink,
+.dobbleInnerDrop {
+    text-decoration: none;
+    color: var(--sidebartext);
+    transition: all .2s ease-in-out;
+    font-size: 13px;
+}
+
+
+.dropContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+
+.itemContainer {
+    display: flex;
+    padding: 0.5rem 1rem;
+    position: relative;
+    height: 35px;
+}
+
+
+.innerDrop {
+    margin-left: 2.5rem;
+}
+
+.dobbleInnerDrop{
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    margin-left: 1.2rem;
+    overflow: hidden;
+}
+
+
+.dobbleInnerDrop.active,
+.innerDrop.active {
+    max-height: 1000px; 
+}
+
+
+.innerDrop {
+    max-height: 0;
+    transition: max-height 0.3s  ease-in-out;
+    margin-left: 2.5rem;
+    overflow: hidden;
+}
+
+
+.dobbleDrop{
+    overflow: hidden;
+}
+
+
+.dropdownTitle{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s  ease-in-out;
+}
+
+
+#altdash {
+    color: var(--blue)
+}
+
+.dropdownTitle:hover,
+.dropTitle:hover,
+.dobbleDropLink:hover,
+.dobbleInnerDrop:hover{
+    color: var( --dark);
+}
+
+
+
+/* Sidebar Tags */
+
+
+.tagContainer {
+    display: flex;
+    padding: 0.5rem 1rem;
+    position: relative;
+    padding-left: 0;
+    width: 100%;
+}
+
+.minTagnew {
+    display: inline-flex;
+    height: 16px;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: #ccf6e4;
+    color: #118f5b;
+    font-weight: 500;
+    font-size: 10px;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.tagContainerBottom {
+    margin-left: 0.5rem;
+    width: 100%;
+}
+
+.minTag {
+    display: inline-block;
+    border-radius: 35px;
+    width: 50px; 
+    text-align: center;
+    background-color: var(--backgroungtag);
+    color: var(--blue);
+    font-weight: 600;
+    height: 20px;
+    font-size: 10.5px;
+    margin-left: 3px; 
+}
+
+.logIcon {
+    margin-left: 0.5rem;
+} 
+
+.log {
+    margin-left: 0;
+}
+
+
+
+/* Purchase Sidebar Button */
+
+
+.buttonContainer{
+    display: block;
+    width: 205px;
+    height: 32px;
+    padding-inline: 0.2rem;
+}
+
+.purchaseSidebar {
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    border-radius: 5px;
+    border: var(--blue) solid;
+}
+
+#purchaseBoton {
+    color:white;
+}
+
+
+/* Sidebar Divisor */
+
+.dividerContainer {
+    width: 200px;
+    height: 16px;
+    margin-left: 0.2rem;
+}
+
+.divider {
+    color: var(--divider);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+
+@media (max-width: 1200px){
+    
+    .container {
+        flex-direction: column;
+        padding-inline: 1rem;
+        width: 950px;
+        left: 0;
+    }
+
+    .sideCollapser {
+        display: flex;
+        visibility: hidden; 
+        flex-direction: column;
+        width: 930px;
+        width: fit-content;
+        z-index: 100;
+    }
+
+    .sidebarWrapper{
+        width: 960px;
+    }
+
+    .dividerContainer {
+        width: 898px;
+    }
+
+    .buttonContainer  {
+        width: 100%;
+        display: block;
+        padding-inline: 1rem;
+    }
+
+    .toggleContainerSidebar{
+        margin-left: -0.5rem;
+    }
+}  
+
+
+
+@media (max-width: 768px){
+
+    .container {
+        max-width: 720px;
+    }
+
+    .sidebarWrapper{
+        width: 690px;
+    }
+
+    .sideCollapser {
+        max-width: 660px;
+    }
+
+    .dividerContainer {
+        width: 658px;
+    }
+}
+
+
+
+@media (max-width: 586px){
+
+    body{
+        width: 578px;
+    }
+    .container {
+        max-width: 560px;
+    }
+
+    .sidebarWrapper{
+        width: 540px;
+    }
+
+    .sideCollapser {
+        max-width: 510px;;
+    }
+
+    .dividerContainer {
+        width: 478px;
+    }
+}  
+
+
+
+.collapsed.clicked {
+    display: none;
+  }

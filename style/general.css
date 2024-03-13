@@ -1,0 +1,72 @@
+@import url(fontandroot.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-primary-letter)
+}
+#user{
+    width: 100%;
+    /* height: calc(100% - 40px); */
+    /* height: auto; */
+    display: flex;
+    gap: 10px;
+}
+
+#user article{
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-card);
+    width: 100%;
+        overflow: hidden;
+    /* max-width: 50%;  */
+        box-shadow: 0 7px 14px 0 rgba(59, 65, 94, .1), 0 3px 6px 0 rgba(0, 0, 0, .07);
+}
+
+/*A PARTIR DE AQUI*/
+:root {
+    --border-radius-user: 50%;
+    --border-radius-card: 0.375rem;
+    --background-cabecera: #f9fafd;
+    --fondo-card:#ffffff ;
+    --border-button-menu: 0.2rem;
+    --color-primary-letter: #5e6e82;
+    --padding-buttom: 0.4rem 0.75rem;
+    --size-user: 0.83rem;
+    --size-rol:0.694rem;
+}
+
+.fs--2{
+    width: .69444rem;
+}
+figure img{
+height: 80%;
+}
+   
+h6 a{
+    font-family: "Poppins Sans", sans-serif;
+    font-size: 13.3px;
+    color: #344050;
+    line-height: 1.2;
+    font-weight: 600 !important;
+}
+
+#nombre-user span{
+    font-size: var(--size-rol);
+}
+button{
+    border:1px solid transparent;
+    border-radius: var(--border-button-menu);
+    background-color:transparent;
+    cursor: pointer;
+   
+    
+    
+}
+

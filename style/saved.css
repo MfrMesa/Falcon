@@ -1,0 +1,59 @@
+@import url(fontandroot.css);
+
+#section-saved {
+height: 290px;
+background-color: rgb(255, 255, 255);
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.fill{
+    width: 100%;
+    height: 100%; 
+}
+
+.fillContainer{
+    height: 308px;
+}
+
+/* GRAFICAS */
+
+.grafica-user {
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.capacidad{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+
+}
+.capacidad p{
+    color: #344050;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.tick-svg{
+    width: 1.25em;
+    color: #00d27a;
+}
+.porcentaje-user{
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #9da9bb;
+}
+.size-p{
+    font-size: 13.3px;
+    color: #5E6E82;
+}

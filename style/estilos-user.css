@@ -1,0 +1,92 @@
+@import url(fontandroot.css);
+
+.flex-colum{
+    
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#nombre-user span{
+    color: #5E6E82;
+}
+
+.section-usuarios{
+   justify-content: center;
+    height: 80%; 
+    background-color: var(--fondo-card);
+
+}
+
+.avatar{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: var(--border-radius-user);
+}
+
+#usuario{
+    display: flex;
+    gap: 10px;
+    padding: 0.43rem;
+    margin-left: 1rem;
+}
+.user-img{
+    position: relative;
+}
+
+/*BOTONES USUARIOS ACTIVADOS-DESCONECTADOS*/
+.activo::before{
+    position: absolute;
+    border: 2px solid #fff;
+    height: 0.6rem;
+    width: 0.6rem;
+    right: -3px;
+    bottom: 3px;
+    background-color: rgb(52, 146, 52);
+    content: '';
+    border-radius: 100%;
+    z-index: 1;
+}
+.desconectado::before{
+    position: absolute;
+    border: 2px solid #fff;
+    height: 0.6rem;
+    width: 0.6rem;
+    right: -3px;
+    bottom: 3px;
+    background-color: #748194;
+    content: '';
+    border-radius: 100%;
+    z-index: 1;
+}
+.pausa::before{
+    position: absolute;
+    border: 2px solid #fff;
+    height: 0.6rem;
+    width: 0.6rem;
+    right: -3px;
+    bottom: 3px;
+    background-color: #f5803e;
+    content: '';
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.help a{
+    color: #2c7be5;
+    font-size: 13px;
+    font-family: "Poppins Sans", sans-serif;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+

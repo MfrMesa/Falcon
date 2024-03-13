@@ -1,0 +1,567 @@
+@import url(fontandroot.css);
+
+:root{  
+    --grayText: #364052;
+    --backgroundcolor: #edf2f9;
+    --divider:#d8e2ef;
+    --backgroungtag:  #d5e5fa;
+    --svgColor: #c1c9d3; 
+    --ligthblack: #344050;
+    --brick: #c46632;
+    --ligthbrick: #fde6d8;
+    --watergreen: #5bb891;
+    --ligthwatergreen: #ccf6e4;
+    --ligthblue:#d4f2ff;
+    --pastelblue: #5da4c4;
+    --background: #edf2f9;
+    --sidebartext: #5E6e82;
+    --blue: #2c7be5;
+    --indigo: #727cf5;
+    --purple: #6b5eae;
+    --pink: #ff679b;
+    --red: #e63757;
+    --orange: #fd7e14;
+    --yellow: #f5803e;
+    --green: #00d27a;
+    --teal: #02a8b5;
+    --cyan: #27bcfd;
+    --white: #fff;
+    --gray: #748194;
+    --gray-dark: #4d5969;
+    --primary: #2c7be5;
+    --secondary: #748194;
+    --success: #00d27a;
+    --info: #27bcfd;
+    --warning: #f5803e;
+    --danger: #e63757;
+    --light: #f9fafd;
+    --dark: #0b1727;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1540px;
+    --font-family-sans-serif: "Poppins";
+    --Poppins-Black:"Poppins Black";
+    --Poppins-Black-Italic:"Poppins Black Italic";
+    --Poppins-Bold:"Poppins Bold";
+    --Poppins-Light:"Poppins Light";
+    --Poppins-Thin:"Poppins Thin";
+    --Poppins-ExtraBold: "Poppins ExtraBold";
+    --Poppins-Light-Italic:"Poppins Light Italic";
+    --Poppins-Regular:"Poppins Regular";
+    --Poppins-Medium:"Poppins Medium";
+    --Poppins-SemiBold-Italic:"Poppins SemiBold Italic";
+    --Poppins-Semibold:"Poppins semiBold";
+    --Poppins-Bold-Italic:"Poppins Bold Italic";
+    --Poppins-Thin-Italic:"Poppins Thin Italic";
+    --Poppins-ExtraLight-Italic:"Poppins ExtraLight Italic";
+    --Poppins-ExtraBold-Italic:"Poppins ExtraBold Italic";
+    --Poppins-Italic:"Poppins Italic";
+    --Texto-Normal:font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.circuloSuperiorDerecho{
+    position: relative;
+    z-index: 1;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    left: 85px;
+    bottom: 35px;
+    background-image: linear-gradient(45deg,#318aff,#247cef);
+}
+
+.checkboxLight {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkboxLight input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+  }
+  .checkboxLight input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+  }
+  .checkboxLight input[type="radio"]:checked + 
+  #radioVerdeMenuAjustes{
+    background-color: var(--success);
+    border-color: var(--success);
+  }
+  .checkboxLight .checkmark {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .checkboxLight input[type="checkbox"]:checked + .checkmark {
+    background-color: #0078d4;
+    border-color: #0078d4;
+  }
+  .checkboxLight input[type="radio"]:checked + .checkmark {
+    background-color: #0078d4;
+    border-color: #0078d4;
+  }
+  .checkboxLight input[type="radio"]:checked + .checkmark:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.2s ease;
+    transform: scale(1);
+  }
+  
+  .scrollbar {
+    scrollbar-color: rgba(116,129,148,.3) transparent;
+    scrollbar-width: thin;
+    overflow: auto;
+}
+
+  .checkboxLight input[type="checkbox"]:checked + .checkmark:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.2s ease;
+    transform: scale(1);
+  }
+  
+  .checkboxLight .checkmark:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+  }
+  
+.switch {
+    display: inline-block;
+}
+.switch input {
+    display: none;
+}
+.switch label {
+    display: flex;
+    width: 28px;
+    height: 16px;
+    padding: 3px;
+    border-radius: 15px;
+    border: 1px solid var(--gray);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .switch label::after {
+    content: "";
+    display: inherit;
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+    width: 13px;
+    height: 13px;
+    border-radius: 12px;
+    background: var(--gray);
+    transition: 0.3s;
+  }
+  
+  .switch input:checked ~ label {
+    border-color: var(--gray) ;
+    background: var(--blue);
+  }
+  
+  .switch input:checked ~ label::after {
+    translate: 12px;
+    background: white;
+  }
+  
+  .switch input:disabled ~ label {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+.circuloSuperiorIzquierdo{
+    position: relative;
+    z-index: 1;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    left: 250px;
+    bottom: 400px;
+    background-image: linear-gradient(45deg,#318aff,#247cef);
+
+}
+
+.contenedorMenuAjustesDiv{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-family: var(--Poppins-Regular);
+}
+#contenedorDarkCheckBoxOpcionesColorSchemeMenuAjustes{
+    display: flex;
+    position: relative;
+    bottom: 6px;
+    justify-content: center;
+}
+.contenedorCheckboxOpcionesColorSchemeMenuAjustes{
+    justify-content: center;
+    display: flex;
+}
+.darkLabel{
+    position: relative;
+    line-height: 1.45rem;
+    font-size: 13.3px;
+    margin-left: 6px;
+}
+.lightLabel{
+    line-height: 1.45rem;
+    font-size: 13.3px;
+    margin-left: 6px;
+}
+.inicioRTLModeMenuajustes{
+    display: flex;
+}
+.imgPrimeraOpcionColorSchemeMenuAjustes, 
+.imgSegundaOpcionColorSchemeMenuAjustes{
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    border: 3px solid #d8e2ef;
+    border-radius: 0.375rem;
+}
+.parteOscuraMenuAjustesDiv{
+    width: calc(100vw - 350px);
+    height: 100%;
+    background-color: #1d2024;
+    opacity: 0.5;
+    z-index: 101;
+}
+.contenedorContenidoMenuAjuste{
+    overflow: hidden;
+    overflow-y: auto;
+    max-height:calc(100vh - 69px);
+    background-color: white;
+}
+.ContenedorSettingsMenuAjustes{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #f5f5f5; 
+    overflow: hidden;
+}
+.svgTituloMenuAjuste{
+    font-size: 13.3px;
+    margin-right: 0.5rem;
+}
+.settingsTituloMenuAjustes{
+    margin-bottom: 0.25rem;
+    padding-top: 0.5rem;
+    margin-left: 1.25rem;
+}
+
+.spanButtonMenuAjustes{
+    font-weight: 300;
+    margin-right: 0.25rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 20px;
+    opacity: .80;
+    z-index: 1000;
+    text-shadow: 0 1px 0 #fff;
+}
+.spanButtonMenuAjustes:hover{
+    opacity: 1;
+}
+.settingsMenuAjustes{
+    color: white;
+    max-height: 69px;
+    overflow: hidden;
+    background-image: linear-gradient(-45deg,#4695ff,#1970e2);
+    min-height: 69px;
+}
+.contenedorSliderRTL{
+    position: relative;
+    margin-left: 163px;
+
+}
+.contenedorSliderFL{
+    position: relative;
+    margin-left: 143px;
+}
+.settingsSubtituloMenuajustes{
+    position: relative;
+    z-index: 5;
+    font-size: 13.3px;
+    font-weight: 400;
+    opacity: 0.75;
+    margin-left: 1.25rem;
+    font-family: var(--Poppins-Regular);
+}
+.contenedorSuperiorSettingsMenuAjustes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.colorSchemeMenuAjustes{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.subtituloColorSchemeMenuAjustes{
+    margin-bottom: 1rem;
+    font-size: 13.3px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5e6e82;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedorOpcionesColorSchemeMenuAjustes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    vertical-align: middle;
+    width: 100%;
+}
+.imgPrimeraOpcionColorSchemeMenuAjustes{
+    width: 138.500px;
+}
+.imgSegundaOpcionColorSchemeMenuAjustes{
+    width: 138.500px;
+}
+.primeraOpcionColorSchemeMenuAjustes{
+    display: flex;
+    flex-direction: column;
+}
+
+.ContenedorSettingsMenuAjustes section{
+    border-bottom: 1px lightgrey solid;
+}
+.RTLModeMenuAjustes,.fluidLayoutMenuAjustes,
+.navigationPositionMenuAjustes,.VerticalNavbarStyleMenuAjustes
+{
+    width: 100%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+.contenedorSuperiorRTLModeAjustes,
+.contenedorSuperiorFluidLayoutModeAjustes,
+.contenedorSuperiorNavigationPositionAjustes{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.navigationPositionMenuAjustes{
+    margin-top: 1rem;
+}
+
+.radioButtonDarkColorSchemeMenuAjustesfail,
+.radioButtonLightColorSchemeMenuAjustesfail{
+    content: "";
+
+    border:1px solid var(--gray);
+    height: 14px;
+    width: 14px;
+    display: inline-flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.radioButtonDarkColorSchemeMenuAjustessuccess,
+.radioButtonLightColorSchemeMenuAjustessuccess{
+    content: "";
+    border:5px solid var(--success);
+    height: 14px;
+    width: 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    margin-right: 0.5rem;
+    cursor: pointer;
+
+}
+.contenedorInferiorNavigationPosititonMenuAjustes{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 272px;
+    gap: 16px;
+    font-size: 13.3px;
+    margin-top: 1rem;
+    margin-left: 25px;
+}
+
+.svgRTLModeAjustes,.svgFluidLayoutMenuAjustes,
+.svgNavigationPositionMenuAjustes
+{
+    margin-right: 0.5rem;
+    width: 20px;
+}
+.subtituloRTLModeAjustes, .subtituloFluidLayoutMenuAjustes,
+.subtituloNavigationPositionMenuAjustes,.subtituloCompraMenuAjustes
+{
+    margin-left: 25px;
+    font-size: 13.3px;
+    width: 272px;
+    color: #8f8f90;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+/* 
+.subtituloVerticalNavbarStyleMenuAjustes{
+    font-size: 13.3px;
+    color: #344050;
+    font-weight: 400;
+    font-family: 'Poppins';
+} */
+.tituloFluidLayoutMenuAjustes,
+.tituloRTLModeAjustes,
+.tituloColorSchemeMenuAjustes,
+.titulonavigationPositionMenuAjustes,
+.tituloVerticalNavbarStyleMenuAjustes
+{
+    font-size: 16px;
+    color: var(--sidebartext);
+    font-weight: 600;
+}
+
+.tituloCompraMenuAjustes {
+    font-size: 19px;
+    color: var(--sidebartext);
+    font-weight: 600;
+}
+
+.labelNavigationPositionMenuAjustes{
+    font-size: 13.3px;
+    font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 1.45rem;
+    letter-spacing: .02rem;
+    color: #5e6e82;
+}
+.subtituloVerticalNavbarStyleMenuAjustes{
+    font-size: 13.3px;
+    font-family: 'Poppins Thin';
+    margin-bottom: 1rem;
+    
+}
+.labelVerticalNavigationPositionMenuAjustes,
+.labelTopNavigationPositionMenuAjustes,
+.labelComboNavigationPositionMenuAjustes{
+    font-size: 13.3px;
+    font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    color: #5e6e82;
+}
+.lineaUnoOpcionesVerticalNavbarStyleMenuAjustes,
+.lineaDosOpcionesVerticalNavbarStyleMenuAjustes{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 1rem;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+.TransparentOpcionVerticalNavbarStyleMenuAjustes,
+.imgInvertedOptionVerticalNavbarmenuAjustes,
+.imgCardOptionVerticalNavbarMenuAjustes,
+.imgVibrantVerticalNavbarMenuAjustes{
+    border-radius: 0.375rem;
+    border: 3px solid #d8e2ef;
+    width: 134px;
+}
+.compraMenuAjustes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imgCompraMenuAjustes{
+    margin-bottom:1.8rem ;
+    width: 120px;
+}
+.contenedorImagenPursache{
+    display: grid;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.textoBotonCompraMenuAjustes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+.botonCompramenuAjustes{
+    color: white;
+    background-color: #1a68d1;
+    border-color: #1862c6;
+    border: 1px solid transparent;
+    width: 108px;
+    height: 35px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.estadoDelnavigatoPositionMenuAjustes{
+    margin-left: 0.5rem;
+    color:#00864e;
+    background-color: #ccf6e4;
+    padding-right: 0.71111em;
+    padding-left: 0.71111em;
+    border-radius: 10rem;
+    font-size: 11px;
+    vertical-align: baseline;
+    padding: 0.35556em 0.71111em;
+}
+
+
+.TransparentOptionmenuAjustes,
+.labelInvertedOptionVerticalNavbarMenuAjustes,
+.labelCardOptionVerticalNavbarMenuAjustes,
+.labelVibrantOptionVericalMenuAjustes{
+    font-size: 13.3px;
+}
+
+.subtituloCompraMenuAjustes{
+    font-size: 13.3px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: var(--sidebartext);
+    text-align: center;
+    margin-left: 0;
+}

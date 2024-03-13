@@ -1,7 +1,12 @@
+
+
+@import url(fontandroot.css);
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url(style/fonts.css);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+in
 
 :root{  
     --background: #edf2f9;
@@ -46,21 +51,33 @@ body {
     background-color: #EDF2F9;
 }
 
-.NavigationBarSection {
-    width: 862px;
-    padding-left: 216px;
-    font-family: "Poppins";
+
+.navbar{
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    width: 890px;
+    height: 74px;
+    justify-self: left;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins";
+    margin-left: 17.2rem;
+    z-index: 3;
+    background-color: rgba(237, 242, 249, 0.9);
 }
+
 
 /* Top Logos */
 
-.TopLogosContainer {
+.logoContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 70%;
+    height: 100%;
+
     gap: 5px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -72,13 +89,17 @@ body {
 }
 
 #TopLogosFalconText {
-    font-size: 1.728rem;
+
+    font-size: 27.64px;
     font-weight: 800;
     color: #2C7BE5;
     margin: 0;
+    font-family: "Poppins Sans", sans-serif;
+=
 }
 
 /* Top Logos End */
+
 
 .NavigationBarContainer {
     width: 100%;
@@ -86,6 +107,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding-left: 0.5rem;
+
 }
 
 .NavBarSearchBar {
@@ -98,9 +122,12 @@ body {
     padding: 5px 16px;
     padding-left: 25px;
     border: none;
-    outline: 1px solid #B6C1D2;
+
+    outline: 0.5px solid #e3e7ed;
     border-radius: 18px;
-    line-height: 1.7;
+    font-size: 30px;
+    line-height: 1.5;
+
     transition: all 0.3s ease;
 }
 
@@ -117,6 +144,12 @@ input[type="search"] {
     outline:solid 1px #669fea;
 }
 
+
+#NavBarSearchInput:focus ~ .dropdownSearch,
+#NavBarSearchInput:not(:placeholder-shown) ~ .dropdownSearch {
+display: block; /* Show the dropdown when the search bar is focused or not empty */
+}
+
 #NavBarSearchIcon {
     margin-left: 5px;
     position: absolute;
@@ -126,15 +159,35 @@ input[type="search"] {
     width: 20px;
 }
 
+/* Input Cancel Search Button */
+
 input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: searchfield-cancel-button;
-    display: block;
+    -webkit-appearance: none;
+}  
+
+#NavBarSearchCancel {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
 }
 
-input[type="search"]:focus::-webkit-search-cancel-button,
-.container:hover input[type="search"]::-webkit-search-cancel-button {
-    display: block !important;
+#NavBarSearchCancelSVG:hover {
+    fill: #404040
 }
+
+#NavBarSearchInput:focus:not(:placeholder-shown) + #NavBarSearchCancel,
+#NavBarSearchInput:not(:placeholder-shown):focus + #NavBarSearchCancel {
+  display: block;
+}
+
+/* NavBar Cancel Search Button End */
 
 
 
@@ -295,7 +348,76 @@ input[type="search"]:focus::-webkit-search-cancel-button,
     top: -32px;
     left: 8px;
     z-index: 1;
-    display: block;
+
+    display: inline-block;
 }
 
 /* NavBar Notifications Bell End */
+
+.svgAvatar{
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 100%;
+}
+
+
+@media (max-width: 1200px){
+
+    .navbar{
+        margin-left: 12rem;
+        width: 680px;
+    }
+
+    .NavigationBarContainer{
+        width: 680px;
+    } 
+
+} 
+
+
+@media (max-width: 983px){
+    
+    .navbar{
+        margin-left: 12rem;
+        width: 480px;
+    }
+
+    .NavigationBarContainer{
+        width: 480px;
+    } 
+
+    #NavBarSearchInput {
+        display: none;
+    }
+
+    #NavBarSearchIcon{
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .navbar{
+        margin-left: 3rem;
+        width: 480px;
+    }
+
+    .NavigationBarContainer{
+        width: 480px;
+    }
+
+}
+
+
+@media (max-width: 586px){
+
+    .navbar{
+        margin-left: 3rem;
+        width: 500px;
+    }
+
+    .NavigationBarContainer{
+        width: 500px;
+    }
+}

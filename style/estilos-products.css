@@ -1,0 +1,103 @@
+@import url(fontandroot.css);
+
+:root {
+    --border-radius-user: 50%;
+    --border-radius-card: 0.375rem;
+    --background-cabecera: #f9fafd;
+    --fondo-card:#ffffff ;
+    --border-button-menu: 0.2rem;
+    --color-primary-letter: #5e6e82;
+    --padding-buttom: 0.4rem 0.75rem;
+    --size-user: 0.83rem;
+    --size-rol:0.694rem;
+}
+
+#products {
+    box-shadow: 0 7px 14px 0 rgba(59, 65, 94, .1), 0 3px 6px 0 rgba(0, 0, 0, .07);
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    font-size: 13.3px;
+    font-family: "Poppins Sans", sans-serif;
+    
+}
+
+
+.products-container{
+    border-radius: var(--border-radius-card);
+    height: 100%;
+    width: 100%;
+} 
+
+.cabecera-menu a{
+    font-weight: 400;
+    color: #2c7be5;
+    font-size: 13.3px;
+    text-decoration: none;
+}
+.img-products{
+    max-width: 3rem;
+    min-width: 2.25rem;
+    max-height: 3rem;
+    min-height:2.25rem;
+    margin-top: 0.5rem;
+}
+.img-products img{
+    margin-right:0.5rem ; 
+    object-fit: cover;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.2rem;
+}
+
+.elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start ;
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--fondo-card);
+    padding: 0.5rem;
+    border-radius: var(--border-radius-card);
+}
+
+.archivo{
+    padding: 0.2rem;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    border-top: 0.5px solid #f6f7f8;
+    gap: 5px;
+}
+.archivo-primero{
+    border: none;
+}
+.texto-archivo {
+    margin-top: 0.5rem;
+    font-size: 13.3px;
+    font-weight: 600;
+    height: 100%;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.texto-archivo h6 a{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    text-align: left;
+}
+span.autor{
+    color: #5e6e82;
+    font-size: 13.3px;
+    font-weight: 600;
+    margin-right: 0.2rem;
+}
+span.fecha{
+    font-weight: 500;
+    color: #748194;
+    font-size: 11.3px;
+}

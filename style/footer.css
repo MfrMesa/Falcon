@@ -1,0 +1,25 @@
+@import url(fontandroot.css);
+
+
+.footerFooter {
+    margin-top: 4rem;
+    width: 878px;
+    transition: 0.2s ease-in-out;
+}
+
+.contentText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: var(--secondary);
+    font-size: 13.3px;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+}
+
+.linkFooter {
+    text-decoration: none;
+    color: var(--blue);
+}

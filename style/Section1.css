@@ -1,0 +1,186 @@
+@import url(fontandroot.css);
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #EDF2F9;
+}
+
+.ChartsDashboard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* ChartWeeklySales */
+
+.ChartWeeklySales {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.375rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease-in-out;
+}
+
+.ChartHeader {
+    width: 100%;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ChartHeaderTitle, h6 {
+    max-height: 1.2rem;
+    font-size: 13.3px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #344050;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.HeaderTooltipDropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 2.1rem;
+    left: 0.9rem;
+    width: 13rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px 8px;
+    border-radius: .275rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.HeaderTooltipDropdownSpout {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent; /* Half the width of the base */
+    border-right: 6px solid transparent; /* Half the width of the base */
+    border-bottom: 6px solid #000000; /* Height of the triangle */
+}
+
+#ChartWeeklySalesHeaderTooltip:hover .HeaderTooltipDropdown {
+    display: block;
+}
+
+.ChartData {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+.ChartDataSideInfo {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ChartMainInfo {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #5E6E82;
+}
+
+.ChartSecondaryInfo {
+    padding: 4px 8px;
+    background-color: #CCF6E4;
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #00864E;
+}
+
+.ChartDataGraph {
+    width: 136px;
+    height: 61px;
+}
+
+#ChartWeeklySalesGraph {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ChartWeeklySales End */
+
+/* ChartTotalOrder */
+
+.ChartTotalOrder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.375rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#ChartTotalOrderInfo .ChartDataSideInfo .ChartSecondaryInfo {
+    background-color: #D4F2FF;
+    color: #1978A2;
+}
+
+#ChartTotalOrderGraph {
+    width: 100%;
+    height: 100px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ChartTotalOrderGraphContainer {
+    overflow: visible;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    35% {
+      transform: scale(1.3);
+    }
+    70% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1.3);
+    }
+}
+
+.chartjs-point.hovered {
+    animation: pulse 0.5s infinite;
+}
+
+/* ChartTotalOrder End */

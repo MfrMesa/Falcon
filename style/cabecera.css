@@ -1,0 +1,118 @@
+@import url(fontandroot.css);
+
+ :root {
+    --border-radius-user: 50%;
+    --border-radius-card: 0.375rem;
+    --background-cabecera: #f9fafd;
+    --fondo-card:#ffffff ;
+    --border-button-menu: 0.2rem;
+    --color-primary-letter: #5e6e82;
+    --padding-buttom: 0.1875rem 0.75rem;
+    --size-user: 0.83rem;
+    --size-rol:0.694rem;
+} 
+
+.cabecera-menu{
+    height: 44px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: var(--border-radius-card) var(--border-radius-card) 0 0;
+    background-color: var(--background-cabecera);
+    padding: 0.8rem;
+}
+
+.cabecera-menuTitle{
+    font-weight: 500;
+    font-size: 13.3px;
+    font-family: "Open Sans", sans-serif;
+    color: #344050; 
+}
+
+/* FOOTER */
+.btn-footer{
+    /* max-height: 50px; */
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding:0.5rem;
+    background-color: var(--background-cabecera);
+    border-radius: 0 0 var(--border-radius-card) var(--border-radius-card);
+    
+}
+.btn-footer button{
+    color: #2c7be5;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: "Poppins Sans", sans-serif;
+    font-weight: 500;
+}
+/* FOOTER */
+
+
+/* BOTON */
+
+.btn-menu {
+   
+    border:1px solid transparent;
+    border-radius: var(--border-button-menu);
+    background-color:transparent;
+    padding: var(--padding-buttom);
+    color: var(--color-primary-letter);
+    cursor: pointer;
+    
+}
+.btn-menu-focus{
+    background-color: rgb(221, 218, 218);
+    color:black;
+}
+
+/* DROPDOWN */
+.dropdown-content a{
+    padding: 1rem;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(0.5rem*2 + 2px + 0.75rem*2);
+   right: calc(0px + 0.5rem + 0.4rem*2 + 0.7rem);
+   border-radius: var(--border-radius-card);
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+
+  .show {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .dropdown-divider {
+    height: 0;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #edf2f9;
+}
+#dropdownMenu{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+#dropdownMenu .remove{
+    color: #e63757;
+    font-size: 400;
+}
+  #dropdownMenu button{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    font-weight: 400;
+    color: inherit;
+    text-align: inherit;
+}
+
+
+
+
+

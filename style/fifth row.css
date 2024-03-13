@@ -1,0 +1,83 @@
+@import url("fontandroot.css");
+
+
+.fifthRow {
+    /* display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: right;
+    width: 878px;
+    height: 418px;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.bestSellingProducts{
+    display: inline-flex;
+    /* grid-column: 1;
+    grid-row: 1; */
+    position: relative;
+    width: 605px;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+.sharedFiles{
+    display: inline-flex;
+    /* grid-column: 2;
+    grid-row: 1; */
+    position: relative;
+    width: 275px;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+
+@media (max-width: 1200px){
+
+    .fifthRow{
+        width: 930px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .bestSellingProducts{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .sharedFiles{
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+
+@media (max-width: 983px){
+
+    .fifthRow{
+        width: 690px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .fifthRow{
+        width: 510px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .fifthRow{
+        width: 513px;
+    }
+}
+
